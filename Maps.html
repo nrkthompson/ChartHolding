@@ -7,9 +7,15 @@
   <script src="https://nrkthompson.github.io/ChartHolding/topojson.min.js"></script>
   <script src="https://nrkthompson.github.io/ChartHolding/datamaps.world.min.js"></script>
   <body>
-    <div id="container" style="position: relative; width: 500px; height: 300px;"></div>
+    <style>
+      body, html {width: 100%; height: 100%; margin: 0; padding: 0}
+      .chart canvas {display: block; width: 100%; height: 100%; border: none;}
+    </style>
+    <div class="chart">
+      <canvas id="myChart"></canvas>
+    </div>
     <script>
-      var map = new Datamap({element: document.getElementById('container')});
+      var map = new Datamap({element: document.getElementById('myChart')});
     </script>
   </body>
 </html>
