@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+  <script type="text/javascript">
+  response.addHeader("Access-Control-Allow-Origin", "*");
+  </script>
+  <body>
+    <style>
+      body, html {width: 100%; height: 100%; margin: 0; padding: 0}
+      .chart canvas {display: block; width: 100%; height: 100%; border: none;}
+    </style>
+    <div class="chart"></div>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
+      <script src="/datamaps.world.min.js"></script>
+      <script>
+          var map = new Datamap({element: document.getElementById('chart')});
+      </script>
+  </body>
+</html>
