@@ -62,10 +62,10 @@
                 var load2 = parsedCSV.slice(0,1).slice(1,2)
                 var load3 = parsedCSV.slice(1,2).slice(0,1)
                 var load4 = parsedCSV.slice(1,2).slice(1,2)
-                d3.select("#one").text.append(load1)
-                d3.select("#two").text.append(load2)
-                d3.select("#three").text.append(load3)
-                d3.select("#four").text.append(load4)
+                d3.select("#one").data(load1).enter()
+                d3.select("#two").data(load2).enter()
+                d3.select("#three").data(load3).enter()
+                d3.select("#four").data(load4).enter()
 
             });
         </script>
