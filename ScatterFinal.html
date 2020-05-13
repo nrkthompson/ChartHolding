@@ -4,6 +4,8 @@
 	<title>Scatter Chart</title>
 	</script><script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
 	<script src="https://www.chartjs.org/samples/latest/utils.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datasource@0.1.0"></script>
+	</script><script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.16.0/d3.min.js"></script>
 	<style>
 	canvas {
 		-moz-user-select: none;
@@ -19,37 +21,22 @@
 		<canvas id="canvas" style="display: block; width: 100%; height: 100%;" class="chartjs-render-monitor"></canvas>
 	</div>
 	<script>
-		var color = Chart.helpers.color;
-		function generateData() {
-			var data = "https://nrkthompson.github.io/ChartHolding/ScatterOECD.csv";
-			for (var i = 0; i < 37; i++) {
-				data.push({
-					x: randomScalingFactor(),
-					y: randomScalingFactor()
-				});
-			}
-			return data;
-		}
-
-		var scatterChartData = {
-			datasets: [{
-				label: 'Countries',
-				borderColor: window.chartColors.blue,
-				backgroundColor: color(window.chartColors.blue).alpha(0.2).rgbString(),
-				data: "https://nrkthompson.github.io/ChartHolding/ScatterOECD.csv"
-				}]
-		};
-
+		d3.csv('https://nrkthompson.github.io/ChartHolding/ScatterOECD.csv');
 		window.onload = function() {
-			var ctx = document.getElementById('canvas').getContext('2d');
-			window.myScatter = Chart.Scatter(ctx, {
-				data: scatterChartData,
-				options: {
-					title: {
-						display: true,
-						text: 'Health Policies by Closure Policies'
-					},
-				}
+				var
+				var ctx = document.getElementById('canvas').getContext('2d');
+				var scatterChart = new Chart(ctx, {
+				    type: 'scatter',
+				    data: ,
+				    options: {
+					scales: {
+					    xAxes: [{
+						type: 'linear',
+						position: 'bottom'
+					    }]
+					}
+				    }
+				});
 			});
 		};
 	</script>
