@@ -17,24 +17,49 @@
                 border: 1px black solid;
                 padding: 5px;
             }
+            
+            #blank {
+                border: 0px black solid;
+            }
         </style>
     </head>
     <body>
+        <table>
+            <tr>
+                <td id="blank">
+                </td>
+                <td>
+                    0-1 Closure Policies
+                </td>
+                <td>
+                    2+ Closure Policies
+                </td>
+            </tr>
+            <tr id="target1">
+                <td>
+                    3+ Health Policies
+                </td>
+            </tr>
+            <tr id="target2">
+                <td>
+                    0-2 Health Policies
+                </td>
+            </tr>
+        </table>
         <script type="text/javascript"charset="utf-8">
             d3.text("https://nrkthompson.github.io/ChartHolding/DeathsOECD.csv", function(data) {
                 var parsedCSV = d3.csv.parseRows(data);
 
-                var container = d3.select("body")
-                    .append("table")
-
-                    .selectAll("tr")
-                        .data(parsedCSV).enter()
-                        .append("tr")
-
+                var container1 = d3.select("#target1")
                     .selectAll("td")
-                        .data(function(d) { return d; }).enter()
+                        .data(parsedCSV).slice(0, 1)
                         .append("td")
-                        .text(function(d) { return d; });
+                
+                var container2 = d3.select("#target2")
+                    .selectAll("td")
+                        .data(parsedCSV).slice(1, 2)
+                        .append("td")
+
             });
         </script>
     </body>
