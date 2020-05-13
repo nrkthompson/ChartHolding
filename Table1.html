@@ -58,10 +58,10 @@
         <script type="text/javascript"charset="utf-8">
             d3.text("https://nrkthompson.github.io/ChartHolding/DeathsOECD.csv", function(data) {
                 var parsedCSV = d3.csv.parseRows(data);
-                var load1 = parseCSV.slice(0,1).slice(0,1)
-                var load2 = parseCSV.slice(0,1).slice(1,2)
-                var load3 = parseCSV.slice(1,2).slice(0,1)
-                var load4 = parseCSV.slice(1,2).slice(1,2)
+                var load1 = parsedCSV.slice(0,1).slice(0,1)
+                var load2 = parsedCSV.slice(0,1).slice(1,2)
+                var load3 = parsedCSV.slice(1,2).slice(0,1)
+                var load4 = parsedCSV.slice(1,2).slice(1,2)
                 d3.select("#one").append(load1)
                 d3.select("#two").append(load2)
                 d3.select("#three").append(load3)
