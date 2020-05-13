@@ -58,14 +58,12 @@
         <script type="text/javascript"charset="utf-8">
             d3.text("https://nrkthompson.github.io/ChartHolding/DeathsOECD.csv", function(data) {
                 var parsedCSV = d3.csv.parseRows(data);
-                var loadA = parsedCSV.slice(0,1)
-                var loadB = parsedCSV.slice(0,1)
-                var loadC = parsedCSV.slice(1,2)
-                var loadD = parsedCSV.slice(1,2)
+                var loadA = str(parsedCSV.slice(0,1))
+                var loadB = str(parsedCSV.slice(1,2))
                 var load1 = loadA.split(",").slice(0,1)
-                var load2 = loadB.split(",").slice(1,2)
-                var load3 = loadC.split(",").slice(0,1)
-                var load4 = loadD.split(",").slice(1,2)
+                var load2 = loadA.split(",").slice(1,2)
+                var load3 = loadB.split(",").slice(0,1)
+                var load4 = loadB.split(",").slice(1,2)
                 document.getElementById('one').innerHTML = load1;
                 document.getElementById('two').innerHTML = load2;
                 document.getElementById('three').innerHTML = load3;
