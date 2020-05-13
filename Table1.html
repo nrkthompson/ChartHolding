@@ -35,30 +35,37 @@
                     2+ Closure Policies
                 </td>
             </tr>
-            <tr id="target1">
+            <tr>
                 <td>
                     3+ Health Policies
                 </td>
+                <td id="one">
+                </td>
+                <td id="two">
+                </td>
             </tr>
-            <tr id="target2">
+            <tr>
                 <td>
                     0-2 Health Policies
+                </td>
+                </td>
+                <td id="three">
+                </td>
+                <td id="four">
                 </td>
             </tr>
         </table>
         <script type="text/javascript"charset="utf-8">
             d3.text("https://nrkthompson.github.io/ChartHolding/DeathsOECD.csv", function(data) {
                 var parsedCSV = d3.csv.parseRows(data);
-
-                var container1 = d3.select("#target1")
-                    .selectAll("td")
-                        .data(parsedCSV).slice(0, 1)
-                        .append("td")
-                
-                var container2 = d3.select("#target2")
-                    .selectAll("td")
-                        .data(parsedCSV).slice(1, 2)
-                        .append("td")
+                var load1 = parseCSV.slice(0,1).slice(0,1)
+                var load2 = parseCSV.slice(0,1).slice(1,2)
+                var load3 = parseCSV.slice(1,2).slice(0,1)
+                var load4 = parseCSV.slice(1,2).slice(1,2)
+                d3.select("#one").append(load1)
+                d3.select("#two").append(load2)
+                d3.select("#three").append(load3)
+                d3.select("#four").append(load4)
 
             });
         </script>
