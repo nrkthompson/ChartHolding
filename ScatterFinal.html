@@ -18,12 +18,11 @@
 	<div style="margin: 0 auto; display:block; width:90%; height:90%;"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
 		<canvas id="canvas" style="display: block; width: 100%; height: 100%;" class="chartjs-render-monitor"></canvas>
 	</div>
-	<button id="randomizeData">Randomize Data</button>
 	<script>
 		var color = Chart.helpers.color;
 		function generateData() {
 			var data = [];
-			for (var i = 0; i < 7; i++) {
+			for (var i = 0; i < 37; i++) {
 				data.push({
 					x: randomScalingFactor(),
 					y: randomScalingFactor()
@@ -34,16 +33,11 @@
 
 		var scatterChartData = {
 			datasets: [{
-				label: 'My First dataset',
-				borderColor: window.chartColors.red,
-				backgroundColor: color(window.chartColors.red).alpha(0.2).rgbString(),
-				data: generateData()
-			}, {
-				label: 'My Second dataset',
+				label: 'Countries',
 				borderColor: window.chartColors.blue,
 				backgroundColor: color(window.chartColors.blue).alpha(0.2).rgbString(),
-				data: generateData()
-			}]
+				data: https://nrkthompson.github.io/ChartHolding/ScatterOECD.csv
+				}]
 		};
 
 		window.onload = function() {
@@ -53,23 +47,11 @@
 				options: {
 					title: {
 						display: true,
-						text: 'Chart.js Scatter Chart'
+						text: 'Health Policies by Closure Policies'
 					},
 				}
 			});
 		};
-
-		document.getElementById('randomizeData').addEventListener('click', function() {
-			scatterChartData.datasets.forEach(function(dataset) {
-				dataset.data = dataset.data.map(function() {
-					return {
-						x: randomScalingFactor(),
-						y: randomScalingFactor()
-					};
-				});
-			});
-			window.myScatter.update();
-		});
 	</script>
 
 
