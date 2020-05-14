@@ -24,6 +24,13 @@
                 defaultFill: '#04297a'
          },
        });
+      function(Datamap) {
+          Datamap.svg.selectAll('.datamaps-subunit').on('click', function(geography) {
+              var country = String(geography.properties.name);
+              var event = new CustomEvent('myCustomEvent', { detail: data })
+              window.parent.document.dispatchEvent(event)
+          });
+      }
     </script>
   </body>
 </html>
