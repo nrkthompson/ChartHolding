@@ -27,7 +27,7 @@
          done: function clicker(datamap) {
             datamap.svg.selectAll('.datamaps-subunit').on('click', function(geography) {
                 var country = String(geography.properties.name);
-                parent.postMessage(country, "https://www.pearlmunk.com");
+                parent.postMessage(country, "*");
             });
         }
        });
