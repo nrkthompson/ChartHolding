@@ -28,7 +28,7 @@
             datamap.svg.selectAll('.datamaps-subunit').on('click', function(geography) {
                 alert('It works!');
                 var country = String(geography.properties.name);
-                parent.document.window.postMessage(country, "https://www.pearlmunk.com")
+                parent.postMessage(country, "https://www.pearlmunk.com")
             });
         }
        });
