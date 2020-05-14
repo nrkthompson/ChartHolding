@@ -26,7 +26,7 @@
          },
          done: function clicker(datamap) {
             datamap.svg.selectAll('.datamaps-subunit').on('click', function(geography) {
-                var country = String(geography.properties.name).replace(" ", "");
+                var country = String(geography.properties.name).replace(" ", "").replace(" ", "").replace(" ", "").replace(" ", "").replace(" ", "");
                 parent.postMessage(country, "*");
             });
         }
