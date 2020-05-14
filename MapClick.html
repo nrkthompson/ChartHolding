@@ -25,8 +25,8 @@
                 defaultFill: '#04297a'
          },
        });
-      done: function clicker(map) {
-          map.svg.selectAll('.datamaps-subunit').on('click', function(geography) {
+      done: function clicker(datamap) {
+          datamap.svg.selectAll('.datamaps-subunit').on('click', function(geography) {
               alert('It works!');
               var country = String(geography.properties.name);
               var event = new CustomEvent('myCustomEvent', {detail: country});
