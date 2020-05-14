@@ -27,7 +27,7 @@
       function(Datamap) {
           Datamap.svg.selectAll('.datamaps-subunit').on('click', function(geography) {
               var country = String(geography.properties.name);
-              var event = new CustomEvent('myCustomEvent', { detail: data })
+              var event = new CustomEvent('myCustomEvent', country)
               window.parent.document.dispatchEvent(event)
           });
       }
