@@ -24,15 +24,15 @@
          fills: {
                 defaultFill: '#04297a'
          },
+         done: function clicker(datamap) {
+            datamap.svg.selectAll('.datamaps-subunit').on('click', function(geography) {
+                alert('It works!');
+                var country = String(geography.properties.name);
+                var event = new CustomEvent('myCustomEvent', {detail: country});
+                window.parent.document.dispatchEvent(event);
+            });
+        }
        });
-      done: function clicker(datamap) {
-          datamap.svg.selectAll('.datamaps-subunit').on('click', function(geography) {
-              alert('It works!');
-              var country = String(geography.properties.name);
-              var event = new CustomEvent('myCustomEvent', {detail: country});
-              window.parent.document.dispatchEvent(event);
-          });
-      }
     </script>
   </body>
 </html>
