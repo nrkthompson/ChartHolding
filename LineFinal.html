@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+
+	<head>
+		<title>Line Chart Multiple Axes</title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+		<script src="https://www.chartjs.org/samples/latest/utils.js"></script>
+		<style>
+		canvas {
+			-moz-user-select: none;
+			-webkit-user-select: none;
+			-ms-user-select: none;
+		}
+		</style>
+	</head>
+
+	<body>
+		<div style="margin: 0 auto; disaply: block; width:86%; height: 86%;">
+			<canvas id="canvas"></canvas>
+		</div>
+		<script>
+			window.onload = function() {
+          var ctx = document.getElementById('canvas').getContext('2d');
+          window.myLine = Chart.Line(ctx, {
+            data: lineChartData,
+            options: {
+              responsive: true,
+              hoverMode: 'index',
+              stacked: false,
+              title: {
+                display: true,
+                text: 'Chart.js Line Chart - Multi Axis'
+              },
+            }
+          });
+        };
+		</script>
+	</body>
+
+</html>
