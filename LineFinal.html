@@ -26,9 +26,9 @@
 				var row2 = String(parsedCSV.slice(1,2)).split(",");
 				var row3 = String(parsedCSV.slice(2,3)).split(",");
 				var row4 = String(parsedCSV.slice(3,4)).split(",");
-				for(var i=0; i<row2.length;i++) row2[i] = +row2[i];
-				for(var i=0; i<row3.length;i++) row3[i] = +row3[i];
-				for(var i=0; i<row4.length;i++) row4[i] = +row4[i];
+				for(var i=0; i<row2.length;i++) row2[i] = +row2[i]*100;
+				for(var i=0; i<row3.length;i++) row3[i] = +row3[i]*100;
+				for(var i=0; i<row4.length;i++) row4[i] = +row4[i]*100;
 				console.log(row1)
 				console.log(row2)
 				console.log(row3)
@@ -65,7 +65,7 @@
 				    stacked: false,
 				    title: {
 					display: true,
-					text: 'Chart.js Line Chart - Multi Axis'
+					text: 'Percentage of Countries With 2 or More Closure Policies'
 				     },
 				   }
 				 });
