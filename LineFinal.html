@@ -22,7 +22,7 @@
 		<script>
 			d3.text("https://nrkthompson.github.io/ChartHolding/greaterthan2.csv", function(data) {
 				var parsedCSV = d3.csv.parseRows(data);
-				alert(parsedCSV.slic(0,1));
+				alert(parsedCSV.slice(0,1));
 				var lineChartData = {
 					labels: parsedCSV.slice(0,1),
 					datasets: [{
