@@ -19,21 +19,50 @@
 			<canvas id="canvas"></canvas>
 		</div>
 		<script>
-			window.onload = function() {
-          var ctx = document.getElementById('canvas').getContext('2d');
-          window.myLine = Chart.Line(ctx, {
-            data: lineChartData,
-            options: {
-              responsive: true,
-              hoverMode: 'index',
-              stacked: false,
-              title: {
-                display: true,
-                text: 'Chart.js Line Chart - Multi Axis'
-              },
-            }
-          });
-        };
+			d3.text("https://nrkthompson.github.io/ChartHolding/greaterthan2.csv", function(data) {
+				var parsedCSV = d3.csv.parseRows(data);
+				alert(pasedCSV.slice(0, 1)
+				var lineChartData = {
+					labels: [],
+					datasets: [{
+						label: 'World',
+						borderColor: '#04297a',
+						backgroundColor: '#04297a',
+						fill: false,
+						data: [],
+						yAxisID: 'y-axis-1',
+					}, {
+						label: 'OECD',
+						borderColor: '#34baeb',
+						backgroundColor: '#34baeb',
+						fill: false,
+						data: [],
+						yAxisID: 'y-axis-1'
+					}, {
+						label: 'G7',
+						borderColor: window.chartColors.blue,
+						backgroundColor: window.chartColors.blue,
+						fill: false,
+						data: [],
+						yAxisID: 'y-axis-1'
+					}]
+				};
+				window.onload = function() {
+				var ctx = document.getElementById('canvas').getContext('2d');
+				window.myLine = Chart.Line(ctx, {
+				  data: lineChartData,
+				  options: {
+				    responsive: true,
+				    hoverMode: 'index',
+				    stacked: false,
+				    title: {
+					display: true,
+					text: 'Chart.js Line Chart - Multi Axis'
+				     },
+				   }
+				 });
+				};
+			});
 		</script>
 	</body>
 
