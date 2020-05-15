@@ -22,29 +22,35 @@
 		<script>
 			d3.text("https://nrkthompson.github.io/ChartHolding/greaterthan2.csv", function(data) {
 				var parsedCSV = d3.csv.parseRows(data);
-				alert(parsedCSV.slice(0,1));
+				var row1 = String(parsedCSV.slice(0,1)).split(",");
+				var row2 = String(parsedCSV.slice(1,2)).split(",");
+				var row3 = String(parsedCSV.slice(2,3)).split(",");
+				var row4 = String(parsedCSV.slice(3,4)).split(",");
+				for(var i=0; i<row2.length;i++) row2[i] = +row2[i];
+				for(var i=0; i<row3.length;i++) row3[i] = +row3[i];
+				for(var i=0; i<row4.length;i++) row4[i] = +row4[i];
 				var lineChartData = {
-					labels: parsedCSV.slice(0,1),
+					labels: row1,
 					datasets: [{
 						label: 'World',
 						borderColor: '#04297a',
 						backgroundColor: '#04297a',
 						fill: false,
-						data: group1,
+						data: row2,
 						yAxisID: 'y-axis-1',
 					}, {
 						label: 'OECD',
 						borderColor: '#34baeb',
 						backgroundColor: '#34baeb',
 						fill: false,
-						data: group3,
+						data: row3,
 						yAxisID: 'y-axis-1'
 					}, {
 						label: 'G7',
 						borderColor: window.chartColors.blue,
 						backgroundColor: window.chartColors.blue,
 						fill: false,
-						data: group2,
+						data: row4,
 						yAxisID: 'y-axis-1'
 					}]
 				};
