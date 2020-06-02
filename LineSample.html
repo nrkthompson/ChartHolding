@@ -18,7 +18,6 @@
 		<div style="margin: 0 auto; disaply: block; width:86%; height: 86%;">
 			<canvas id="canvas"></canvas>
 		</div>
-		<button id="randomizeData">Randomize Data</button>
 		<script>
 			var lineChartData = {
 				labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
@@ -56,16 +55,6 @@
 								display: true,
 								position: 'left',
 								id: 'y-axis-1',
-							}, {
-								type: 'linear', // only linear but allow scale type registration. This allows extensions to exist solely for log scale for instance
-								display: true,
-								position: 'right',
-								id: 'y-axis-2',
-
-								// grid line settings
-								gridLines: {
-									drawOnChartArea: false, // only want the grid lines for one axis to show up
-								},
 							}],
 						}
 					}
