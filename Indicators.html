@@ -35,12 +35,12 @@
 	      			var csv = d3.csv.parseRows(text);
 			console.log(csv.toString())
 			var data = [];
-			for (var i = 0, len = csv.length; i < len; i++) {
+			for (var i = 0; i < upperLimit+1; i++) {
 				if (i >= lowerLimit && i <= upperLimit) {
 					var preData = csv[i-1];
 					console.log(preData.toString())
 					var tracker = 1;
-					for (i = 1, len = preData.length; i < len; i++) {
+					for (var z = 1, len = preData.length; z < len; z++) {
 						if (tracker == 1) {
 							var xValue = parseInt(preData[i], 10);
 						} else {
@@ -49,8 +49,8 @@
 								x: xValue,
 								y: yValue
 							});
-							var tracker = tracker * -1
 						}
+						var tracker = tracker * -1
 					}
 				}
 			}
