@@ -7,14 +7,17 @@
         var text1 = document.getElementById("country1");
         var text2 = document.getElementById("country2");
         var text3 = document.getElementById("country3");
+        var text4 = document.getElementById("weeks");
         if (checkBox.checked == true){
           text1.style.display = "inline";
           text2.style.display = "inline";
           text3.style.display = "inline";
+          text4.style.display = "none";
         } else {
           text1.style.display = "none";
           text2.style.display = "none";
           text3.style.display = "none";
+          text4.style.display = "inline";
         }
       }
     </script>
@@ -22,6 +25,11 @@
   <body style="height:100%; width:100%; color: #666;">
     <span style="height:4%; width:100%" style="font-family: Helvetica Neue, Helvetica, Arial, sans-serif;">
       Check to Compare Specific Countries: <input type="checkbox" id="myCheck" onclick="myFunction()">
+      <select name="Weeks" id="weeks" style="display:inline">
+        <option value="Most Recent Available">Most Recent Available</option>
+        <option value="Previous Week">Previous Week</option>
+        <option value="2 Weeks Ago">2 Weeks Ago/option>>
+      </select>
       <select name="Country 1" id="country1" style="display:none">
         <option value="Country1">Country 1</option>
         <option value="United Kingdom">United Kingdom</option>
