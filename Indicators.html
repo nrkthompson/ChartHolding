@@ -54,6 +54,10 @@
 					}
 				}
 			}
+			data.push({
+				x: -10,
+				y: -10
+			});
 			console.log(data)
 			return data;
 			});
@@ -133,8 +137,8 @@
 					scales: {
 					      yAxes: [{
 						  ticks: {
-						      suggestedMin: 0,
-						      suggestedMax: 9,
+						      min: 0,
+						      max: 9,
 						      stepSize: 1,
 						      callback: function(value, index, values) {
 							  return yLabels[value];
@@ -143,8 +147,8 @@
 					      }],
 					      xAxes: [{
 						  ticks: {
-						      suggestedMin: 0,
-						      suggestedMax: 5,
+						      min: 0,
+						      max: 5,
 						      stepSize: 1,
 						      callback: function(value, index, values) {
 							  return xLabels[value];
