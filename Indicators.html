@@ -32,21 +32,11 @@
     var set1 = [2, 3, 2, 5, 3, 2, 2, 3, 4, 2]
     var set2 = [4, 3, 4, 5, 4, 4, 1, 2, 3, 4]
     
-		function generateData() {
+		function generateData(list) {
 			var data = [];
 			for (var i = 0; i < 10; i++) {
 				data.push({
-					x: set1[i],
-					y: i
-				});
-			}
-			return data;
-		}
-		function generateData2() {
-			var data = [];
-			for (var i = 0; i < 10; i++) {
-				data.push({
-					x: set2[i],
+					x: list[i],
 					y: i
 				});
 			}
@@ -60,13 +50,13 @@
 				pointRadius: 5,
 				borderColor: '#33FF6B',
 				backgroundColor: '#33FF6B',
-				data: generateData()
+				data: generateData(set1)
 			}, {
 				label: 'Australia',
 				pointRadius: 5,
 				borderColor: '#84388B',
 				backgroundColor: '#84388B',
-				data: generateData2()
+				data: generateData(set2)
 			}]
 		};
 
@@ -88,6 +78,7 @@
 						  ticks: {
 						      suggestedMin: 0,
 						      suggestedMax: 9,
+						      stepSize: 1,
 						      callback: function(value, index, values) {
 							  return yLabels[value];
 						      }
@@ -97,6 +88,7 @@
 						  ticks: {
 						      suggestedMin: 0,
 						      suggestedMax: 5,
+						      stepSize: 1,
 						      callback: function(value, index, values) {
 							  return xLabels[value];
 						      }
