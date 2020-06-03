@@ -6,7 +6,7 @@
         var checkBox = document.getElementById("myCheck");
         var text = document.getElementById("country1");
         if (checkBox.checked == true){
-          text.style.display = "block";
+          text.style.display = "inline";
         } else {
           text.style.display = "none";
         }
@@ -14,7 +14,7 @@
     </script>
   </head>
   <body style="height:100%; width:100%">
-    <span style="height:4%; width:100%; display:inline">
+    <span style="height:4%; width:100%">
       Check to Compare Specific Countries: <input type="checkbox" id="myCheck" onclick="myFunction()">
       <select name="Country 1" id="country1" style="display:none">
         <option value="Country1">Country 1</option>
