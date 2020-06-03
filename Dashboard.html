@@ -4,11 +4,17 @@
     <script>
       function myFunction() {
         var checkBox = document.getElementById("myCheck");
-        var text = document.getElementsByClassName("countries");
+        var text1 = document.getElementById("country1");
+        var text2 = document.getElementById("country2");
+        var text3 = document.getElementById("country3");
         if (checkBox.checked == true){
-          text.style.display = "inline";
+          text1.style.display = "inline";
+          text2.style.display = "inline";
+          text3.style.display = "inline";
         } else {
-          text.style.display = "none";
+          text1.style.display = "none";
+          text2.style.display = "none";
+          text3.style.display = "none";
         }
       }
     </script>
@@ -16,17 +22,17 @@
   <body style="height:100%; width:100%; color: #666;">
     <span style="height:4%; width:100%" style="font-family: Helvetica Neue, Helvetica, Arial, sans-serif;">
       Check to Compare Specific Countries: <input type="checkbox" id="myCheck" onclick="myFunction()">
-      <select name="Country 1" class="countries" style="display:none">
+      <select name="Country 1" id="country1" style="display:none">
         <option value="Country1">Country 1</option>
         <option value="United Kingdom">United Kingdom</option>
         <option value="Australia">Australia</option>>
       </select>
-      <select name="Country 2" class="countries" style="display:none">
+      <select name="Country 2" id="country2" style="display:none">
         <option value="Country2">Country 2</option>
         <option value="United Kingdom">United Kingdom</option>
         <option value="Australia">Australia</option>>
       </select>
-      <select name="Country 3" class="countries" style="display:none">
+      <select name="Country 3" id="country3" style="display:none">
         <option value="Country3">Country 3</option>
         <option value="United Kingdom">United Kingdom</option>
         <option value="Australia">Australia</option>>
