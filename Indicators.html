@@ -29,33 +29,85 @@
 	      0: 'Insufficient Data', 1: 'Level 1 (Most Restrictive)', 2: 'Level 2', 3: 'Level 3', 4: 'Level 4', 5: 'Level 5 (Least Restrictive)'
 	    }
     	    var csv = d3.csv("https://nrkthompson.github.io/ChartHolding/Data/HeatMapMay29.csv")
-	    console.log(csv)
     
-		function generateData(list) {
+		function generateData(csv, lowerLimit, UpperLimit) {
 			var data = [];
-			for (var i = 0; i < 10; i++) {
-				data.push({
-					x: list[i],
-					y: i
-				});
+			for (var i = 0; i < UpperLimit+1; i++) {
+				if (i >= lowerLimit && i <= UpperLimit) {
+					var preData = csv[i-1];
+					var tracker = 1;
+					for (i = 1, len = preData.length; i < len; i++) {
+						if (tracker == 1) {
+							var xValue = preData[i];
+						} else {
+							var yValue = preData[i];
+							data.push({
+								x: xValue,
+								y: yValue
+							});
+							var tracker = tracker * -1
+						}
+					}
+				}
 			}
 			return data;
 		}
 
 		var scatterChartData = {
-			labels: ['United Kingdom', 'Australia'],
 			datasets: [{
-				label: 'United Kingdom',
+				label: '1-4 Countries',
 				pointRadius: 5,
-				borderColor: '#33FF6B',
-				backgroundColor: '#33FF6B',
-				data: generateData(set1)
+				borderColor: '#D4E6F1',
+				backgroundColor: '#D4E6F1',
+				data: generateData(csv, 1, 4)
 			}, {
-				label: 'Australia',
+				label: '5-8 Countries',
 				pointRadius: 5,
-				borderColor: '#84388B',
-				backgroundColor: '#84388B',
-				data: generateData(set2)
+				borderColor: '#A9CCE3',
+				backgroundColor: '#A9CCE3',
+				data: generateData(csv, 5, 8)
+			}, {
+				label: '9-12 Countries',
+				pointRadius: 5,
+				borderColor: '#7FB3D5',
+				backgroundColor: '#7FB3D5',
+				data: generateData(csv, 9, 12)
+			}, {
+				label: '13-16 Countries',
+				pointRadius: 5,
+				borderColor: '#5499C7',
+				backgroundColor: '#5499C7',
+				data: generateData(csv, 13, 16)
+			}, {
+				label: '17-20 Countries',
+				pointRadius: 5,
+				borderColor: '#2980B9',
+				backgroundColor: '#2980B9',
+				data: generateData(csv, 17, 20)
+			}, {
+				label: '21-24 Countries',
+				pointRadius: 5,
+				borderColor: '#2471A3',
+				backgroundColor: '#2471A3',
+				data: generateData(csv, 21, 24)
+			}, {
+				label: '25-28 Countries',
+				pointRadius: 5,
+				borderColor: '#1F618D',
+				backgroundColor: '#1F618D',
+				data: generateData(csv, 25, 28)
+			}, {
+				label: '29-32 Countries',
+				pointRadius: 5,
+				borderColor: '#1A5276',
+				backgroundColor: '#1A5276',
+				data: generateData(csv, 29 ,32)
+			}, {
+				label: '33-26 Countries',
+				pointRadius: 5,
+				borderColor: '#154360',
+				backgroundColor: '#154360',
+				data: generateData(csv, 33 ,36)
 			}]
 		};
 
