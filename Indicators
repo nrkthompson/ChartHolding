@@ -1,0 +1,86 @@
+
+<!doctype html>
+<html style="margin: 0 auto; disaply: block; height: 98%;">
+
+<head>
+	<title>Scatter Chart</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+	<script src="https://www.chartjs.org/samples/latest/utils.js"></script>
+	<style>
+	canvas {
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		-ms-user-select: none;
+	}
+	</style>
+</head>
+
+<body style="margin: 0 auto; disaply: block; height: 100%;">
+	<div style="margin: 0 auto; disaply: block; height: 100%;">
+		<canvas id="canvas"></canvas>
+	</div>
+	<script>
+		var color = Chart.helpers.color;
+    var yLabels = {
+      0: 'Overall', 1: 'Stores and Non-Essential Businesses', 2: 'Schooling and Youth Activities',
+      3: 'Eateries', 4: 'Leisure Activities', 5: 'Contact Services', 6: Manufacturing and Construction',
+      7: 'Gatherings', 8: 'Borders and Movement'
+    }
+    var xLabels = {
+      0: 'Insufficient Data', 1: 'Level 1', 2: 'Level 2', 3: 'Level 3', 4: 'Level 4', 5: 'Level 5'
+    }
+    var set1 = [2, 3, 2, 5, 3, 2, 2, 3, 4]
+    
+		function generateData() {
+			var data = [];
+			for (var i = 0; i < 7; i++) {
+				data.push({
+					x: set1[i],
+					y: i
+				});
+			}
+			return data;
+		}
+
+		var scatterChartData = {
+			datasets: [{
+				label: 'My First dataset',
+				borderColor: window.chartColors.red,
+				backgroundColor: color(window.chartColors.red).alpha(0.2).rgbString(),
+				data: generateData()
+			}]
+		};
+
+		window.onload = function() {
+			var ctx = document.getElementById('canvas').getContext('2d');
+			window.myScatter = Chart.Scatter(ctx, {
+				data: scatterChartData,
+				options: {
+					title: {
+						display: true,
+						text: 'Chart.js Scatter Chart'
+					},
+        scales: {
+              yAxes: [{
+                  ticks: {
+                      callback: function(value, index, values) {
+                          return yLabels[value];
+                      }
+                  }
+              }],
+              xAxes: [{
+                  ticks: {
+                      callback: function(value, index, values) {
+                          return xLabels[value];
+                      }
+                  }
+              }]
+          }
+				}
+			});
+		};
+
+	</script>
+</body>
+
+</html>
