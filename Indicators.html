@@ -45,6 +45,7 @@
 		var scatterChartData = {
 			datasets: [{
 				label: 'United Kingdom',
+				 pointRadius: 30,
 				borderColor: window.chartColors.red,
 				backgroundColor: color(window.chartColors.red).alpha(0.2).rgbString(),
 				data: generateData()
@@ -56,6 +57,7 @@
 			window.myScatter = Chart.Scatter(ctx, {
 				data: scatterChartData,
 				options: {
+					maintainAspectRatio: false,
 					title: {
 						display: true,
 						text: 'Indicators Sample'
