@@ -31,9 +31,9 @@
 	    
     
 		function generateData(lowerLimit, upperLimit) {
+			var data = [];
 			d3.text("https://nrkthompson.github.io/ChartHolding/Data/HeatMapMay29.csv", "text/csv", function(text) {
 	      			var csv = d3.csv.parseRows(text);
-			var data = [];
 			for (var i = 0; i < upperLimit+1; i++) {
 				if (i >= lowerLimit && i <= upperLimit) {
 					var preData = csv[i-1];
@@ -59,8 +59,8 @@
 				y: -10
 			});
 			console.log(data)
-			return data;
 			});
+			return data;
 		}
 
 		var scatterChartData = {
