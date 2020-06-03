@@ -20,12 +20,12 @@
 		<canvas id="canvas"></canvas>
 	</div>
 	<script>
-	    var yLabels = {
+	    var xLabels = {
 	      0: 'Country Average', 1: 'Stores and Non-Essential Businesses', 2: 'Schooling and Youth Activities',
 	      3: 'Eateries', 4: 'Leisure Activities', 5: 'Contact Services', 6: 'Manufacturing and Construction',
 	      7: 'Gatherings', 8: 'Borders and Movement', 9: 'Cultural'
 	    }
-	    var xLabels = {
+	    var yLabels = {
 	      0: 'Insufficient Data', 1: 'Level 1 (Most Restrictive)', 2: 'Level 2', 3: 'Level 3', 4: 'Level 4', 5: 'Level 5 (Least Restrictive)'
 	    }
 	    
@@ -40,9 +40,9 @@
 					var tracker = 1;
 					for (var z = 1, len = preData.length; z < len; z++) {
 						if (tracker == 1) {
-							var xValue = parseInt(preData[z], 10);
-						} else {
 							var yValue = parseInt(preData[z], 10);
+						} else {
+							var xValue = parseInt(preData[z], 10);
 							console.log(xValue)
 							console.log(yValue)
 							data.push({
@@ -138,7 +138,7 @@
 					      yAxes: [{
 						  ticks: {
 						      min: 0,
-						      max: 9,
+						      max: 5,
 						      stepSize: 1,
 						      callback: function(value, index, values) {
 							  return yLabels[value];
@@ -148,7 +148,7 @@
 					      xAxes: [{
 						  ticks: {
 						      min: 0,
-						      max: 5,
+						      max: 9,
 						      stepSize: 1,
 						      callback: function(value, index, values) {
 							  return xLabels[value];
