@@ -28,7 +28,9 @@
 	    var xLabels = {
 	      0: 'Insufficient Data', 1: 'Level 1 (Most Restrictive)', 2: 'Level 2', 3: 'Level 3', 4: 'Level 4', 5: 'Level 5 (Least Restrictive)'
 	    }
-    	    var csv = d3.csv("https://nrkthompson.github.io/ChartHolding/Data/HeatMapMay29.csv")
+	    d3.text("https://nrkthompson.github.io/ChartHolding/Data/HeatMapMay29.csv", "text/csv", function(text) {
+	      var csv = d3.csv.parseRows(text);
+    		});
 	    console.log(csv.toString())
     
 		function generateData(csv, lowerLimit, UpperLimit) {
@@ -40,9 +42,9 @@
 					var tracker = 1;
 					for (i = 1, len = preData.length; i < len; i++) {
 						if (tracker == 1) {
-							var xValue = preData[i];
+							var xValue = parseInt(preData[i], 10);
 						} else {
-							var yValue = preData[i];
+							var yValue = parseInt(preData[i], 10);
 							data.push({
 								x: xValue,
 								y: yValue
