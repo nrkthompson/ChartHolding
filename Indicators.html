@@ -35,7 +35,7 @@
 	      			var csv = d3.csv.parseRows(text);
 			console.log(csv.toString())
 			var data = [];
-			for (var i = 0; i < UpperLimit+1; i++) {
+			for (var i = 0, len = csv.length; i < len; i++) {
 				if (i >= lowerLimit && i <= upperLimit) {
 					var preData = csv[i-1];
 					console.log(preData.toString())
