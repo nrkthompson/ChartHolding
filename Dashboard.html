@@ -1,11 +1,31 @@
 <!DOCTYPE html>
 <html style="margin: 0 auto; disaply: block; height:95%; width:95%">
-  <head></head>
+  <head>
+    <script>
+      function myFunction() {
+        var checkBox = document.getElementById("myCheck");
+        var text = document.getElementById("country1");
+        if (checkBox.checked == true){
+          text.style.display = "block";
+        } else {
+          text.style.display = "none";
+        }
+      }
+    </script>
+  </head>
   <body style="height:100%; width:100%">
-    <div  style="margin: 0 auto; disaply: block; height:50%; width:100%;">
+    <div>
+      Country Specific View: <input type="checkbox" id="myCheck" onclick="myFunction()">
+      <label for="country1">Choose a country:</label>
+      <select name="Country 1" id="country1" style="display:none">
+        <option value="United Kingdom">United Kingdom</option>
+        <option value="Australia">Australia</option>>
+      </select>
+    </div>
+    <div  style="margin: 0 auto; disaply: block; height:48%; width:100%;">
       <iframe src="https://nrkthompson.github.io/ChartHolding/Indicators.html" style="margin: 0 auto; disaply: block; height:100%; width:100%;" frameBorder="0"></iframe>
     </div>
-    <table style="margin: 0 auto; disaply: block; height:50%; width:100%">
+    <table style="margin: 0 auto; disaply: block; height:48%; width:100%">
       <tr>
         <th style="width:33%">
            <table>
