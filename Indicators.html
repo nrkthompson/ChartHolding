@@ -54,6 +54,7 @@
 		}
 
 		var scatterChartData = {
+			labels: ['United Kingdom', 'Australia'],
 			datasets: [{
 				label: 'United Kingdom',
 				pointRadius: 5,
@@ -75,14 +76,6 @@
 				data: scatterChartData,
 				options: {
 					maintainAspectRatio: false,
-					tooltips: {
-            					callback: {
-							label: function(tooltipItem, data) {
-							    var label = data.datasets[tooltipItem.datasetIndex].label || '';
-							    return label;
-							}
-						}
-        				},
 					title: {
 						display: true,
 						text: 'Indicators Sample'
