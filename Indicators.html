@@ -28,12 +28,12 @@
 	    var xLabels = {
 	      0: 'Insufficient Data', 1: 'Level 1 (Most Restrictive)', 2: 'Level 2', 3: 'Level 3', 4: 'Level 4', 5: 'Level 5 (Least Restrictive)'
 	    }
-	    d3.text("https://nrkthompson.github.io/ChartHolding/Data/HeatMapMay29.csv", "text/csv", function(text) {
-	      var csv = d3.csv.parseRows(text);
-    		});
-	    console.log(csv.toString())
+	    
     
 		function generateData(csv, lowerLimit, UpperLimit) {
+			d3.text("https://nrkthompson.github.io/ChartHolding/Data/HeatMapMay29.csv", "text/csv", function(text) {
+	      			var csv = d3.csv.parseRows(text);
+			console.log(csv.toString())
 			var data = [];
 			for (var i = 0; i < UpperLimit+1; i++) {
 				if (i >= lowerLimit && i <= UpperLimit) {
@@ -55,6 +55,7 @@
 				}
 			}
 			return data;
+			});
 		}
 
 		var scatterChartData = {
