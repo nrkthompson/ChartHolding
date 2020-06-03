@@ -30,13 +30,13 @@
 	    }
 	    
     
-		function generateData(lowerLimit, UpperLimit) {
+		function generateData(lowerLimit, upperLimit) {
 			d3.text("https://nrkthompson.github.io/ChartHolding/Data/HeatMapMay29.csv", "text/csv", function(text) {
 	      			var csv = d3.csv.parseRows(text);
 			console.log(csv.toString())
 			var data = [];
 			for (var i = 0; i < UpperLimit+1; i++) {
-				if (i >= lowerLimit && i <= UpperLimit) {
+				if (i >= lowerLimit && i <= upperLimit) {
 					var preData = csv[i-1];
 					console.log(preData.toString())
 					var tracker = 1;
