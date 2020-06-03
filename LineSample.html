@@ -16,7 +16,7 @@
 
 	<body style="height: 100%;">
 		<div style="margin: 0 auto; disaply: block; height: 100%;">
-			<canvas id="canvas" style="height: 100%;"></canvas>
+			<canvas id="canvas"></canvas>
 		</div>
 		<script>
 			var lineChartData = {
@@ -46,6 +46,7 @@
 						responsive: true,
 						hoverMode: 'index',
 						stacked: false,
+						maintainAspectRatio: false,
 						title: {
 							display: true,
 							text: 'Sample'
