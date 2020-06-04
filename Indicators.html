@@ -156,6 +156,9 @@
 				}
 			});
 		};
+		document.addEventListener('DOMContentLoaded', function() {
+		   window.dispatchEvent(new Event('resize'));
+		}, false);
 	</script>
 </body>
 
