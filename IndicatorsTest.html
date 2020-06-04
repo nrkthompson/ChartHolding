@@ -115,8 +115,9 @@
 		}
 		window.onload = async function onboard() {
 				var ctx = document.getElementById('canvas').getContext('2d');
+				var dataFinal = await dataMaker();
 				var myScatter = Chart.Scatter(ctx, {
-					data: await dataMaker(),
+					data: dataFinal,
 					options: {
 						maintainAspectRatio: false,
 						responsive: true,
