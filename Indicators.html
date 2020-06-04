@@ -124,7 +124,7 @@
 					data: generateData(fileName,33 ,36)
 				}]
 		};
-		function onboard(fileName) {
+		window.onload = function onboard(fileName) {
 			var ctx = document.getElementById('canvas').getContext('2d');
 			window.myScatter = Chart.Scatter(ctx, {
 				data: scatterChartData,
@@ -162,7 +162,6 @@
 				}
 			});
 		};
-	window.onload = onboard(fileName);
 	</script>
 </body>
 
