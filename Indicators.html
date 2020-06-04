@@ -67,9 +67,7 @@
 			});
 			return data;
 		}
-
-		window.onload = function onboard(fileName) {
-			var scatterChartData = {
+		var scatterChartData = {
 			datasets: [{
 					label: '1-4 Countries',
 					pointRadius: 3,
@@ -125,7 +123,8 @@
 					backgroundColor: '#154360',
 					data: generateData(fileName,33 ,36)
 				}]
-			};
+		};
+		window.onload = function onboard(fileName) {
 			var ctx = document.getElementById('canvas').getContext('2d');
 			window.myScatter = Chart.Scatter(ctx, {
 				data: scatterChartData,
