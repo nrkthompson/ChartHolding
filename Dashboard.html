@@ -27,25 +27,136 @@
   </head>
   <body style="height:100%; width:100%; color: #666;">
     <span style="height:4%; width:100%" style="font-family: Helvetica Neue, Helvetica, Arial, sans-serif;">
-      Check to Compare Specific Countries (Most Recent Data Available): <input type="checkbox" id="myCheck" onclick="myFunction()">
+      Check to Compare Specific Countries/States (Most Recent Data Available): <input type="checkbox" id="myCheck" onclick="myFunction()">
       <select name="Weeks" id="weeks" style="display:inline" onchange='dataChanger(this.value)'>
         <option value="https://nrkthompson.github.io/ChartHolding/Indicators.html">Most Recent Available</option>
         <option value="https://nrkthompson.github.io/ChartHolding/Indicators2.html">Previous Week</option>
       </select>
       <select name="Country 1" id="country1" style="display:none">
-        <option value="Country1">Country 1</option>
+        <option value="Country1">Country/State 1</option>
+        <option value="Australia">Australia</option>
+        <option value="Austria">Austria</option>
+        <option value="Belgium">Beglium</option>
+        <option value="California (USA)">California (USA)</option>
+        <option value="Chile">Chile</option>
+        <option value="Czech Republic">Czech Republic</option>
+        <option value="Denmark">Denmark</option>
+        <option value="Estonia">Estonia</option>
+        <option value="Finland">Finland</option>
+        <option value="France">France</option>
+        <option value="Germany">Germany</option>
+        <option value="Greece">Greece</option>
+        <option value="Hungary">Hungary</option>
+        <option value="Iceland">Iceland</option>
+        <option value="Illinois (USA)">Illinois (USA)</option>
+        <option value="Ireland">Ireland</option>
+        <option value="Israel">Israel</option>
+        <option value="Italy">Italy</option>
+        <option value="Japan">Japan</option>
+        <option value="Latvia">Latvia</option>
+        <option value="Lithuania">Lithuania</option>
+        <option value="Luxembourg">Luxembourg</option>
+        <option value="Mexico">Mexico</option>
+        <option value="Michigan (USA)">Michigan (USA)</option>
+        <option value="Netherlands">Netherlands</option>
+        <option value="New York (USA)">New York (USA)</option>
+        <option value="New Zealand">New Zealand</option>
+        <option value="Norway">Norway</option>
+        <option value="Poland">Poland</option>
+        <option value="Portugal">Portugal</option>
+        <option value="Slovakia">Slovakia</option>
+        <option value="Slovenia">Slovenia</option>
+        <option value="Spain">Spain</option>
+        <option value="South Korea">South Korea</option>
+        <option value="Sweden">Sweden</option>
+        <option value="Switzerland">Switzerland</option>
+        <option value="Texas (USA)">Texas (USA)</option>
+        <option value="Turkey">Turkey</option>
         <option value="United Kingdom">United Kingdom</option>
-        <option value="Australia">Australia</option>>
       </select>
       <select name="Country 2" id="country2" style="display:none">
-        <option value="Country2">Country 2</option>
-        <option value="United Kingdom">United Kingdom</option>
+        <option value="Country2">Country/State 2</option>
         <option value="Australia">Australia</option>
+        <option value="Austria">Austria</option>
+        <option value="Belgium">Beglium</option>
+        <option value="California (USA)">California (USA)</option>
+        <option value="Chile">Chile</option>
+        <option value="Czech Republic">Czech Republic</option>
+        <option value="Denmark">Denmark</option>
+        <option value="Estonia">Estonia</option>
+        <option value="Finland">Finland</option>
+        <option value="France">France</option>
+        <option value="Germany">Germany</option>
+        <option value="Greece">Greece</option>
+        <option value="Hungary">Hungary</option>
+        <option value="Iceland">Iceland</option>
+        <option value="Illinois (USA)">Illinois (USA)</option>
+        <option value="Ireland">Ireland</option>
+        <option value="Israel">Israel</option>
+        <option value="Italy">Italy</option>
+        <option value="Japan">Japan</option>
+        <option value="Latvia">Latvia</option>
+        <option value="Lithuania">Lithuania</option>
+        <option value="Luxembourg">Luxembourg</option>
+        <option value="Mexico">Mexico</option>
+        <option value="Michigan (USA)">Michigan (USA)</option>
+        <option value="Netherlands">Netherlands</option>
+        <option value="New York (USA)">New York (USA)</option>
+        <option value="New Zealand">New Zealand</option>
+        <option value="Norway">Norway</option>
+        <option value="Poland">Poland</option>
+        <option value="Portugal">Portugal</option>
+        <option value="Slovakia">Slovakia</option>
+        <option value="Slovenia">Slovenia</option>
+        <option value="Spain">Spain</option>
+        <option value="South Korea">South Korea</option>
+        <option value="Sweden">Sweden</option>
+        <option value="Switzerland">Switzerland</option>
+        <option value="Texas (USA)">Texas (USA)</option>
+        <option value="Turkey">Turkey</option>
+        <option value="United Kingdom">United Kingdom</option>
       </select>
       <select name="Country 3" id="country3" style="display:none">
-        <option value="Country3">Country 3</option>
-        <option value="United Kingdom">United Kingdom</option>
+        <option value="Country3">Country/State 3</option>
         <option value="Australia">Australia</option>
+        <option value="Austria">Austria</option>
+        <option value="Belgium">Beglium</option>
+        <option value="California (USA)">California (USA)</option>
+        <option value="Chile">Chile</option>
+        <option value="Czech Republic">Czech Republic</option>
+        <option value="Denmark">Denmark</option>
+        <option value="Estonia">Estonia</option>
+        <option value="Finland">Finland</option>
+        <option value="France">France</option>
+        <option value="Germany">Germany</option>
+        <option value="Greece">Greece</option>
+        <option value="Hungary">Hungary</option>
+        <option value="Iceland">Iceland</option>
+        <option value="Illinois (USA)">Illinois (USA)</option>
+        <option value="Ireland">Ireland</option>
+        <option value="Israel">Israel</option>
+        <option value="Italy">Italy</option>
+        <option value="Japan">Japan</option>
+        <option value="Latvia">Latvia</option>
+        <option value="Lithuania">Lithuania</option>
+        <option value="Luxembourg">Luxembourg</option>
+        <option value="Mexico">Mexico</option>
+        <option value="Michigan (USA)">Michigan (USA)</option>
+        <option value="Netherlands">Netherlands</option>
+        <option value="New York (USA)">New York (USA)</option>
+        <option value="New Zealand">New Zealand</option>
+        <option value="Norway">Norway</option>
+        <option value="Poland">Poland</option>
+        <option value="Portugal">Portugal</option>
+        <option value="Slovakia">Slovakia</option>
+        <option value="Slovenia">Slovenia</option>
+        <option value="Spain">Spain</option>
+        <option value="South Korea">South Korea</option>
+        <option value="Sweden">Sweden</option>
+        <option value="Switzerland">Switzerland</option>
+        <option value="Texas (USA)">Texas (USA)</option>
+        <option value="Turkey">Turkey</option>
+        <option value="United Kingdom">United Kingdom</option>
       </select>
     </span>
     <div  style="margin: 0 auto; disaply: block; height:48%; width:100%;">
