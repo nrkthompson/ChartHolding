@@ -151,44 +151,6 @@
 				}
 			});
 		};
-		function onboard2(inputData) {
-			var ctx = document.getElementById('canvas').getContext('2d');
-			window.myScatter = Chart.Scatter(ctx, {
-				data: inputData,
-				options: {
-					maintainAspectRatio: false,
-					tooltips: {
-						mode: 'point'
-					},
-					title: {
-						display: true,
-						text: 'Level of Reopening by Sector Among OECD Countries and Selected US States'
-					},
-					scales: {
-					      yAxes: [{
-						  ticks: {
-						      min: 0,
-						      max: 5,
-						      stepSize: 1,
-						      callback: function(value, index, values) {
-							  return yLabels[value];
-						      }
-						  }
-					      }],
-					      xAxes: [{
-						  ticks: {
-						      min: 0,
-						      max: 9,
-						      stepSize: 1,
-						      callback: function(value, index, values) {
-							  return xLabels[value];
-						      }
-						  }
-					      }]
-					  }
-				}
-			});
-		};
 		window.addEventListener("message", receiveMessage, false);
 		function receiveMessage(event) {
 			if (String(event.data).includes("https://nrkthompson.github.io/ChartHolding")) {
@@ -250,10 +212,45 @@
 							data: generateData(fileName,33 ,36)
 						}]
 				};
-				window.myScatter.clear();
-				window.myScatter.data = scatterChartData2;
-				this.myChartInstance = window.myScatter
-				this.myChartInstance.update();
+				window.myScatter.destroy()
+				var ctx = document.getElementById('canvas').getContext('2d');
+				window.myScatter = Chart.Scatter(ctx, {
+					data: scatterChartData2,
+					options: {
+						maintainAspectRatio: false,
+						responsive: true,
+						tooltips: {
+							mode: 'point'
+						},
+						title: {
+							display: true,
+							text: 'Level of Reopening by Sector Among OECD Countries and Selected US States'
+						},
+						scales: {
+						      yAxes: [{
+							  ticks: {
+							      min: 0,
+							      max: 5,
+							      stepSize: 1,
+							      callback: function(value, index, values) {
+								  return yLabels[value];
+							      }
+							  }
+						      }],
+						      xAxes: [{
+							  ticks: {
+							      min: 0,
+							      max: 9,
+							      stepSize: 1,
+							      callback: function(value, index, values) {
+								  return xLabels[value];
+							      }
+							  }
+						      }]
+						  }
+					}
+				});
+	
 			}
 		}
 	</script>
