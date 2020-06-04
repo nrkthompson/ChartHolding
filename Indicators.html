@@ -150,10 +150,49 @@
 				}
 			});
 		};
-		function onboard2(fileName) {
+		function onboard2(inputData) {
 			var ctx = document.getElementById('canvas').getContext('2d');
 			window.myScatter = Chart.Scatter(ctx, {
-				data: {
+				data: inputData,
+				options: {
+					maintainAspectRatio: false,
+					tooltips: {
+						mode: 'point'
+					},
+					title: {
+						display: true,
+						text: 'Level of Reopening by Sector Among OECD Countries and Selected US States'
+					},
+					scales: {
+					      yAxes: [{
+						  ticks: {
+						      min: 0,
+						      max: 5,
+						      stepSize: 1,
+						      callback: function(value, index, values) {
+							  return yLabels[value];
+						      }
+						  }
+					      }],
+					      xAxes: [{
+						  ticks: {
+						      min: 0,
+						      max: 9,
+						      stepSize: 1,
+						      callback: function(value, index, values) {
+							  return xLabels[value];
+						      }
+						  }
+					      }]
+					  }
+				}
+			});
+		};
+		window.addEventListener("message", receiveMessage, false);
+		function receiveMessage(event) {
+			if (String(event.data).includes("https://nrkthompson.github.io/ChartHolding")) {
+				var fileName = event.data;
+				var scatterChartData2 = {
 					datasets: [{
 							label: '1-4 Countries',
 							pointRadius: 3,
@@ -209,46 +248,8 @@
 							backgroundColor: '#154360',
 							data: generateData(fileName,33 ,36)
 						}]
-				},
-				options: {
-					maintainAspectRatio: false,
-					tooltips: {
-						mode: 'point'
-					},
-					title: {
-						display: true,
-						text: 'Level of Reopening by Sector Among OECD Countries and Selected US States'
-					},
-					scales: {
-					      yAxes: [{
-						  ticks: {
-						      min: 0,
-						      max: 5,
-						      stepSize: 1,
-						      callback: function(value, index, values) {
-							  return yLabels[value];
-						      }
-						  }
-					      }],
-					      xAxes: [{
-						  ticks: {
-						      min: 0,
-						      max: 9,
-						      stepSize: 1,
-						      callback: function(value, index, values) {
-							  return xLabels[value];
-						      }
-						  }
-					      }]
-					  }
-				}
-			});
-		};
-		window.addEventListener("message", receiveMessage, false);
-		function receiveMessage(event) {
-			if (String(event.data).includes("https://nrkthompson.github.io/ChartHolding")) {
-				var fileName = event.data;
-				onboard2(fileName);
+				};
+				onboard2(scatterChartData2);
 			}
 		}
 	</script>
