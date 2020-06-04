@@ -214,7 +214,7 @@
 				};
 				window.myScatter.destroy()
 				var ctx = document.getElementById('canvas').getContext('2d');
-				new Chart.Scatter(ctx, {
+				window.myScatter2 = new Chart.Scatter(ctx, {
 					data: scatterChartData2,
 					options: {
 						maintainAspectRatio: false,
@@ -250,7 +250,7 @@
 						  }
 					}
 				});
-	
+				window.myScatter2.update();
 			}
 		}
 	</script>
