@@ -13,13 +13,6 @@
 		-ms-user-select: none;
 	}
 	</style>
-	<script>
-		window.addEventListener("message", receiveMessage, false);
-		function receiveMessage(event) {
-			var fileName = event.data;
-			onboard(fileName);
-		}
-	</script>
 </head>
 
 <body style="margin: 0 auto; disaply: block; height: 100%;">
@@ -162,7 +155,11 @@
 				}
 			});
 		};
-
+	window.addEventListener("message", receiveMessage, false);
+	function receiveMessage(event) {
+		var fileName = event.data;
+		onboard(fileName);
+	}
 	</script>
 </body>
 
