@@ -249,7 +249,8 @@
 							data: generateData(fileName,33 ,36)
 						}]
 				};
-				onboard2(scatterChartData2);
+				window.myScatter.data = scatterChartData2;
+				chart.update();
 			}
 		}
 	</script>
