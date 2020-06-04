@@ -28,19 +28,7 @@
 	    var yLabels = {
 	      0: 'Insufficient Data', 1: 'Level 1 (Most Restrictive)', 2: 'Level 2', 3: 'Level 3', 4: 'Level 4', 5: 'Level 5 (Least Restrictive)'
 	    };
-      
-		window.onload = function onboard() {
-		      window.addEventListener("message", receiveMessage, false);
-		      function receiveMessage(event) {
-			console.log(String(event.data));
-			if (String(event.data).includes("Verified")) {
-			  var country1 = String(event.data).split(",")[0];
-			  var country2 = String(event.data).split(",")[1];
-			  var country3 = String(event.data).split(",")[2];
-			  console.log(country1);
-			  console.log(country2);
-		          console.log(country3);
-			  function generateData(country) {
+	    function generateData(country) {
 				var data = [];
 				d3.text("https://nrkthompson.github.io/ChartHolding/Data/Indicator_Levels_PEARL.csv", "text/csv", function(text) {
 					var csv = d3.csv.parseRows(text);
@@ -93,6 +81,18 @@
 			      console.log(data);
 			      return data;
 			  }
+      
+		window.onload = function onboard() {
+		      window.addEventListener("message", receiveMessage, false);
+		      function receiveMessage(event) {
+			console.log(String(event.data));
+			if (String(event.data).includes("Verified")) {
+			  var country1 = String(event.data).split(",")[0];
+			  var country2 = String(event.data).split(",")[1];
+			  var country3 = String(event.data).split(",")[2];
+			  console.log(country1);
+			  console.log(country2);
+		          console.log(country3);
 			  var scatterData = {
 			  datasets: [{
 			      label: country1,
