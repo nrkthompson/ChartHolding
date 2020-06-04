@@ -29,7 +29,7 @@
 	    };
 		async function generateData(fileName, lowerLimit, upperLimit) {
 			var data = [];
-			d3.text(fileName, "text/csv", await function(text) {
+			d3.text(fileName, "text/csv", await async function(text) {
 	      			var csv = d3.csv.parseRows(text);
 			for (var i = 0; i < upperLimit+1; i++) {
 				if (i >= lowerLimit && i <= upperLimit) {
