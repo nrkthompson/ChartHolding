@@ -32,6 +32,7 @@
 		window.onload = function onboard() {
 		      window.addEventListener("message", receiveMessage, false);
 		      function receiveMessage(event) {
+			console.log(String(event.data));
 			if (String(event.data).includes("Verified")) {
 			  var country1 = String(event.data).split(",")[0];
 			  var country2 = String(event.data).split(",")[1];
