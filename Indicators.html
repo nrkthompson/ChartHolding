@@ -121,6 +121,7 @@
 				}]
 		};
 		window.onload = function onboard(scatterChartData) {
+			console.log(scatterChartData);
 			var ctx = document.getElementById('canvas').getContext('2d');
 			var myScatter = Chart.Scatter(ctx, {
 				data: scatterChartData,
