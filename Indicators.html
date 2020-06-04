@@ -251,11 +251,8 @@
 				};
 				window.myScatter.clear();
 				window.myScatter.data = scatterChartData2;
+				window.myScatter.defaults.global.animation.duration = 0;
 				window.myScatter.update();
-				document.getElementById("bodyID").style.height="80%";
-				window.myScatter.resize();
-				document.getElementById("bodyID").style.height="98%";
-				window.myScatter.resize();
 			}
 		}
 	</script>
