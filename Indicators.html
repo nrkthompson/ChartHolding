@@ -54,62 +54,70 @@
 			});
 			return data;
 		}
-		var fileName = "https://nrkthompson.github.io/ChartHolding/Data/HeatMapMay29.csv"
+		var one = generateData("https://nrkthompson.github.io/ChartHolding/Data/HeatMapMay29.csv", 1, 4);
+		var two = generateData("https://nrkthompson.github.io/ChartHolding/Data/HeatMapMay29.csv", 5, 8);
+		var three = generateData("https://nrkthompson.github.io/ChartHolding/Data/HeatMapMay29.csv", 9, 12);
+		var four = generateData("https://nrkthompson.github.io/ChartHolding/Data/HeatMapMay29.csv", 13, 16);
+		var five = generateData("https://nrkthompson.github.io/ChartHolding/Data/HeatMapMay29.csv", 17, 20);
+		var six  = generateData("https://nrkthompson.github.io/ChartHolding/Data/HeatMapMay29.csv", 21, 24);
+		var seven = generateData("https://nrkthompson.github.io/ChartHolding/Data/HeatMapMay29.csv", 25, 28);
+		var eight = generateData("https://nrkthompson.github.io/ChartHolding/Data/HeatMapMay29.csv", 29, 32);
+		var nine = generateData("https://nrkthompson.github.io/ChartHolding/Data/HeatMapMay29.csv", 33, 36);
 		var scatterChartData = {
 			datasets: [{
 					label: '1-4 Countries',
 					pointRadius: 3,
 					borderColor: '#D4E6F1',
 					backgroundColor: '#D4E6F1',
-					data: generateData(fileName, 1, 4)
+					data: one
 				}, {
 					label: '5-8 Countries',
 					pointRadius: 4,
 					borderColor: '#A9CCE3',
 					backgroundColor: '#A9CCE3',
-					data: generateData(fileName, 5, 8)
+					data: two
 				}, {
 					label: '9-12 Countries',
 					pointRadius: 5,
 					borderColor: '#7FB3D5',
 					backgroundColor: '#7FB3D5',
-					data: generateData(fileName, 9, 12)
+					data: three
 				}, {
 					label: '13-16 Countries',
 					pointRadius: 6,
 					borderColor: '#5499C7',
 					backgroundColor: '#5499C7',
-					data: generateData(fileName, 13, 16)
+					data: four
 				}, {
 					label: '17-20 Countries',
 					pointRadius: 7,
 					borderColor: '#2980B9',
 					backgroundColor: '#2980B9',
-					data: generateData(fileName, 17, 20)
+					data: five
 				}, {
 					label: '21-24 Countries',
 					pointRadius: 8,
 					borderColor: '#2471A3',
 					backgroundColor: '#2471A3',
-					data: generateData(fileName, 21, 24)
+					data: six
 				}, {
 					label: '25-28 Countries',
 					pointRadius: 9,
 					borderColor: '#1F618D',
 					backgroundColor: '#1F618D',
-					data: generateData(fileName, 25, 28)
+					data: seven
 				}, {
 					label: '29-32 Countries',
 					pointRadius: 10,
 					borderColor: '#1A5276',
 					backgroundColor: '#1A5276',
-					data: generateData(fileName, 29 ,32)
+					data: eight
 				}, {
 					label: '33-36 Countries',
 					pointRadius: 11,
 					borderColor: '#154360',
 					backgroundColor: '#154360',
-					data: generateData(fileName,33 ,36)
+					data: nine
 				}]
 		};
 		window.onload = function onboard() {
