@@ -43,8 +43,6 @@
 							var yValue = parseInt(preData[z], 10);
 						} else {
 							var xValue = parseInt(preData[z], 10);
-							console.log(xValue)
-							console.log(yValue)
 							data.push({
 								x: xValue,
 								y: yValue
@@ -121,7 +119,7 @@
 			}]
 		};
 
-		window.onload = function() {
+		window.onload = function onboard() {
 			var ctx = document.getElementById('canvas').getContext('2d');
 			window.myScatter = Chart.Scatter(ctx, {
 				data: scatterChartData,
