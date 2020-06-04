@@ -249,6 +249,9 @@
 							data: generateData(fileName,33 ,36)
 						}]
 				};
+				window.myScatter.data.datasets.forEach((dataset) => {
+					dataset.data.pop();
+				    });
 				window.myScatter.data = scatterChartData2;
 				window.myScatter.update();
 			}
