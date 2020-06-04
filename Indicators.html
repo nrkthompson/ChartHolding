@@ -249,13 +249,10 @@
 							data: generateData(fileName,33 ,36)
 						}]
 				};
-				window.myScatter.removeData();
+				window.myScatter.clear();
 				window.myScatter.config.data = scatterChartData2;
-				window.myScatter.update({
-				    duration: 800,
-				    lazy: false,
-				    easing: 'easeOutBounce'
-				});
+				window.myScatter.animation = 'false';
+				window.myScatter.update();
 			}
 		}
 	</script>
