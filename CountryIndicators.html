@@ -93,9 +93,7 @@
 			      console.log(data);
 			      return data;
 			  }
-			  var ctx = document.getElementById('canvas').getContext('2d');
-			  window.myScatter = Chart.Scatter(ctx, {
-			    data: {
+			  var scatterData = {
 			  datasets: [{
 			      label: country1,
 			      pointRadius: 3,
@@ -115,7 +113,10 @@
 			      backgroundColor: '#154360',
 			      data: generateData(country3)
 			    }]
-			  },
+			  };
+			  var ctx = document.getElementById('canvas').getContext('2d');
+			  window.myScatter = Chart.Scatter(ctx, {
+			    data: scatterData,
 			    options: {
 			      maintainAspectRatio: false,
 			      responsive: true,
