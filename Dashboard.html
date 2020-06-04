@@ -23,6 +23,9 @@
       function dataChanger(inputValue) {
         document.getElementById('indicators').src = inputValue;
       }
+      function countryChanger(input1, input2, input3) {
+        document.getElementById('indicators').src = "";
+      }
     </script>
   </head>
   <body style="height:100%; width:100%; color: #666;">
@@ -32,7 +35,7 @@
         <option value="https://nrkthompson.github.io/ChartHolding/Indicators.html">Most Recent Available</option>
         <option value="https://nrkthompson.github.io/ChartHolding/Indicators2.html">Previous Week</option>
       </select>
-      <select name="Country 1" id="country1" style="display:none">
+      <select name="Country 1" id="country1" style="display:none" onchange='countryChanger(this.value, document.getElementById('country2').value, document.getElementById('country3').value)'>
         <option value="Country">Country/State 1</option>
         <option value="Australia">Australia</option>
         <option value="Austria">Austria</option>
@@ -74,7 +77,7 @@
         <option value="Turkey">Turkey</option>
         <option value="United Kingdom">United Kingdom</option>
       </select>
-      <select name="Country 2" id="country2" style="display:none">
+      <select name="Country 2" id="country2" style="display:none" onchange='countryChanger(this.value, document.getElementById('country1').value, document.getElementById('country3').value)'>
         <option value="Country">Country/State 2</option>
         <option value="Australia">Australia</option>
         <option value="Austria">Austria</option>
@@ -116,7 +119,7 @@
         <option value="Turkey">Turkey</option>
         <option value="United Kingdom">United Kingdom</option>
       </select>
-      <select name="Country 3" id="country3" style="display:none">
+      <select name="Country 3" id="country3" style="display:none" onchange='countryChanger(this.value, document.getElementById('country2').value, document.getElementById('country1').value)'>
         <option value="Country">Country/State 3</option>
         <option value="Australia">Australia</option>
         <option value="Austria">Austria</option>
