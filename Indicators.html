@@ -28,8 +28,6 @@
 	    var yLabels = {
 	      0: 'Insufficient Data', 1: 'Level 1 (Most Restrictive)', 2: 'Level 2', 3: 'Level 3', 4: 'Level 4', 5: 'Level 5 (Least Restrictive)'
 	    };
-	    var fileName = "https://nrkthompson.github.io/ChartHolding/Data/HeatMapMay29.csv";
-    
 		function generateData(fileName, lowerLimit, upperLimit) {
 			var data = [];
 			d3.text(fileName, "text/csv", function(text) {
@@ -61,8 +59,8 @@
 			return data;
 		}
 		
-		window.onload = function(fileName) {
-			onboard(fileName)
+		window.onload = function() {
+			onboard("https://nrkthompson.github.io/ChartHolding/Data/HeatMapMay29.csv")
 		}
 			function onboard(fileName) {
 			var ctx = document.getElementById('canvas').getContext('2d');
