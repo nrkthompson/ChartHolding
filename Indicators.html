@@ -121,49 +121,50 @@
 				}]
 		};
 		window.onload = function onboard() {
-			console.log(scatterChartData);
-			var ctx = document.getElementById('canvas').getContext('2d');
-			var myScatter = Chart.Scatter(ctx, {
-				data: scatterChartData,
-				options: {
-					maintainAspectRatio: false,
-					responsive: true,
-					tooltips: {
-					    callbacks: {
-						label: function(tooltipItem, data) {
-						    var label = data.datasets[tooltipItem.datasetIndex].label;
-						    return label;
-						}
-					    }
-					},
-					title: {
-						display: true,
-						text: 'Level of Reopening by Sector Among OECD Countries and Selected US States'
-					},
-					scales: {
-					      yAxes: [{
-						  ticks: {
-						      min: 0,
-						      max: 5,
-						      stepSize: 1,
-						      callback: function(value, index, values) {
-							  return yLabels[value];
-						      }
+			setTimeout(() => { 
+				var ctx = document.getElementById('canvas').getContext('2d');
+				var myScatter = Chart.Scatter(ctx, {
+					data: scatterChartData,
+					options: {
+						maintainAspectRatio: false,
+						responsive: true,
+						tooltips: {
+						    callbacks: {
+							label: function(tooltipItem, data) {
+							    var label = data.datasets[tooltipItem.datasetIndex].label;
+							    return label;
+							}
+						    }
+						},
+						title: {
+							display: true,
+							text: 'Level of Reopening by Sector Among OECD Countries and Selected US States'
+						},
+						scales: {
+						      yAxes: [{
+							  ticks: {
+							      min: 0,
+							      max: 5,
+							      stepSize: 1,
+							      callback: function(value, index, values) {
+								  return yLabels[value];
+							      }
+							  }
+						      }],
+						      xAxes: [{
+							  ticks: {
+							      min: 0,
+							      max: 9,
+							      stepSize: 1,
+							      callback: function(value, index, values) {
+								  return xLabels[value];
+							      }
+							  }
+						      }]
 						  }
-					      }],
-					      xAxes: [{
-						  ticks: {
-						      min: 0,
-						      max: 9,
-						      stepSize: 1,
-						      callback: function(value, index, values) {
-							  return xLabels[value];
-						      }
-						  }
-					      }]
-					  }
-				}
-			});
+					}
+				});
+			}, 2000);
 		};
 	</script>
 </body>
