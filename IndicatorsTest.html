@@ -27,7 +27,7 @@
 	    var yLabels = {
 	      0: 'Insufficient Data', 1: 'Level 1 (Most Restrictive)', 2: 'Level 2', 3: 'Level 3', 4: 'Level 4', 5: 'Level 5 (Least Restrictive)'
 	    };
-		function generateData(fileName, lowerLimit, upperLimit) {
+		async function generateData(fileName, lowerLimit, upperLimit) {
 			var data = [];
 			d3.text(fileName, "text/csv", function(text) {
 	      			var csv = d3.csv.parseRows(text);
