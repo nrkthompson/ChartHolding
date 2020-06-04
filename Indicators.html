@@ -15,7 +15,7 @@
 	</style>
 </head>
 
-<body style="margin: 0 auto; disaply: block; height: 100%;">
+<body style="margin: 0 auto; disaply: block; height: 100%;" id="bodyID">
 	<div style="margin: 0 auto; disaply: block; height: 100%;">
 		<canvas id="canvas"></canvas>
 	</div>
@@ -252,7 +252,8 @@
 				window.myScatter.clear();
 				window.myScatter.data = scatterChartData2;
 				window.myScatter.update();
-				window.myScatter.resize();
+				document.getElementByID("bodyID").style.width="97%";
+				document.getElementByID("bodyID").style.width="98%";
 			}
 		}
 	</script>
