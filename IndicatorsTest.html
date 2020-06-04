@@ -1,0 +1,160 @@
+<!doctype html>
+<html style="margin: 0 auto; disaply: block; height: 98%;  width: 95%;">
+
+<head>
+	<title>Scatter Chart</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+	<style>
+	canvas {
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		-ms-user-select: none;
+	}
+	</style>
+</head>
+
+<body style="margin: 0 auto; disaply: block; height: 100%;" id="bodyID">
+	<div style="margin: 0 auto; disaply: block; height: 100%;">
+		<canvas id="canvas"></canvas>
+	</div>
+	<script>
+	    var xLabels = {
+	      0: 'Country Average', 1: 'Stores/Non-Essential Businesses', 2: 'Schooling/Youth Activities',
+	      3: 'Eateries', 4: 'Leisure Activities', 5: 'Contact Services', 6: 'Manufacturing/Construction',
+	      7: 'Gatherings', 8: 'Borders/Movement', 9: 'Cultural'
+	    };
+	    var yLabels = {
+	      0: 'Insufficient Data', 1: 'Level 1 (Most Restrictive)', 2: 'Level 2', 3: 'Level 3', 4: 'Level 4', 5: 'Level 5 (Least Restrictive)'
+	    };
+		function generateData(fileName, lowerLimit, upperLimit) {
+			var data = [];
+			d3.text(fileName, "text/csv", function(text) {
+	      			var csv = d3.csv.parseRows(text);
+			for (var i = 0; i < upperLimit+1; i++) {
+				if (i >= lowerLimit && i <= upperLimit) {
+					var preData = csv[i-1];
+					var tracker = 1;
+					for (var z = 1, len = preData.length; z < len; z++) {
+						if (tracker == 1) {
+							var yValue = parseInt(preData[z], 10);
+						} else {
+							var xValue = parseInt(preData[z], 10);
+							data.push({
+								x: xValue,
+								y: yValue
+							});
+						}
+						var tracker = tracker * -1
+					}
+				}
+			}
+			console.log(data)
+			});
+			return data;
+		}
+		var scatterChartData = 
+		window.onload = async function onboard() {
+				var ctx = document.getElementById('canvas').getContext('2d');
+				var myScatter = Chart.Scatter(ctx, {
+					data: {
+              datasets: [{
+                  label: '1-4 Countries',
+                  pointRadius: 3,
+                  borderColor: '#D4E6F1',
+                  backgroundColor: '#D4E6F1',
+                  data: generateData("https://nrkthompson.github.io/ChartHolding/Data/HeatMapMay29.csv", 1, 4)
+                }, {
+                  label: '5-8 Countries',
+                  pointRadius: 4,
+                  borderColor: '#A9CCE3',
+                  backgroundColor: '#A9CCE3',
+                  data: generateData("https://nrkthompson.github.io/ChartHolding/Data/HeatMapMay29.csv", 5, 8)
+                }, {
+                  label: '9-12 Countries',
+                  pointRadius: 5,
+                  borderColor: '#7FB3D5',
+                  backgroundColor: '#7FB3D5',
+                  data: generateData("https://nrkthompson.github.io/ChartHolding/Data/HeatMapMay29.csv", 9, 12)
+                }, {
+                  label: '13-16 Countries',
+                  pointRadius: 6,
+                  borderColor: '#5499C7',
+                  backgroundColor: '#5499C7',
+                  data: generateData("https://nrkthompson.github.io/ChartHolding/Data/HeatMapMay29.csv", 13, 16)
+                }, {
+                  label: '17-20 Countries',
+                  pointRadius: 7,
+                  borderColor: '#2980B9',
+                  backgroundColor: '#2980B9',
+                  data: generateData("https://nrkthompson.github.io/ChartHolding/Data/HeatMapMay29.csv", 17, 20)
+                }, {
+                  label: '21-24 Countries',
+                  pointRadius: 8,
+                  borderColor: '#2471A3',
+                  backgroundColor: '#2471A3',
+                  data: generateData("https://nrkthompson.github.io/ChartHolding/Data/HeatMapMay29.csv", 21, 24)
+                }, {
+                  label: '25-28 Countries',
+                  pointRadius: 9,
+                  borderColor: '#1F618D',
+                  backgroundColor: '#1F618D',
+                  data: generateData("https://nrkthompson.github.io/ChartHolding/Data/HeatMapMay29.csv", 25, 28)
+                }, {
+                  label: '29-32 Countries',
+                  pointRadius: 10,
+                  borderColor: '#1A5276',
+                  backgroundColor: '#1A5276',
+                  data: generateData("https://nrkthompson.github.io/ChartHolding/Data/HeatMapMay29.csv", 29, 32)
+                }, {
+                  label: '33-36 Countries',
+                  pointRadius: 11,
+                  borderColor: '#154360',
+                  backgroundColor: '#154360',
+                  data: generateData("https://nrkthompson.github.io/ChartHolding/Data/HeatMapMay29.csv", 33, 36)
+                }]
+            },
+					options: {
+						maintainAspectRatio: false,
+						responsive: true,
+						tooltips: {
+						    callbacks: {
+							label: function(tooltipItem, data) {
+							    var label = data.datasets[tooltipItem.datasetIndex].label;
+							    return label;
+							}
+						    }
+						},
+						title: {
+							display: true,
+							text: 'Level of Reopening by Sector Among OECD Countries and Selected US States'
+						},
+						scales: {
+						      yAxes: [{
+							  ticks: {
+							      min: 0,
+							      max: 5,
+							      stepSize: 1,
+							      callback: function(value, index, values) {
+								  return yLabels[value];
+							      }
+							  }
+						      }],
+						      xAxes: [{
+							  ticks: {
+							      min: 0,
+							      max: 9,
+							      stepSize: 1,
+							      callback: function(value, index, values) {
+								  return xLabels[value];
+							      }
+							  }
+						      }]
+						  }
+					}
+				});
+		};
+	</script>
+</body>
+
+</html>
