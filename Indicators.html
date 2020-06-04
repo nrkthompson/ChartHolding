@@ -114,7 +114,7 @@
 		};
 		window.onload = function onboard() {
 			var ctx = document.getElementById('canvas').getContext('2d');
-			window.myScatter = Chart.Scatter(ctx, {
+			var myScatter = Chart.Scatter(ctx, {
 				data: scatterChartData,
 				options: {
 					maintainAspectRatio: false,
@@ -155,6 +155,7 @@
 					  }
 				}
 			});
+			myScatter.resize();
 		};
 	</script>
 </body>
