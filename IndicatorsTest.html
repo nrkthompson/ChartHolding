@@ -53,7 +53,7 @@
 			});
 			return data;
 		}
-		async function() {
+		async function dataMaker() {
 			var scatterChartData = {
 			      datasets: [{
 				  label: '1-4 Countries',
@@ -111,6 +111,7 @@
 				  data: await generateData("https://nrkthompson.github.io/ChartHolding/Data/HeatMapMay29.csv", 33, 36)
 				}]
 			    };
+			    return scatterChartData;
 		}
 		window.onload = async function onboard() {
 				var ctx = document.getElementById('canvas').getContext('2d');
