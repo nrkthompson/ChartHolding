@@ -40,6 +40,9 @@
         document.getElementById('indicators').src = "https://nrkthompson.github.io/ChartHolding/CountryIndicators.html";
         window.frames[0].postMessage(toTransmit, "*");
       }
+      document.addEventListener('DOMContentLoaded', function() {
+		   window.dispatchEvent(new Event('resize'));
+      }, false);
     </script>
   </head>
   <body style="height:100%; width:100%; color: #666;">
