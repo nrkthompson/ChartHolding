@@ -1,0 +1,40 @@
+﻿Country,Cultural ,Borders_and_Movement,Gatherings ,Manufacturing_and_Construction,Contact_Services,Leisure_Activities,Eateries,Schooling_and_Youth_Activities,Stores_and_Non-Essential_Businesses,Overall_Level_Previous_Week,Mean_Overall_Level,Overall_Level
+Australia,3,2,2,4,3,2,3,3,3,2,2.7,2
+Austria,3,2,2,3,4,3,3,3,3,2,2.8,2
+Belgium,3,2,2,3,3,3,2,2,3,2,2.5,2
+California (USA),3,3,insufficient data,3,3,2,2,1,4,2,2.56,2
+Chile,1,2,2,insufficient data,1,1,1,1,1,1,1.22,1
+Czech Republic,4,3,4,3,4,4,3,3,4,3,3.5,3
+Denmark,3,3,3,4,4,3,3,3,4,3,3.3,3
+Estonia,3,3,3,4,4,3,2,3,4,3,3.2,3
+Finland,2,3,2,3,3,3,2,3,2,2,2.5,2
+France,2,2,2,4,3,2,1,2,2,2,2.2,2
+Germany,3,2,2,4,3,4,3,3,3,3,3,3
+Greece,3,2,2,insufficient data,4,3,3,3,3,2,2.78,2
+Hungary,4,4,4,4,4,4,4,4,4,4,4,4
+Iceland,4,3,4,4,4,4,3,4,4,3,3.7,3
+Illinois (USA),1,3,1,4,2,2,2,1,1,1,1.8,1
+Ireland,1,3,1,3,1,2,1,1,2,1,1.6,1
+Israel,3,2,3,4,4,3,3,3,3,2,3,3
+Italy,3,2,2,4,4,4,3,1,3,2,2.8,2
+Japan,4,3,4,4,4,3,4,3,4,3,3.6,3
+Latvia,3,3,3,3,3,3,3,3,3,3,3,3
+Lithuania,3,4,3,3,3,3,3,4,4,3,3.3,3
+Luxembourg,4,2,3,4,3,3,4,3,4,2,3.2,3
+Mexico,1,2,insufficient data,3,1,1,insufficient data,1,insufficient data,1,1.43,1
+Michigan (USA),1,3,2,4,1,2,2,1,1,1,1.8,1
+Netherlands,2,1,1,4,3,3,1,2,3,2,2.2,2
+New York (USA),1,3,2,2,1,2,2,1,1,1,1.6,1
+New Zealand,3,2,3,4,4,3,3,4,3,3,3.2,3
+Norway,2,2,2,3,3,3,3,4,3,3,2.8,2
+Poland,3,3,2,3,3,3,3,3,3,3,2.9,2
+Portugal,1,2,2,insufficient data,3,3,3,2,2,1,2.11,2
+Slovakia,4,3,3,3,4,4,3,3,4,3,3.4,3
+Slovenia,3,2,3,insufficient data,4,3,4,3,4,2,3.11,3
+Spain,2,2,2,4,3,2,3,2,3,2,2.5,2
+South Korea,4,3,4,4,4,4,3,3,4,3,3.6,3
+Sweden,4,3,3,4,4,4,4,4,4,3,3.7,3
+Switzerland,3,2,2,insufficient data,4,3,4,3,4,2,3,3
+Texas (USA),4,3,insufficient data,insufficient data,3,4,3,3,4,3,3.38,3
+Turkey,3,1,2,4,3,2,1,1,3,2,2.2,2
+United Kingdom,1,3,1,3,1,2,1,1,1,1,1.5,1
