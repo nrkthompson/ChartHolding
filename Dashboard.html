@@ -40,7 +40,7 @@
         document.getElementById('indicators').src = "https://nrkthompson.github.io/ChartHolding/CountryIndicators.html";
         window.frames[0].postMessage(toTransmit, "*");
       }
-      setTimeout(() => {  document.getElementById('indicators').src = "https://nrkthompson.github.io/ChartHolding/CountryIndicators.html"; }, 2000);
+      window.onload = setTimeout(() => {  document.getElementById('indicators').src = "https://nrkthompson.github.io/ChartHolding/CountryIndicators.html"; }, 2000);
     </script>
   </head>
   <body style="height:100%; width:100%; color: #666;">
