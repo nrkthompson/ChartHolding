@@ -40,6 +40,7 @@
         document.getElementById('indicators').src = "https://nrkthompson.github.io/ChartHolding/CountryIndicators.html";
         window.frames[0].postMessage(toTransmit, "*");
       }
+      setTimeout(() => {  document.getElementById('indicators').src = "https://nrkthompson.github.io/ChartHolding/CountryIndicators.html"; }, 2000);
     </script>
   </head>
   <body style="height:100%; width:100%; color: #666;">
@@ -177,7 +178,7 @@
       </select>
     </span>
     <div  style="margin: 0 auto; disaply: block; height:48%; width:100%;">
-      <iframe id="indicators" src="https://nrkthompson.github.io/ChartHolding/Indicators.html" style="margin: 0 auto; disaply: block; height:100%; width:100%;" frameBorder="0"></iframe>
+      <iframe id="indicators" src="" style="margin: 0 auto; disaply: block; height:100%; width:100%;" frameBorder="0"></iframe>
     </div>
     <table style="margin: 0 auto; disaply: block; height:48%; width:100%">
       <tr>
