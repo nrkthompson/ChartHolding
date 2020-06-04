@@ -23,8 +23,20 @@
       function dataChanger(inputValue) {
         document.getElementById('indicators').src = inputValue;
       }
-      function countryChanger(inputMain, inputSecondary) {
-        document.getElementById('indicators').src = "";
+      function countryChanger(country1, inputSecondary) {
+        if (inputSecondary == 1) {
+          var country2 = document.getElementById('country2').value;
+          var country3 = document.getElementById('country3').value;
+        } else if (inputSecondary == 2) {
+          var country2 = document.getElementById('country1').value;
+          var country3 = document.getElementById('country3').value;
+        } else {
+          var country2 = document.getElementById('country1').value;
+          var country3 = document.getElementById('country2').value;
+        }
+        var toTransmit = country1.concat(",").concat(country2).concat(",").concat(country3).concat(",").concat("Verified);
+        document.getElementById('indicators').src = "https://nrkthompson.github.io/ChartHolding/CountryIndicators.html";
+        window.frames[0].postMessage(toTransmit, "*");
       }
     </script>
   </head>
