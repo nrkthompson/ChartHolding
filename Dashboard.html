@@ -34,7 +34,7 @@
           var country2 = document.getElementById('country1').value;
           var country3 = document.getElementById('country2').value;
         }
-        var toTransmit = country1.concat(",").concat(country2).concat(",").concat(country3).concat(",").concat("Verified);
+        var toTransmit = country1.concat(",").concat(country2).concat(",").concat(country3).concat(",").concat("Verified");
         document.getElementById('indicators').src = "https://nrkthompson.github.io/ChartHolding/CountryIndicators.html";
         window.frames[0].postMessage(toTransmit, "*");
       }
