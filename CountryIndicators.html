@@ -30,76 +30,76 @@
 	    };
       
 		window.onload = function onboard() {
-      window.addEventListener("message", receiveMessage, false);
-      function receiveMessage(event) {
-        if (String(event.data).includes("Verified")) {
-          var country1 = String(event.data).split(",")[0];
-          var country2 = String(event.data).split(",")[1];
-          var country3 = String(event.data).split(",")[2];
-          var ctx = document.getElementById('canvas').getContext('2d');
-          window.myScatter = Chart.Scatter(ctx, {
-            data: {
-          datasets: [{
-              label: country1,
-              pointRadius: 3,
-              borderColor: '#D4E6F1',
-              backgroundColor: '#D4E6F1',
-              data: []
-            }, {
-              label: country2,
-              pointRadius: 4,
-              borderColor: '#A9CCE3',
-              backgroundColor: '#A9CCE3',
-              data: []
-            }, {
-              label: country3,
-              pointRadius: 11,
-              borderColor: '#154360',
-              backgroundColor: '#154360',
-              data: []
-            }]
-        };,
-            options: {
-              maintainAspectRatio: false,
-              responsive: true,
-              tooltips: {
-                  callbacks: {
-                label: function(tooltipItem, data) {
-                    var label = data.datasets[tooltipItem.datasetIndex].label;
-                    return label;
-                }
-                  }
-              },
-              title: {
-                display: true,
-                text: 'Level of Reopening by Sector Among OECD Countries and Selected US States'
-              },
-              scales: {
-                    yAxes: [{
-                  ticks: {
-                      min: 0,
-                      max: 5,
-                      stepSize: 1,
-                      callback: function(value, index, values) {
-                    return yLabels[value];
-                      }
-                  }
-                    }],
-                    xAxes: [{
-                  ticks: {
-                      min: 0,
-                      max: 9,
-                      stepSize: 1,
-                      callback: function(value, index, values) {
-                    return xLabels[value];
-                      }
-                  }
-                    }]
-                }
-            }
-          });
-         }
-      }
+		      window.addEventListener("message", receiveMessage, false);
+		      function receiveMessage(event) {
+			if (String(event.data).includes("Verified")) {
+			  var country1 = String(event.data).split(",")[0];
+			  var country2 = String(event.data).split(",")[1];
+			  var country3 = String(event.data).split(",")[2];
+			  var ctx = document.getElementById('canvas').getContext('2d');
+			  window.myScatter = Chart.Scatter(ctx, {
+			    data: {
+			  datasets: [{
+			      label: country1,
+			      pointRadius: 3,
+			      borderColor: '#D4E6F1',
+			      backgroundColor: '#D4E6F1',
+			      data: []
+			    }, {
+			      label: country2,
+			      pointRadius: 4,
+			      borderColor: '#A9CCE3',
+			      backgroundColor: '#A9CCE3',
+			      data: []
+			    }, {
+			      label: country3,
+			      pointRadius: 11,
+			      borderColor: '#154360',
+			      backgroundColor: '#154360',
+			      data: []
+			    }]
+			};,
+			    options: {
+			      maintainAspectRatio: false,
+			      responsive: true,
+			      tooltips: {
+				  callbacks: {
+				label: function(tooltipItem, data) {
+				    var label = data.datasets[tooltipItem.datasetIndex].label;
+				    return label;
+				}
+				  }
+			      },
+			      title: {
+				display: true,
+				text: 'Level of Reopening by Sector Among OECD Countries and Selected US States'
+			      },
+			      scales: {
+				    yAxes: [{
+				  ticks: {
+				      min: 0,
+				      max: 5,
+				      stepSize: 1,
+				      callback: function(value, index, values) {
+				    return yLabels[value];
+				      }
+				  }
+				    }],
+				    xAxes: [{
+				  ticks: {
+				      min: 0,
+				      max: 9,
+				      stepSize: 1,
+				      callback: function(value, index, values) {
+				    return xLabels[value];
+				      }
+				  }
+				    }]
+				}
+			    }
+			  });
+			 }
+		      }
 		};
 	
 	</script>
