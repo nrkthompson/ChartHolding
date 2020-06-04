@@ -117,7 +117,10 @@
 					data: generateData(fileName,33 ,36)
 				}]
 		};
-		window.onload = function onboard(fileName) {
+		window.onload = function(fileName) {
+			onboard(fileName)
+		}
+			function onboard(fileName) {
 			var ctx = document.getElementById('canvas').getContext('2d');
 			window.myScatter = Chart.Scatter(ctx, {
 				data: scatterChartData,
