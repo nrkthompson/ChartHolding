@@ -60,6 +60,7 @@
 		}
 		window.onload = function() {
 			onboard("https://nrkthompson.github.io/ChartHolding/Data/HeatMapMay29.csv")
+			window.myScatter.update();
 		}
 			function onboard(fileName) {
 			var ctx = document.getElementById('canvas').getContext('2d');
@@ -154,13 +155,13 @@
 					  }
 				}
 			});
-		Chart.update();
 		};
 		window.addEventListener("message", receiveMessage, false);
 		function receiveMessage(event) {
 			if (String(event.data).includes("https://nrkthompson.github.io/ChartHolding")) {
 				var fileName = event.data;
 				onboard(fileName);
+				window.myScatter.update();
 			}
 		}
 	</script>
