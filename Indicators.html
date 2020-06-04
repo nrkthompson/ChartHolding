@@ -213,44 +213,45 @@
 						}]
 				};
 				window.myScatter.destroy()
-				var ctx = document.getElementById('canvas').getContext('2d');
-				window.myScatter2 = new Chart.Scatter(ctx, {
-					data: scatterChartData2,
-					options: {
-						maintainAspectRatio: false,
-						responsive: true,
-						tooltips: {
-							mode: 'point'
-						},
-						title: {
-							display: true,
-							text: 'Level of Reopening by Sector Among OECD Countries and Selected US States'
-						},
-						scales: {
-						      yAxes: [{
-							  ticks: {
-							      min: 0,
-							      max: 5,
-							      stepSize: 1,
-							      callback: function(value, index, values) {
-								  return yLabels[value];
-							      }
+				window.onload = function(scatterChartData2) {
+					var ctx = document.getElementById('canvas').getContext('2d');
+					window.myScatter = new Chart.Scatter(ctx, {
+						data: scatterChartData2,
+						options: {
+							maintainAspectRatio: false,
+							responsive: true,
+							tooltips: {
+								mode: 'point'
+							},
+							title: {
+								display: true,
+								text: 'Level of Reopening by Sector Among OECD Countries and Selected US States'
+							},
+							scales: {
+							      yAxes: [{
+								  ticks: {
+								      min: 0,
+								      max: 5,
+								      stepSize: 1,
+								      callback: function(value, index, values) {
+									  return yLabels[value];
+								      }
+								  }
+							      }],
+							      xAxes: [{
+								  ticks: {
+								      min: 0,
+								      max: 9,
+								      stepSize: 1,
+								      callback: function(value, index, values) {
+									  return xLabels[value];
+								      }
+								  }
+							      }]
 							  }
-						      }],
-						      xAxes: [{
-							  ticks: {
-							      min: 0,
-							      max: 9,
-							      stepSize: 1,
-							      callback: function(value, index, values) {
-								  return xLabels[value];
-							      }
-							  }
-						      }]
-						  }
-					}
-				});
-				window.myScatter2.update();
+						}
+					});
+				}
 			}
 		}
 	</script>
