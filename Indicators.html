@@ -4,7 +4,7 @@
 
 <head>
 	<title>Scatter Chart</title>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
 	<style>
 	canvas {
@@ -249,8 +249,9 @@
 							data: generateData(fileName,33 ,36)
 						}]
 				};
-				window.myScatter.destroy();
-				onboard2(scatterChartData2);
+				window.myScatter.clear();
+				window.myScatter.config.data = scatterChartData2;
+				window.myScatter.update();
 			}
 		}
 	</script>
