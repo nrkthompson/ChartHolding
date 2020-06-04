@@ -32,7 +32,7 @@
 				var data = [];
 				d3.text("https://nrkthompson.github.io/ChartHolding/Data/Indicator_Levels_PEARL.csv", "text/csv", function(text) {
 					var csv = d3.csv.parseRows(text);
-					console.log(String(csv[1][0])));
+					console.log(String(csv[1][0]));
 					for (var i = 0, len = csv.length ; i < len ; i++) {
 						if (csv[i][0].includes(country)) {
 							data.push({
