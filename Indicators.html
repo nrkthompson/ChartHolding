@@ -118,6 +118,7 @@
 				data: scatterChartData,
 				options: {
 					maintainAspectRatio: false,
+					pointRotation: 0,
 					tooltips: {
 						mode: 'point'
 					},
@@ -188,8 +189,9 @@
 				}
 			});
 		};
+		var counter = 0
 		window.addEventListener("message", receiveMessage, false);
-		function receiveMessage(event) {
+		function receiveMessage(event, counter) {
 			if (String(event.data).includes("https://nrkthompson.github.io/ChartHolding")) {
 				var fileName = event.data;
 				var scatterChartData2 = {
@@ -249,9 +251,11 @@
 							data: generateData(fileName,33 ,36)
 						}]
 				};
+				counter = counter + 1
 				window.myScatter.clear();
 				window.myScatter.data = scatterChartData2;
-				window.myScatter.defaults.global.animation.duration = 0;
+				window.myScatter.update();
+				window.myScatter.pointRotation = counter;
 				window.myScatter.update();
 			}
 		}
