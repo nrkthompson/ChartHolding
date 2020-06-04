@@ -157,8 +157,7 @@
 		};
 		window.addEventListener("message", receiveMessage, false);
 		function receiveMessage(event) {
-			console.log(event.origin);
-			if (event.origin == "https://nrkthompson.github.io/ChartHolding/Dashboard.html") {
+			if (event.data.includes("https://nrkthompson.github.io/ChartHolding")) {
 				var fileName = event.data;
 				onboard(fileName);
 			}
