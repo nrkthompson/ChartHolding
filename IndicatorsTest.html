@@ -113,8 +113,7 @@
 			    };
 			    return scatterChartData;
 		}
-		var chartData = dataMaker();
-		window.onload = async function onboard(dataFinal = chartData) {
+		window.onload = async function onboard(dataFinal = dataMaker()) {
 				var ctx = document.getElementById('canvas').getContext('2d');
 				var myScatter = Chart.Scatter(ctx, {
 					data: dataFinal,
