@@ -65,6 +65,7 @@
 			var lineChartDataFinal = dataMaker();
 			window.onload = function() {
 						setTimeout(() => { 
+							console.log(lineChartDataFinal);
 							var ctx = document.getElementById('canvas').getContext('2d');
 							window.myLine = Chart.Line(ctx, {
 							  data: lineChartDataFinal,
