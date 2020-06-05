@@ -63,7 +63,7 @@
 			window.onload = function() {
 						setTimeout(() => { 
 							var ctx = document.getElementById('canvas').getContext('2d');
-							window.myBar = Chart(ctx, {
+							window.myBar = new Chart(ctx, {
                 type: 'horizontalBar',
 							  data: window.myData,
 							  options: {
