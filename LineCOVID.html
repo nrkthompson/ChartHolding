@@ -22,38 +22,38 @@
 			d3.text("https://nrkthompson.github.io/ChartHolding/Data/TwitterAll.csv", "text/csv", function(text) {
 				var parsedCSV = d3.csv.parseRows(text);
 				d3.text("https://nrkthompson.github.io/ChartHolding/Data/TwitterElite.csv", "text/csv", function(data) {
-              var parsedCSV = d3.csv.parseRows(data);
-              var labelNames = [];
-              var all = [];
-              var elite = [];
-              for (var i = 0, len = text.length; i < len; i++) {
-                if (i[2].includes("COVID")) {
-                  labelNames.push(i[1]);
-                  all.push(i[4]*100);
-                }
-              }
-              for (var i = 0, len = data.length; i < len; i++) {
-                if (i[2].includes("COVID")) {
-                  elite.push(i[4]*100);
-                }
-              }
-              var lineChartData = {
-                labels: labelNames,
-                datasets: [{
-                  label: 'All Users',
-                  borderColor: '#04297a',
-                  backgroundColor: '#04297a',
-                  fill: false,
-                  data: all
-                }, {
-                  label: 'Elites',
-                  borderColor: '#34baeb',
-                  backgroundColor: '#34baeb',
-                  fill: false,
-                  data: elite
-                }]
-               }
-          };
+				      var parsedCSV = d3.csv.parseRows(data);
+				      var labelNames = [];
+				      var all = [];
+				      var elite = [];
+				      for (var i = 0, len = text.length; i < len; i++) {
+					if (i[2].includes("COVID")) {
+					  labelNames.push(i[1]);
+					  all.push(i[4]*100);
+					}
+				      }
+				      for (var i = 0, len = data.length; i < len; i++) {
+					if (i[2].includes("COVID")) {
+					  elite.push(i[4]*100);
+					}
+				      }
+				      var lineChartData = {
+					labels: labelNames,
+					datasets: [{
+					  label: 'All Users',
+					  borderColor: '#04297a',
+					  backgroundColor: '#04297a',
+					  fill: false,
+					  data: all
+					}, {
+					  label: 'Elites',
+					  borderColor: '#34baeb',
+					  backgroundColor: '#34baeb',
+					  fill: false,
+					  data: elite
+					}]
+				       }
+				  };
 				};
 				window.onload = function() {
 				var ctx = document.getElementById('canvas').getContext('2d');
@@ -71,6 +71,7 @@
 				 });
 				};
 			});
+		     });
 		</script>
 	</body>
 
