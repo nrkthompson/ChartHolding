@@ -20,9 +20,9 @@
 		</div>
 		<script>
 			function dataMaker() {
-				var chartData = d3.text("https://nrkthompson.github.io/ChartHolding/Data/TwitterAll.csv", "text/csv", function(text) {
+				d3.text("https://nrkthompson.github.io/ChartHolding/Data/TwitterAll.csv", "text/csv", function(text) {
 					var csv1 = d3.csv.parseRows(text);
-					var chartData2 = d3.text("https://nrkthompson.github.io/ChartHolding/Data/TwitterElite.csv", "text/csv", function(data) {
+					d3.text("https://nrkthompson.github.io/ChartHolding/Data/TwitterElite.csv", "text/csv", var chartData2 = function(data) {
 					      var csv2 = d3.csv.parseRows(data);
 					      var labelNames = [];
 					      var all = [];
@@ -38,7 +38,7 @@
 						  elite.push((csv2[i][4]*100).toFixed(2));
 						}
 					      }
-					      var lineChartData = {
+					      window.myData = {
 						labels: labelNames,
 						datasets: [{
 						  label: 'All Users',
@@ -56,22 +56,14 @@
 						  data: elite
 						}]
 					       }
-					      console.log(lineChartData);
-					      return lineChartData;
 					});
-				     console.log(chartData2);
-				     return chartData2;
 				});
-				console.log(chartData);
-				return chartData;
 			}
-			var lineChartDataFinal = dataMaker();
 			window.onload = function() {
 						setTimeout(() => { 
-							console.log(lineChartDataFinal);
 							var ctx = document.getElementById('canvas').getContext('2d');
 							window.myLine = Chart.Line(ctx, {
-							  data: lineChartDataFinal,
+							  data: window.myData,
 							  options: {
 							    responsive: true,
 							    hoverMode: 'index',
