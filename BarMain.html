@@ -53,7 +53,7 @@
               }
             }
 				});
-        d3.text("https://nrkthompson.github.io/ChartHolding/Data/SocDist.csv", "text/csv", function(text) {
+        setTimeout(() => { d3.text("https://nrkthompson.github.io/ChartHolding/Data/SocDist.csv", "text/csv", function(text) {
 					  var csv = d3.csv.parseRows(text);
             for (var i = 0, len = csv.length; i < len; i++) {
               if (csv[i][4] == 8) {
@@ -61,6 +61,7 @@
                 values.push((csv[i][0]*100).toFixed(2));
               }
             }
+	}, 10);
 				});
 				window.myData = {
           labels: labelNames,
