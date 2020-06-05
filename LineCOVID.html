@@ -53,23 +53,23 @@
 					  data: elite
 					}]
 				       }
-				  });
+					window.onload = function() {
+					var ctx = document.getElementById('canvas').getContext('2d');
+					window.myLine = Chart.Line(ctx, {
+					  data: lineChartData,
+					  options: {
+					    responsive: true,
+					    hoverMode: 'index',
+					    stacked: false,
+					    title: {
+						display: true,
+						text: 'COVID-19 Twitter Activity'
+					     },
+					   }
+					 });
+					};
 				});
-				window.onload = function() {
-				var ctx = document.getElementById('canvas').getContext('2d');
-				window.myLine = Chart.Line(ctx, {
-				  data: lineChartData,
-				  options: {
-				    responsive: true,
-				    hoverMode: 'index',
-				    stacked: false,
-				    title: {
-					display: true,
-					text: 'COVID-19 Twitter Activity'
-				     },
-				   }
-				 });
-				};
+			});
 		</script>
 	</body>
 
