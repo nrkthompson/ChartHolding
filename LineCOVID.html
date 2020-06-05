@@ -62,12 +62,12 @@
 				});
 				return chartData;
 			}
+			var lineChartDataFinal = dataMaker();
 			window.onload = function() {
-						var lineChartData = dataMaker();
 						setTimeout(() => { 
 							var ctx = document.getElementById('canvas').getContext('2d');
 							window.myLine = Chart.Line(ctx, {
-							  data: lineChartData,
+							  data: lineChartDataFinal,
 							  options: {
 							    responsive: true,
 							    hoverMode: 'index',
