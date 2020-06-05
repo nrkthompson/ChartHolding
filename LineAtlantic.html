@@ -1,0 +1,114 @@
+<!doctype html>
+<html style="margin: 0 auto; disaply: block; height: 100%;  width: 100%;">
+
+	<head>
+		<title>Line Chart Multiple Axes</title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+		<style>
+		canvas {
+			-moz-user-select: none;
+			-webkit-user-select: none;
+			-ms-user-select: none;
+		}
+		</style>
+	</head>
+
+	<body style="margin: 0 auto; disaply: block; height: 100%;  width: 100%;">
+		<div style="margin: 0 auto; disaply: block; height: 100%;  width: 100%;">
+			<canvas id="canvas"></canvas>
+		</div>
+		<script>
+			function dataMaker() {
+				d3.text("https://nrkthompson.github.io/ChartHolding/Data/SocDistRegion.csv", "text/csv", function(text) {
+					  var csv1 = d3.csv.parseRows(text);
+					  var labelNames = [];
+					  var fed = [];
+					  var prov = [];
+					  var loc = [];
+					  for (var i = 0, len = csv1.length; i < len; i++) {
+					  	if (csv1[i][5].includes("Atlantic")) {
+							labelNames.push("Wave ".concat(String(csv1[i][4])));
+							fed.push((csv1[i][1]*100).toFixed(2));
+							prov.push((csv1[i][2]*100).toFixed(2));
+							loc.push((csv1[i][3]*100).toFixed(2));
+					  	}
+					  }
+					  window.myData = {
+						labels: labelNames,
+						datasets: [{
+						  label: 'Federal',
+						  borderColor: '#04297a',
+						  backgroundColor: '#04297a',
+						  fill: false,
+						  pointRadius: 1,
+						  data: fed
+						  }, {
+						  label: 'Provincial',
+						  borderColor: '#2980B9',
+						  backgroundColor: '#2980B9',
+						  fill: false,
+						  pointRadius: 1,
+						  data: prov
+						  }, {
+						  label: 'Local',
+						  borderColor: '#34baeb',
+						  backgroundColor: '#34baeb',
+						  fill: false,
+						  pointRadius: 1,
+						  data: loc
+						  }]
+					    }
+				});
+			}
+			dataMaker();
+			window.onload = function() {
+						setTimeout(() => { 
+							var ctx = document.getElementById('canvas').getContext('2d');
+							window.myLine = Chart.Line(ctx, {
+							  data: window.myData,
+							  options: {
+							    responsive: true,
+							    hoverMode: 'index',
+							    stacked: false,
+							    maintainAspectRatio: false,
+							    tooltips: {
+								callbacks: {
+								    label: function(tooltipItem, data) {
+									return data.datasets[tooltipItem.datasetIndex].label.concat(" - ").concat(data['datasets'][0]['data'][tooltipItem.index] + '%');
+								    }
+								}
+							    },
+							    legend: {
+								    display: true
+							    },
+							    title: {
+								display: true,
+								text: 'Atlantic Canada',
+								padding: 5
+							     },
+							     scales: {
+								      yAxes: [{
+									  ticks: {
+									      min: 0,
+									      max: 100,
+									      stepSize: 25,
+									      callback: function(value, index, values) {
+										  return value + '%';
+									      }
+									  }
+								      }],
+								      xAxes: [{
+									  ticks: {
+									      display: true
+									  }
+								      }]
+								  }
+							   }
+							 });
+						}, 500);
+				};
+		</script>
+	</body>
+
+</html>
