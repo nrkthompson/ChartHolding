@@ -61,8 +61,16 @@
 					  data: lineChartData,
 					  options: {
 					    responsive: true,
-					    hoverMode: 'point',
+					    hoverMode: 'index',
 					    stacked: false,
+					    tooltips: {
+						mode: 'label',
+						callbacks: {
+						    label: function(tooltipItem, data) {
+							return data['datasets'][0]['data'][tooltipItem['index']] + '%';
+						    }
+						}
+					    },
 					    legend: {
 						    display: false
 					    },
