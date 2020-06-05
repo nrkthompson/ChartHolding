@@ -44,7 +44,11 @@
 					  var csv = d3.csv.parseRows(text);
             for (var i = 0, len = csv.length; i < len; i++) {
               if (csv[i][4] == 8) {
-                labelNames.push(csv[i][5]);
+		if (csv[i][5] == 0) {
+                	labelNames.push("Male");
+		} else {
+			labelNames.push("Female");
+		}
                 values.push((csv[i][0]*100).toFixed(2));
               }
             }
