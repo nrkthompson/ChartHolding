@@ -40,6 +40,15 @@
               }
             }
 				});
+	d3.text("https://nrkthompson.github.io/ChartHolding/Data/SocDistGender.csv", "text/csv", function(text) {
+					  var csv = d3.csv.parseRows(text);
+            for (var i = 0, len = csv.length; i < len; i++) {
+              if (csv[i][4] == 8) {
+                labelNames.push(csv[i][5]);
+                values.push((csv[i][0]*100).toFixed(2));
+              }
+            }
+				});
         d3.text("https://nrkthompson.github.io/ChartHolding/Data/SocDist.csv", "text/csv", function(text) {
 					  var csv = d3.csv.parseRows(text);
             for (var i = 0, len = csv.length; i < len; i++) {
@@ -80,6 +89,9 @@
 									      min: 0,
 									      max: 100,
 									      stepSize: 10,
+									      callback: function(value, index, values) {
+										  return value + '%';
+									      }
 									  }
 								      }]
 								  }
