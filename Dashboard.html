@@ -20,10 +20,8 @@
           text4.style.display = "inline";
         }
       }
-      function dataChanger(inputValue) {
-        document.getElementById('indicators').src = inputValue;
-        document.getElementById('indicators').src = "";
-        document.getElementById('indicators').src = inputValue;
+      function dataChanger(inputValue, identifier) {
+        document.getElementById(identifier).src = inputValue;
       }
       function countryChanger(country1, inputSecondary) {
         if (inputSecondary == 1) {
@@ -43,204 +41,214 @@
     </script>
   </head>
   <body style="height:100%; width:100%; color: #666;">
-    <span style="height:4%; width:100%" style="font-family: Helvetica Neue, Helvetica, Arial, sans-serif; ">
-      <!--Check to Compare Specific Countries/States (Most Recent Data Available): <input type="checkbox" id="myCheck" onclick="myFunction()">-->
-      <select name="Weeks" id="weeks" style="display:inline" onchange='dataChanger(this.value)'>
-        <option value="https://nrkthompson.github.io/ChartHolding/Indicators.html">May 29, 2020</option>
-        <option value="https://nrkthompson.github.io/ChartHolding/Indicators2.html">May 22, 2020</option>
-      </select>
-      <select name="Country 1" id="country1" style="display:none" onchange='countryChanger(this.value, 1)'>
-        <option value="Country">Country/State 1</option>
-        <option value="Australia">Australia</option>
-        <option value="Austria">Austria</option>
-        <option value="Belgium">Beglium</option>
-        <option value="California (USA)">California (USA)</option>
-        <option value="Chile">Chile</option>
-        <option value="Czech Republic">Czech Republic</option>
-        <option value="Denmark">Denmark</option>
-        <option value="Estonia">Estonia</option>
-        <option value="Finland">Finland</option>
-        <option value="France">France</option>
-        <option value="Germany">Germany</option>
-        <option value="Greece">Greece</option>
-        <option value="Hungary">Hungary</option>
-        <option value="Iceland">Iceland</option>
-        <option value="Illinois (USA)">Illinois (USA)</option>
-        <option value="Ireland">Ireland</option>
-        <option value="Israel">Israel</option>
-        <option value="Italy">Italy</option>
-        <option value="Japan">Japan</option>
-        <option value="Latvia">Latvia</option>
-        <option value="Lithuania">Lithuania</option>
-        <option value="Luxembourg">Luxembourg</option>
-        <option value="Mexico">Mexico</option>
-        <option value="Michigan (USA)">Michigan (USA)</option>
-        <option value="Netherlands">Netherlands</option>
-        <option value="New York (USA)">New York (USA)</option>
-        <option value="New Zealand">New Zealand</option>
-        <option value="Norway">Norway</option>
-        <option value="Poland">Poland</option>
-        <option value="Portugal">Portugal</option>
-        <option value="Slovakia">Slovakia</option>
-        <option value="Slovenia">Slovenia</option>
-        <option value="Spain">Spain</option>
-        <option value="South Korea">South Korea</option>
-        <option value="Sweden">Sweden</option>
-        <option value="Switzerland">Switzerland</option>
-        <option value="Texas (USA)">Texas (USA)</option>
-        <option value="Turkey">Turkey</option>
-        <option value="United Kingdom">United Kingdom</option>
-      </select>
-      <select name="Country 2" id="country2" style="display:none" onchange='countryChanger(this.value, 2)'>
-        <option value="Country">Country/State 2</option>
-        <option value="Australia">Australia</option>
-        <option value="Austria">Austria</option>
-        <option value="Belgium">Beglium</option>
-        <option value="California (USA)">California (USA)</option>
-        <option value="Chile">Chile</option>
-        <option value="Czech Republic">Czech Republic</option>
-        <option value="Denmark">Denmark</option>
-        <option value="Estonia">Estonia</option>
-        <option value="Finland">Finland</option>
-        <option value="France">France</option>
-        <option value="Germany">Germany</option>
-        <option value="Greece">Greece</option>
-        <option value="Hungary">Hungary</option>
-        <option value="Iceland">Iceland</option>
-        <option value="Illinois (USA)">Illinois (USA)</option>
-        <option value="Ireland">Ireland</option>
-        <option value="Israel">Israel</option>
-        <option value="Italy">Italy</option>
-        <option value="Japan">Japan</option>
-        <option value="Latvia">Latvia</option>
-        <option value="Lithuania">Lithuania</option>
-        <option value="Luxembourg">Luxembourg</option>
-        <option value="Mexico">Mexico</option>
-        <option value="Michigan (USA)">Michigan (USA)</option>
-        <option value="Netherlands">Netherlands</option>
-        <option value="New York (USA)">New York (USA)</option>
-        <option value="New Zealand">New Zealand</option>
-        <option value="Norway">Norway</option>
-        <option value="Poland">Poland</option>
-        <option value="Portugal">Portugal</option>
-        <option value="Slovakia">Slovakia</option>
-        <option value="Slovenia">Slovenia</option>
-        <option value="Spain">Spain</option>
-        <option value="South Korea">South Korea</option>
-        <option value="Sweden">Sweden</option>
-        <option value="Switzerland">Switzerland</option>
-        <option value="Texas (USA)">Texas (USA)</option>
-        <option value="Turkey">Turkey</option>
-        <option value="United Kingdom">United Kingdom</option>
-      </select>
-      <select name="Country 3" id="country3" style="display:none" onchange='countryChanger(this.value, 3)'>
-        <option value="Country">Country/State 3</option>
-        <option value="Australia">Australia</option>
-        <option value="Austria">Austria</option>
-        <option value="Belgium">Beglium</option>
-        <option value="California (USA)">California (USA)</option>
-        <option value="Chile">Chile</option>
-        <option value="Czech Republic">Czech Republic</option>
-        <option value="Denmark">Denmark</option>
-        <option value="Estonia">Estonia</option>
-        <option value="Finland">Finland</option>
-        <option value="France">France</option>
-        <option value="Germany">Germany</option>
-        <option value="Greece">Greece</option>
-        <option value="Hungary">Hungary</option>
-        <option value="Iceland">Iceland</option>
-        <option value="Illinois (USA)">Illinois (USA)</option>
-        <option value="Ireland">Ireland</option>
-        <option value="Israel">Israel</option>
-        <option value="Italy">Italy</option>
-        <option value="Japan">Japan</option>
-        <option value="Latvia">Latvia</option>
-        <option value="Lithuania">Lithuania</option>
-        <option value="Luxembourg">Luxembourg</option>
-        <option value="Mexico">Mexico</option>
-        <option value="Michigan (USA)">Michigan (USA)</option>
-        <option value="Netherlands">Netherlands</option>
-        <option value="New York (USA)">New York (USA)</option>
-        <option value="New Zealand">New Zealand</option>
-        <option value="Norway">Norway</option>
-        <option value="Poland">Poland</option>
-        <option value="Portugal">Portugal</option>
-        <option value="Slovakia">Slovakia</option>
-        <option value="Slovenia">Slovenia</option>
-        <option value="Spain">Spain</option>
-        <option value="South Korea">South Korea</option>
-        <option value="Sweden">Sweden</option>
-        <option value="Switzerland">Switzerland</option>
-        <option value="Texas (USA)">Texas (USA)</option>
-        <option value="Turkey">Turkey</option>
-        <option value="United Kingdom">United Kingdom</option>
-      </select>
-    </span>
-    <div  style="margin: 0 auto; disaply: block; height:38%; width:100%;">
-      <iframe id="indicators" src="https://nrkthompson.github.io/ChartHolding/Indicators.html" style="margin: 0 auto; disaply: block; height:100%; width:100%;" frameBorder="0"></iframe>
-    </div>
     <table style="width:100%; height:58%; font-family: Helvetica Neue, Helvetica, Arial, sans-serif; text-align:center; table-layout:fixed;">
-      <tr style="height:100%;">
-        <td style="width:40%;">
-           <table style="table-layout:fixed; height:100%; width:100%; margin: 0 auto; disaply: block;">
-            <tr style="height:4%;">
-              <th style="width:100%" colspan="3">
-                Percent of Tweets That Contain Topic-Specific Keywords Over Time
+      <tr> 
+          <td style="height:4%; width:100%" style="font-family: Helvetica Neue, Helvetica, Arial, sans-serif; ">
+            <!--Check to Compare Specific Countries/States (Most Recent Data Available): <input type="checkbox" id="myCheck" onclick="myFunction()">-->
+            <select name="Weeks" id="weeks" style="display:inline" onchange='dataChanger(this.value, 'indicators')'>
+              <option value="https://nrkthompson.github.io/ChartHolding/Indicators.html">May 29, 2020</option>
+              <option value="https://nrkthompson.github.io/ChartHolding/Indicators2.html">May 22, 2020</option>
+            </select>
+            <select name="Country 1" id="country1" style="display:none" onchange='countryChanger(this.value, 1)'>
+              <option value="Country">Country/State 1</option>
+              <option value="Australia">Australia</option>
+              <option value="Austria">Austria</option>
+              <option value="Belgium">Beglium</option>
+              <option value="California (USA)">California (USA)</option>
+              <option value="Chile">Chile</option>
+              <option value="Czech Republic">Czech Republic</option>
+              <option value="Denmark">Denmark</option>
+              <option value="Estonia">Estonia</option>
+              <option value="Finland">Finland</option>
+              <option value="France">France</option>
+              <option value="Germany">Germany</option>
+              <option value="Greece">Greece</option>
+              <option value="Hungary">Hungary</option>
+              <option value="Iceland">Iceland</option>
+              <option value="Illinois (USA)">Illinois (USA)</option>
+              <option value="Ireland">Ireland</option>
+              <option value="Israel">Israel</option>
+              <option value="Italy">Italy</option>
+              <option value="Japan">Japan</option>
+              <option value="Latvia">Latvia</option>
+              <option value="Lithuania">Lithuania</option>
+              <option value="Luxembourg">Luxembourg</option>
+              <option value="Mexico">Mexico</option>
+              <option value="Michigan (USA)">Michigan (USA)</option>
+              <option value="Netherlands">Netherlands</option>
+              <option value="New York (USA)">New York (USA)</option>
+              <option value="New Zealand">New Zealand</option>
+              <option value="Norway">Norway</option>
+              <option value="Poland">Poland</option>
+              <option value="Portugal">Portugal</option>
+              <option value="Slovakia">Slovakia</option>
+              <option value="Slovenia">Slovenia</option>
+              <option value="Spain">Spain</option>
+              <option value="South Korea">South Korea</option>
+              <option value="Sweden">Sweden</option>
+              <option value="Switzerland">Switzerland</option>
+              <option value="Texas (USA)">Texas (USA)</option>
+              <option value="Turkey">Turkey</option>
+              <option value="United Kingdom">United Kingdom</option>
+            </select>
+            <select name="Country 2" id="country2" style="display:none" onchange='countryChanger(this.value, 2)'>
+              <option value="Country">Country/State 2</option>
+              <option value="Australia">Australia</option>
+              <option value="Austria">Austria</option>
+              <option value="Belgium">Beglium</option>
+              <option value="California (USA)">California (USA)</option>
+              <option value="Chile">Chile</option>
+              <option value="Czech Republic">Czech Republic</option>
+              <option value="Denmark">Denmark</option>
+              <option value="Estonia">Estonia</option>
+              <option value="Finland">Finland</option>
+              <option value="France">France</option>
+              <option value="Germany">Germany</option>
+              <option value="Greece">Greece</option>
+              <option value="Hungary">Hungary</option>
+              <option value="Iceland">Iceland</option>
+              <option value="Illinois (USA)">Illinois (USA)</option>
+              <option value="Ireland">Ireland</option>
+              <option value="Israel">Israel</option>
+              <option value="Italy">Italy</option>
+              <option value="Japan">Japan</option>
+              <option value="Latvia">Latvia</option>
+              <option value="Lithuania">Lithuania</option>
+              <option value="Luxembourg">Luxembourg</option>
+              <option value="Mexico">Mexico</option>
+              <option value="Michigan (USA)">Michigan (USA)</option>
+              <option value="Netherlands">Netherlands</option>
+              <option value="New York (USA)">New York (USA)</option>
+              <option value="New Zealand">New Zealand</option>
+              <option value="Norway">Norway</option>
+              <option value="Poland">Poland</option>
+              <option value="Portugal">Portugal</option>
+              <option value="Slovakia">Slovakia</option>
+              <option value="Slovenia">Slovenia</option>
+              <option value="Spain">Spain</option>
+              <option value="South Korea">South Korea</option>
+              <option value="Sweden">Sweden</option>
+              <option value="Switzerland">Switzerland</option>
+              <option value="Texas (USA)">Texas (USA)</option>
+              <option value="Turkey">Turkey</option>
+              <option value="United Kingdom">United Kingdom</option>
+            </select>
+            <select name="Country 3" id="country3" style="display:none" onchange='countryChanger(this.value, 3)'>
+              <option value="Country">Country/State 3</option>
+              <option value="Australia">Australia</option>
+              <option value="Austria">Austria</option>
+              <option value="Belgium">Beglium</option>
+              <option value="California (USA)">California (USA)</option>
+              <option value="Chile">Chile</option>
+              <option value="Czech Republic">Czech Republic</option>
+              <option value="Denmark">Denmark</option>
+              <option value="Estonia">Estonia</option>
+              <option value="Finland">Finland</option>
+              <option value="France">France</option>
+              <option value="Germany">Germany</option>
+              <option value="Greece">Greece</option>
+              <option value="Hungary">Hungary</option>
+              <option value="Iceland">Iceland</option>
+              <option value="Illinois (USA)">Illinois (USA)</option>
+              <option value="Ireland">Ireland</option>
+              <option value="Israel">Israel</option>
+              <option value="Italy">Italy</option>
+              <option value="Japan">Japan</option>
+              <option value="Latvia">Latvia</option>
+              <option value="Lithuania">Lithuania</option>
+              <option value="Luxembourg">Luxembourg</option>
+              <option value="Mexico">Mexico</option>
+              <option value="Michigan (USA)">Michigan (USA)</option>
+              <option value="Netherlands">Netherlands</option>
+              <option value="New York (USA)">New York (USA)</option>
+              <option value="New Zealand">New Zealand</option>
+              <option value="Norway">Norway</option>
+              <option value="Poland">Poland</option>
+              <option value="Portugal">Portugal</option>
+              <option value="Slovakia">Slovakia</option>
+              <option value="Slovenia">Slovenia</option>
+              <option value="Spain">Spain</option>
+              <option value="South Korea">South Korea</option>
+              <option value="Sweden">Sweden</option>
+              <option value="Switzerland">Switzerland</option>
+              <option value="Texas (USA)">Texas (USA)</option>
+              <option value="Turkey">Turkey</option>
+              <option value="United Kingdom">United Kingdom</option>
+            </select>
+          </td>
+      </tr>
+      <tr style="margin: 0 auto; disaply: block; height:38%; width:100%;">
+        <td>
+            <iframe id="indicators" src="https://nrkthompson.github.io/ChartHolding/Indicators.html" style="margin: 0 auto; disaply: block; height:100%; width:100%;" frameBorder="0"></iframe>
+        </td>
+      </tr>
+      <tr style="width:100%; height:58%; font-family: Helvetica Neue, Helvetica, Arial, sans-serif; text-align:center;>
+        <td>
+          <table style="width:100%; height:100%; font-family: Helvetica Neue, Helvetica, Arial, sans-serif; text-align:center; table-layout:fixed;">
+            <tr style="height:100%;">
+              <td style="width:40%;">
+                 <table style="table-layout:fixed; height:100%; width:100%; margin: 0 auto; disaply: block;">
+                  <tr style="height:4%;">
+                    <th style="width:100%" colspan="3">
+                      Percent of Tweets That Contain Topic-Specific Keywords Over Time
+                    </th>
+                  </tr>
+                   <tr style="height:48%">
+                     <th style="width:33%">
+                       <iframe src="https://nrkthompson.github.io/ChartHolding/LineCOVID.html" style="margin: 0 auto; disaply: block; height:100%; width:100%" frameBorder="0"></iframe>
+                     </th>
+                     <th style="width:33%">
+                       <iframe src="https://nrkthompson.github.io/ChartHolding/LineEconomy.html" style="margin: 0 auto; disaply: block; height:100%; width:100%" frameBorder="0"></iframe>
+                     </th>
+                     <th style="width:33%">
+                       <iframe src="https://nrkthompson.github.io/ChartHolding/LineEnvironment.html" style="margin: 0 auto; disaply: block; height:100%; width:100%" frameBorder="0"></iframe>
+                     </th>
+                   </tr>
+                   <tr style="height:48%">
+                     <th style="width:33%">
+                       <iframe src="https://nrkthompson.github.io/ChartHolding/LineGov.html" style="margin: 0 auto; disaply: block; height:100%; width:100%" frameBorder="0"></iframe>
+                     </th>
+                     <th style="width:33%">
+                       <iframe src="https://nrkthompson.github.io/ChartHolding/LineHealth.html" style="margin: 0 auto; disaply: block; height:100%; width:100%" frameBorder="0"></iframe>
+                     </th>
+                     <th style="width:33%">
+                       <iframe src="https://nrkthompson.github.io/ChartHolding/LineImmigration.html" style="margin: 0 auto; disaply: block; height:100%; width:100%" frameBorder="0"></iframe>
+                     </th>
+                   </tr>
+                 </table>
+              </td>
+              <td style="width:20%;">
+                <iframe src="https://nrkthompson.github.io/ChartHolding/BarMain.html" style="height:100%; width:100%; display:inline;" frameBorder="0"></iframe>
+              </td>
+              <td style="width:40%;">
+                <table style="height:100%; width:100%;">
+                   <tr style="height:4%;">
+                    <th style="width:100%" colspan="2">
+                      Government Approval Over Time in Canada
+                    </th>
+                   </tr>
+                   <tr style="height:48%">
+                     <th style="width:50%;">
+                       <iframe src="https://nrkthompson.github.io/ChartHolding/LineON.html" style="height:100%; width:100%; display:inline;" frameBorder="0"></iframe>
+                     </th>
+                     <th style="width:50%;">
+                       <iframe src="https://nrkthompson.github.io/ChartHolding/LineQC.html" style="height:100%; width:100%; display:inline;" frameBorder="0"></iframe>
+                     </th>
+                   </tr>
+                   <tr style="height:48%">
+                     <th style="width:50%;">
+                       <iframe src="https://nrkthompson.github.io/ChartHolding/LineWest.html" style="height:100%; width:100%; display:inline;" frameBorder="0"></iframe>
+                     </th>
+                     <th style="width:50%;">
+                       <iframe src="https://nrkthompson.github.io/ChartHolding/LineAtlantic.html" style="height:100%; width:100%; display:inline;" frameBorder="0"></iframe>
+                     </td>
+                   </tr>
+                 </table>
               </th>
             </tr>
-             <tr style="height:48%">
-               <th style="width:33%">
-                 <iframe src="https://nrkthompson.github.io/ChartHolding/LineCOVID.html" style="margin: 0 auto; disaply: block; height:100%; width:100%" frameBorder="0"></iframe>
-               </th>
-               <th style="width:33%">
-                 <iframe src="https://nrkthompson.github.io/ChartHolding/LineEconomy.html" style="margin: 0 auto; disaply: block; height:100%; width:100%" frameBorder="0"></iframe>
-               </th>
-               <th style="width:33%">
-                 <iframe src="https://nrkthompson.github.io/ChartHolding/LineEnvironment.html" style="margin: 0 auto; disaply: block; height:100%; width:100%" frameBorder="0"></iframe>
-               </th>
-             </tr>
-             <tr style="height:48%">
-               <th style="width:33%">
-                 <iframe src="https://nrkthompson.github.io/ChartHolding/LineGov.html" style="margin: 0 auto; disaply: block; height:100%; width:100%" frameBorder="0"></iframe>
-               </th>
-               <th style="width:33%">
-                 <iframe src="https://nrkthompson.github.io/ChartHolding/LineHealth.html" style="margin: 0 auto; disaply: block; height:100%; width:100%" frameBorder="0"></iframe>
-               </th>
-               <th style="width:33%">
-                 <iframe src="https://nrkthompson.github.io/ChartHolding/LineImmigration.html" style="margin: 0 auto; disaply: block; height:100%; width:100%" frameBorder="0"></iframe>
-               </th>
-             </tr>
-           </table>
-        </td>
-        <td style="width:20%;">
-          <iframe src="https://nrkthompson.github.io/ChartHolding/BarMain.html" style="height:100%; width:100%; display:inline;" frameBorder="0"></iframe>
-        </td>
-        <td style="width:40%;">
-          <table style="height:100%; width:100%;">
-             <tr style="height:4%;">
-              <th style="width:100%" colspan="2">
-                Government Approval Over Time in Canada
-              </th>
-             </tr>
-             <tr style="height:48%">
-               <th style="width:50%;">
-                 <iframe src="https://nrkthompson.github.io/ChartHolding/LineON.html" style="height:100%; width:100%; display:inline;" frameBorder="0"></iframe>
-               </th>
-               <th style="width:50%;">
-                 <iframe src="https://nrkthompson.github.io/ChartHolding/LineQC.html" style="height:100%; width:100%; display:inline;" frameBorder="0"></iframe>
-               </th>
-             </tr>
-             <tr style="height:48%">
-               <th style="width:50%;">
-                 <iframe src="https://nrkthompson.github.io/ChartHolding/LineWest.html" style="height:100%; width:100%; display:inline;" frameBorder="0"></iframe>
-               </th>
-               <th style="width:50%;">
-                 <iframe src="https://nrkthompson.github.io/ChartHolding/LineAtlantic.html" style="height:100%; width:100%; display:inline;" frameBorder="0"></iframe>
-               </td>
-             </tr>
-           </table>
-        </th>
-      </tr>
-  </table>
+        </table>
+      </td>
+     </tr>
+   </table>
   </body>
 </html>
