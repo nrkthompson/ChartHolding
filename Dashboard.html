@@ -196,30 +196,26 @@
                             <table style="table-layout:fixed; height:100%; width:100%; margin: 0 auto; disaply: block;">
                             <tr style="height:4%;">
                                 <th style="width:100%" colspan="3">
-                                    Percent of Tweets That Contain Topic-Specific Keywords Over Time
+                                    Daily Percent of Tweets by Keyword
+                                    (Jan 1 - Present)
                                 </th>
                             </tr>
-                            <tr style="height:48%">
-                                <th style="width:33%">
-                                    <iframe src="https://nrkthompson.github.io/ChartHolding/LineCOVID.html" style="margin: 0 auto; disaply: block; height:100%; width:100%" frameBorder="0"></iframe>
-                                </th>
-                                <th style="width:33%">
-                                    <iframe src="https://nrkthompson.github.io/ChartHolding/LineEconomy.html" style="margin: 0 auto; disaply: block; height:100%; width:100%" frameBorder="0"></iframe>
-                                </th>
-                                <th style="width:33%">
-                                    <iframe src="https://nrkthompson.github.io/ChartHolding/LineEnvironment.html" style="margin: 0 auto; disaply: block; height:100%; width:100%" frameBorder="0"></iframe>
-                                </th>
+                            <tr style="height:4%;">
+                                <td style="width:100%; text-align:left;" colspan="3">
+                                    <select name="Keyword" id="Keyword" style="display:inline" onchange="dataChanger(this.value, 'socialMedia')">
+                                    <option value="https://nrkthompson.github.io/ChartHolding/LineCOVID.html">COVID-19</option>
+                                    <option value="https://nrkthompson.github.io/ChartHolding/LineEconomy.html">Economy</option>
+                                    <option value="https://nrkthompson.github.io/ChartHolding/LineEnvironment.html">Environment</option>
+                                    <option value="https://nrkthompson.github.io/ChartHolding/LineGov.html">Government</option>
+                                    <option value="https://nrkthompson.github.io/ChartHolding/LineHealth.html">Healthcare</option>
+                                    <option value="https://nrkthompson.github.io/ChartHolding/LineImmigration.html">Immigration and Refugees</option>
+                                    </select>
+                                </td>
                             </tr>
-                            <tr style="height:48%">
-                                <th style="width:33%">
-                                    <iframe src="https://nrkthompson.github.io/ChartHolding/LineGov.html" style="margin: 0 auto; disaply: block; height:100%; width:100%" frameBorder="0"></iframe>
-                                </th>
-                                <th style="width:33%">
-                                    <iframe src="https://nrkthompson.github.io/ChartHolding/LineHealth.html" style="margin: 0 auto; disaply: block; height:100%; width:100%" frameBorder="0"></iframe>
-                                </th>
-                                <th style="width:33%">
-                                    <iframe src="https://nrkthompson.github.io/ChartHolding/LineImmigration.html" style="margin: 0 auto; disaply: block; height:100%; width:100%" frameBorder="0"></iframe>
-                                </th>
+                            <tr style="height:92%;">
+                                <td style="width:100%" colspan="3">
+                                    <iframe id="socialMedia" src="https://nrkthompson.github.io/ChartHolding/LineCOVID.html" style="height:100%; width:100%; display:inline;" frameBorder="0"></iframe>
+                                </td>
                             </tr>
                             </table>
                         </td>
