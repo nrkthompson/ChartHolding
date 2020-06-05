@@ -63,11 +63,11 @@
 				return chartData;
 			}
 			window.onload = function() {
+						var lineChartData = dataMaker();
 						setTimeout(() => { 
 							var ctx = document.getElementById('canvas').getContext('2d');
-							console.log("1");
 							window.myLine = Chart.Line(ctx, {
-							  data: dataMaker(),
+							  data: lineChartData,
 							  options: {
 							    responsive: true,
 							    hoverMode: 'index',
