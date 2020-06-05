@@ -29,12 +29,12 @@
 				      for (var i = 0, len = csv1.length; i < len; i++) {
 					if (csv1[i][2].includes("COVID")) {
 					  labelNames.push(csv1[i][1]);
-					  all.push(csv1[i][4]*100);
+					  all.push(Math.round(csv1[i][4]*100));
 					}
 				      }
 				      for (var i = 0, len = csv2.length; i < len; i++) {
 					if (csv2[i][2].includes("COVID")) {
-					  elite.push(csv2[i][4]*100);
+					  elite.push(Math.round(csv2[i][4]*100));
 					}
 				      }
 				      var lineChartData = {
