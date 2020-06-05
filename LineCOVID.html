@@ -22,7 +22,7 @@
 			function dataMaker() {
 				d3.text("https://nrkthompson.github.io/ChartHolding/Data/TwitterAll.csv", "text/csv", function(text) {
 					var csv1 = d3.csv.parseRows(text);
-					d3.text("https://nrkthompson.github.io/ChartHolding/Data/TwitterElite.csv", "text/csv", var chartData2 = function(data) {
+					d3.text("https://nrkthompson.github.io/ChartHolding/Data/TwitterElite.csv", "text/csv", function(data) {
 					      var csv2 = d3.csv.parseRows(data);
 					      var labelNames = [];
 					      var all = [];
