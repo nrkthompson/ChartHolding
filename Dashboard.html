@@ -223,27 +223,27 @@
                         </td>
                         <td style="width:35%;  border: 1px solid black;">
                             <table style="height:100%; width:100%;">
-                            <tr style="height:4%;">
-                                <th style="width:100%" colspan="2">
-                                    Government Approval Over Time in Canada
-                                </th>
-                            </tr>
-                            <tr style="height:48%">
-                                <th style="width:50%;">
-                                    <iframe src="https://nrkthompson.github.io/ChartHolding/LineON.html" style="height:100%; width:100%; display:inline;" frameBorder="0"></iframe>
-                                </th>
-                                <th style="width:50%;">
-                                    <iframe src="https://nrkthompson.github.io/ChartHolding/LineQC.html" style="height:100%; width:100%; display:inline;" frameBorder="0"></iframe>
-                                </th>
-                            </tr>
-                            <tr style="height:48%">
-                                <th style="width:50%;">
-                                    <iframe src="https://nrkthompson.github.io/ChartHolding/LineWest.html" style="height:100%; width:100%; display:inline;" frameBorder="0"></iframe>
-                                </th>
-                                <th style="width:50%;">
-                                    <iframe src="https://nrkthompson.github.io/ChartHolding/LineAtlantic.html" style="height:100%; width:100%; display:inline;" frameBorder="0"></iframe>
-                                </th>
-                            </tr>
+                               <tr style="height:4%;">
+                                      <th style="width:100%" colspan="3">
+                                          Government Approval Rating by Geographic Region
+                                      </th>
+                                </tr>
+                                <tr style="height:4%;">
+                                      <td style="width:100%; text-align:left;" colspan="3">
+                                          <select name="Region" id="Region" style="display:inline" onchange="dataChanger(this.value, 'Approval')">
+                                          <option value="https://nrkthompson.github.io/ChartHolding/LineNational.html">National</option>
+                                          <option value="https://nrkthompson.github.io/ChartHolding/LineON.html">Ontario</option>
+                                          <option value="https://nrkthompson.github.io/ChartHolding/LineQC.html">Quebec</option>
+                                          <option value="https://nrkthompson.github.io/ChartHolding/LineWest.html">Western Canada</option>
+                                          <option value="https://nrkthompson.github.io/ChartHolding/LineAtlantic.html">Atlantic Canada</option>
+                                          </select>
+                                      </td>
+                                  </tr>
+                                  <tr style="height:92%;">
+                                      <td style="width:100%" colspan="3">
+                                          <iframe id="Approval" src="https://nrkthompson.github.io/ChartHolding/LineNational.html" style="height:100%; width:100%; display:inline;" frameBorder="0"></iframe>
+                                      </td>
+                                   </tr>
                             </table>
                         </td>
                     </tr>
