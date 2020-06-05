@@ -58,6 +58,7 @@
 					window.onload = function() {
 						setTimeout(() => { 
 							var ctx = document.getElementById('canvas').getContext('2d');
+							console.log("1");
 							window.myLine = Chart.Line(ctx, {
 							  data: lineChartData,
 							  options: {
@@ -102,6 +103,7 @@
 							   }
 							 });
 						}, 200);
+						console.log("2");
 					};
 				});
 			});
