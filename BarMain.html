@@ -21,13 +21,16 @@
 		<script>
 			function dataMaker() {
         var labelNames = [];
-        var values = [];
+        var values1 = [];
+	var values2 = [];
+	var values3 = [];
+	var values4 = [];
 				d3.text("https://nrkthompson.github.io/ChartHolding/Data/SocDistRegion.csv", "text/csv", function(text) {
 					  var csv = d3.csv.parseRows(text);
             for (var i = 0, len = csv.length; i < len; i++) {
               if (csv[i][4] == 8) {
                 labelNames.push(csv[i][5]);
-                values.push((csv[i][0]*100).toFixed(2));
+                values1.push((csv[i][0]*100).toFixed(2));
               }
             }
 				});
@@ -36,7 +39,7 @@
             for (var i = 0, len = csv.length; i < len; i++) {
               if (csv[i][4] == 8) {
                 labelNames.push(csv[i][5]);
-                values.push((csv[i][0]*100).toFixed(2));
+                values2.push((csv[i][0]*100).toFixed(2));
               }
             }
 				});
@@ -49,7 +52,7 @@
 		} else {
 			labelNames.push("Female");
 		}
-                values.push((csv[i][0]*100).toFixed(2));
+                values3.push((csv[i][0]*100).toFixed(2));
               }
             }
 				});
@@ -58,20 +61,35 @@
             for (var i = 0, len = csv.length; i < len; i++) {
               if (csv[i][4] == 8) {
                 labelNames.push("Overall");
-                values.push((csv[i][0]*100).toFixed(2));
+                values4.push((csv[i][0]*100).toFixed(2));
               }
             }
 	}, 10);
 				});
-				window.myData = {
-          labels: labelNames,
-          datasets: [{
-          label: 'Percentage',
-          borderColor: '#04297a',
-          backgroundColor: '#04297a',
-          data: values
-          }]
-				}
+			  window.myData = {
+				  labels: labelNames,
+				  datasets: [{
+				  label: 'Percentage',
+				  borderColor: '#A9CCE3',
+				  backgroundColor: '#A9CCE3',
+				  data: values1
+				}, {
+				  label: 'Percentage',
+				  borderColor: '#34baeb',
+				  backgroundColor: '#34baeb',
+			          data: values2
+				}, {
+				  label: 'Percentage',
+				  borderColor: '##2980B9',
+				  backgroundColor: '#2980B9',
+			          data: values3
+				}, {
+				  label: 'Percentage',
+				  borderColor: '#04297a',
+				  backgroundColor: '#04297a',
+			          data: values4
+				}]
+			   }
 			}
 			dataMaker();
 			window.onload = function() {
@@ -84,10 +102,13 @@
 							    responsive: true,
 							    maintainAspectRatio: false,
 							    title: {
-								display: true,
+								display: false,
 								text: 'Percentage Participation in Social Distancing Measure Among Different Groups in Canada',
 								padding: 5
 							     },
+							    legend: {
+								display: false
+							    },
 							    scales: {
 								      xAxes: [{
 									  ticks: {
