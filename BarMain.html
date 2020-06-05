@@ -71,9 +71,18 @@
 							    maintainAspectRatio: false,
 							    title: {
 								display: true,
-								text: 'Ontario',
+								text: 'Percentage Participation in Social Distancing Measure Among Different Groups in Canada',
 								padding: 5
-							     }
+							     },
+							    scales: {
+								      xAxes: [{
+									  ticks: {
+									      min: 0,
+									      max: 100,
+									      stepSize: 10,
+									  }
+								      }]
+								  }
 							   }
 							 });
 						}, 500);
