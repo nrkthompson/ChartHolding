@@ -21,9 +21,9 @@
 	</div>
 	<script>
 	    var xLabels = {
-	      0: 'Country Average', 1: 'Stores/Non-Essential Businesses', 2: 'Schooling/Youth Activities',
-	      3: 'Eateries', 4: 'Leisure Activities', 5: 'Contact Services', 6: 'Manufacturing/Construction',
-	      7: 'Gatherings', 8: 'Borders/Movement', 9: 'Cultural'
+	      0: '', 1: 'Country Average', 2: 'Stores/Non-Essential Businesses', 3: 'Schooling/Youth Activities',
+	      4: 'Eateries', 5: 'Leisure Activities', 6: 'Contact Services', 7: 'Manufacturing/Construction',
+	      8: 'Gatherings', 9: 'Borders/Movement', 10: 'Cultural'
 	    };
 	    var yLabels = {
 	      0: 'Insufficient Data', 1: 'Level 1 (Most Restrictive)', 2: 'Level 2', 3: 'Level 3', 4: 'Level 4', 5: 'Level 5 (Least Restrictive)'
@@ -40,7 +40,7 @@
 						if (tracker == 1) {
 							var yValue = parseInt(preData[z], 10);
 						} else {
-							var xValue = parseInt(preData[z], 10);
+							var xValue = parseInt(preData[z], 10)+1;
 							data.push({
 								x: xValue,
 								y: yValue
