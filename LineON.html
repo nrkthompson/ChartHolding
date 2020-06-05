@@ -25,14 +25,14 @@
 					  var labelNames = [];
 					  var fed = [];
 					  var prov = [];
-            var loc = [];
+					  var loc = [];
 					  for (var i = 0, len = csv1.length; i < len; i++) {
-              if (csv1[i][5].includes("Ontario")) {
-                labelNames.push("Wave ".concat(String(csv1[i][4])));
-                fed.push((csv1[i][1]*100).toFixed(2));
-                prov.push((csv1[i][2]*100).toFixed(2));
-                loc.push((csv1[i][3]*100).toFixed(2));
-              }
+					  if (csv1[i][5].includes("Ontario")) {
+						labelNames.push("Wave ".concat(String(csv1[i][4])));
+						fed.push((csv1[i][1]*100).toFixed(2));
+						prov.push((csv1[i][2]*100).toFixed(2));
+						loc.push((csv1[i][3]*100).toFixed(2));
+					  }
 					  window.myData = {
 						labels: labelNames,
 						datasets: [{
@@ -42,14 +42,14 @@
 						  fill: false,
 						  pointRadius: 1,
 						  data: fed
-              }, {
-              label: 'Provincial',
-              borderColor: '#2980B9',
-              backgroundColor: '#2980B9',
-              fill: false,
+						  }, {
+						  label: 'Provincial',
+						  borderColor: '#2980B9',
+						  backgroundColor: '#2980B9',
+						  fill: false,
 						  pointRadius: 1,
 						  data: prov
-              }, {
+						  }, {
 						  label: 'Local',
 						  borderColor: '#34baeb',
 						  backgroundColor: '#34baeb',
