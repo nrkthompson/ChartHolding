@@ -1,6 +1,6 @@
 
 <!doctype html>
-<html style="margin: 0 auto; disaply: block; height: 98%;">
+<html style="margin: 0 auto; disaply: block; height: 98%;  width: 95%;">
 
 <head>
 	<title>Scatter Chart</title>
@@ -21,146 +21,151 @@
 	</div>
 	<script>
 	    var xLabels = {
-	      0: 'Country Average', 1: 'Stores/Non-Essential Businesses', 2: 'Schooling/Youth Activities',
-	      3: 'Eateries', 4: 'Leisure Activities', 5: 'Contact Services', 6: 'Manufacturing/Construction',
-	      7: 'Gatherings', 8: 'Borders/Movement', 9: 'Cultural'
+	      0: '', 1: 'Country Average', 2: 'Stores/Non-Essential Businesses', 3: 'Schooling/Youth Activities',
+	      4: 'Eateries', 5: 'Leisure Activities', 6: 'Contact Services', 7: 'Manufacturing/Construction',
+	      8: 'Gatherings', 9: 'Borders/Movement', 10: 'Cultural', 11: ''
 	    };
 	    var yLabels = {
 	      0: 'Insufficient Data', 1: 'Level 1 (Most Restrictive)', 2: 'Level 2', 3: 'Level 3', 4: 'Level 4', 5: 'Level 5 (Least Restrictive)'
 	    };
-		window.onload = function onboard() {
-		      window.addEventListener("message", receiveMessage, false);
-		      function receiveMessage(event) {
-			console.log(String(event.data));
-			if (String(event.data).includes("Verified")) {
-			  var country1 = String(event.data).split(",")[0];
-			  var country2 = String(event.data).split(",")[1];
-			  var country3 = String(event.data).split(",")[2];
-			  console.log(country1);
-			  console.log(country2);
-		          console.log(country3);
-			  d3.text("https://nrkthompson.github.io/ChartHolding/Data/Indicator_Levels_PEARL.csv", "text/csv", function(text) {
-					console.log("Hello2");
-					var csv = d3.csv.parseRows(text);
-					console.log("Hello3");
-					console.log(String(csv[1]));
-					  function generateData(country) {
-						var data = [];
-						console.log("Hello1");
-							for (var i = 0, len = csv.length ; i < len ; i++) {
-								if (csv[i][0].includes(country)) {
-									data.push({
-										x: 0,
-										y: csv[i][-1]
-									});
-									data.push({
-										x: 1,
-										y: csv[i][9]
-									});
-									data.push({
-										x: 2,
-										y: csv[i][8]
-									});
-									data.push({
-										x: 3,
-										y: csv[i][7]
-									});
-									data.push({
-										x: 4,
-										y: csv[i][6]
-									});
-									data.push({
-										x: 5,
-										y: csv[i][5]
-									});
-									data.push({
-										x: 6,
-										y: csv[i][4]
-									});
-									data.push({
-										x: 7,
-										y: csv[i][3]
-									});
-									data.push({
-										x: 8,
-										y: csv[i][2]
-									});
-									data.push({
-										x: 9,
-										y: csv[i][1]
-									});
-								}
-							   }
-					      return data;
-					  }
-				  var scatterData = {
-				  datasets: [{
-				      label: country1,
-				      pointRadius: 3,
-				      borderColor: '#D4E6F1',
-				      backgroundColor: '#D4E6F1',
-				      data: generateData(country1)
-				    }, {
-				      label: country2,
-				      pointRadius: 4,
-				      borderColor: '#A9CCE3',
-				      backgroundColor: '#A9CCE3',
-				      data: generateData(country2)
-				    }, {
-				      label: country3,
-				      pointRadius: 11,
-				      borderColor: '#154360',
-				      backgroundColor: '#154360',
-				      data: generateData(country3)
-				    }]
-				  };
-		          });
-			  var ctx = document.getElementById('canvas').getContext('2d');
-			  window.myScatter = Chart.Scatter(ctx, {
-			    data: scatterData,
-			    options: {
-			      maintainAspectRatio: false,
-			      responsive: true,
-			      tooltips: {
-				  callbacks: {
-				label: function(tooltipItem, data) {
-				    var label = data.datasets[tooltipItem.datasetIndex].label;
-				    return label;
+		function generateData(fileName, lowerLimit, upperLimit) {
+			var data = [];
+			d3.text(fileName, "text/csv", function(text) {
+	      			var csv = d3.csv.parseRows(text);
+			for (var i = 0; i < upperLimit+1; i++) {
+				if (i >= lowerLimit && i <= upperLimit) {
+					var preData = csv[i-1];
+					var tracker = 1;
+					for (var z = 1, len = preData.length; z < len; z++) {
+						if (tracker == 1) {
+							var yValue = parseInt(preData[z], 10);
+						} else {
+							var xValue = parseInt(preData[z], 10)+1;
+							data.push({
+								x: xValue,
+								y: yValue
+							});
+						}
+						var tracker = tracker * -1
+					}
 				}
-				  }
-			      },
-			      title: {
-				display: true,
-				text: 'Level of Reopening by Sector Among OECD Countries and Selected US States'
-			      },
-			      scales: {
-				    yAxes: [{
-				  ticks: {
-				      min: 0,
-				      max: 5,
-				      stepSize: 1,
-				      callback: function(value, index, values) {
-				    return yLabels[value];
-				      }
-				  }
-				    }],
-				    xAxes: [{
-				  ticks: {
-				      min: 0,
-				      max: 9,
-				      stepSize: 1,
-				      callback: function(value, index, values) {
-				    return xLabels[value];
-				      }
-				  }
-				    }]
-				}
-			    }
-			  });
-			 }
-		      }
+			}
+			console.log(data)
+			});
+			return data;
+		}
+		var one = generateData("https://nrkthompson.github.io/ChartHolding/Data/HeatMapMay22.csv", 1, 4);
+		var two = generateData("https://nrkthompson.github.io/ChartHolding/Data/HeatMapMay22.csv", 5, 8);
+		var three = generateData("https://nrkthompson.github.io/ChartHolding/Data/HeatMapMay22.csv", 9, 12);
+		var four = generateData("https://nrkthompson.github.io/ChartHolding/Data/HeatMapMay22.csv", 13, 16);
+		var five = generateData("https://nrkthompson.github.io/ChartHolding/Data/HeatMapMay22.csv", 17, 20);
+		var six  = generateData("https://nrkthompson.github.io/ChartHolding/Data/HeatMapMay22.csv", 21, 24);
+		var seven = generateData("https://nrkthompson.github.io/ChartHolding/Data/HeatMapMay22.csv", 25, 28);
+		var eight = generateData("https://nrkthompson.github.io/ChartHolding/Data/HeatMapMay22.csv", 29, 32);
+		var nine = generateData("https://nrkthompson.github.io/ChartHolding/Data/HeatMapMay22.csv", 33, 36);
+		var scatterChartData = {
+			datasets: [{
+					label: '1-4 Countries',
+					pointRadius: 3,
+					borderColor: '#D4E6F1',
+					backgroundColor: '#D4E6F1',
+					data: one
+				}, {
+					label: '5-8 Countries',
+					pointRadius: 4,
+					borderColor: '#A9CCE3',
+					backgroundColor: '#A9CCE3',
+					data: two
+				}, {
+					label: '9-12 Countries',
+					pointRadius: 5,
+					borderColor: '#7FB3D5',
+					backgroundColor: '#7FB3D5',
+					data: three
+				}, {
+					label: '13-16 Countries',
+					pointRadius: 6,
+					borderColor: '#5499C7',
+					backgroundColor: '#5499C7',
+					data: four
+				}, {
+					label: '17-20 Countries',
+					pointRadius: 7,
+					borderColor: '#2980B9',
+					backgroundColor: '#2980B9',
+					data: five
+				}, {
+					label: '21-24 Countries',
+					pointRadius: 8,
+					borderColor: '#2471A3',
+					backgroundColor: '#2471A3',
+					data: six
+				}, {
+					label: '25-28 Countries',
+					pointRadius: 9,
+					borderColor: '#1F618D',
+					backgroundColor: '#1F618D',
+					data: seven
+				}, {
+					label: '29-32 Countries',
+					pointRadius: 10,
+					borderColor: '#1A5276',
+					backgroundColor: '#1A5276',
+					data: eight
+				}, {
+					label: '33-36 Countries',
+					pointRadius: 11,
+					borderColor: '#154360',
+					backgroundColor: '#154360',
+					data: nine
+				}]
 		};
-	
+		window.onload = function onboard() {
+			setTimeout(() => { 
+				var ctx = document.getElementById('canvas').getContext('2d');
+				var myScatter = Chart.Scatter(ctx, {
+					data: scatterChartData,
+					options: {
+						maintainAspectRatio: false,
+						responsive: true,
+						tooltips: {
+						    callbacks: {
+							label: function(tooltipItem, data) {
+							    var label = data.datasets[tooltipItem.datasetIndex].label;
+							    return label;
+							}
+						    }
+						},
+						title: {
+							display: true,
+							text: 'Level of Reopening by Sector Among OECD Countries and Selected US States'
+						},
+						scales: {
+						      yAxes: [{
+							  ticks: {
+							      min: 0,
+							      max: 5,
+							      stepSize: 1,
+							      callback: function(value, index, values) {
+								  return yLabels[value];
+							      }
+							  }
+						      }],
+						      xAxes: [{
+							  ticks: {
+							      min: 0,
+							      max: 11,
+							      stepSize: 1,
+							      callback: function(value, index, values) {
+								  return xLabels[value];
+							      }
+							  }
+						      }]
+						  }
+					}
+				});
+			}, 200);
+		};
 	</script>
 </body>
 
