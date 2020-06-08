@@ -30,8 +30,9 @@
 	    };
 		function getData(fileName) {
 			d3.text(fileName, "text/csv", function(text) {
-				return d3.csv.parseRows(text);
+				var csvFinal = d3.csv.parseRows(text);
 			});
+			return csvFinal;
 		}
 		function generateData(csv, lowerLimit, upperLimit) {
 			var data = [];
