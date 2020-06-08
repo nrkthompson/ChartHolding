@@ -1,0 +1,332 @@
+
+<!doctype html>
+<html style="margin: 0 auto; disaply: block; height: 98%;  width: 95%;">
+
+<head>
+	<title>Scatter Chart</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+	<style>
+	canvas {
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		-ms-user-select: none;
+	}
+	</style>
+</head>
+
+<body style="margin: 0 auto; disaply: block; height: 100%;" id="bodyID">
+	<div style="margin: 0 auto; disaply: block; height: 100%;">
+		<canvas id="canvas"></canvas>
+	</div>
+	<script>
+	    var xLabels = {
+	      0: '', 1: 'Country Average', 2: 'Stores/Non-Essential Businesses', 3: 'Schooling/Youth Activities',
+	      4: 'Eateries', 5: 'Leisure Activities', 6: 'Contact Services', 7: 'Manufacturing/Construction',
+	      8: 'Gatherings', 9: 'Borders/Movement', 10: 'Cultural', 11: ''
+	    };
+	    var yLabels = {
+	      0: 'Insufficient Data', 1: 'Level 1 (Most Restrictive)', 2: 'Level 2', 3: 'Level 3', 4: 'Level 4', 5: 'Level 5 (Least Restrictive)'
+	    };
+		function getData(fileName) {
+			d3.text(fileName, "text/csv", function(text) {
+				var csvFinal = d3.csv.parseRows(text);
+			});
+			return csvFinal;
+		}
+		function generateData(csvFile, lowerLimit, upperLimit) {
+			var data = [];
+			for (var i = 0; i < upperLimit+1; i++) {
+				if (i >= lowerLimit && i <= upperLimit) {
+					var preData = csv[i-1];
+					var tracker = 1;
+					for (var z = 1, len = preData.length; z < len; z++) {
+						if (tracker == 1) {
+							var yValue = parseInt(preData[z], 10);
+						} else {
+							var xValue = parseInt(preData[z], 10)+1;
+							data.push({
+								x: xValue,
+								y: yValue
+							});
+						}
+						var tracker = tracker * -1
+					}
+				}
+			}
+			console.log(data)
+			return data;
+		}
+		var = data = getData("https://nrkthompson.github.io/ChartHolding/Data/HeatMapMay29.csv");
+		var scatterChartData = {
+			datasets: [{
+					label: '1 Country',
+					pointRadius: 3,
+					borderColor: '#1F618D',
+					backgroundColor: '#1F618D',
+					data: generateData(data, 1, 1)
+				}, {
+					label: '2 Countries',
+					pointRadius: 3.25,
+					borderColor: '#1F618D',
+					backgroundColor: '#1F618D',
+					data: generateData(data, 2, 2)
+				}, {
+					label: '3 Countries',
+					pointRadius: 3.5,
+					borderColor: '#1F618D',
+					backgroundColor: '#1F618D',
+					data: generateData(data, 3, 3)
+				}, {
+					label: '4 Countries',
+					pointRadius: 3.75,
+					borderColor: '#1F618D',
+					backgroundColor: '#1F618D',
+					data: generateData(data, 4, 4)
+				}, {
+					label: '5 Countries',
+					pointRadius: 4,
+					borderColor: '#1F618D',
+					backgroundColor: '#1F618D',
+					data: generateData(data, 5, 5)
+				}, {
+					label: '6 Countries',
+					pointRadius: 4.25,
+					borderColor: '#1F618D',
+					backgroundColor: '#1F618D',
+					data: generateData(data, 6, 6)
+				}, {
+					label: '7 Countries',
+					pointRadius: 4.5,
+					borderColor: '#1F618D',
+					backgroundColor: '#1F618D',
+					data: generateData(data, 7, 7)
+				}, {
+					label: '8 Countries',
+					pointRadius: 4.75,
+					borderColor: '#1F618D',
+					backgroundColor: '#1F618D',
+					data: generateData(data, 8, 8)
+				}, {
+					label: '9 Countries',
+					pointRadius: 5,
+					borderColor: '#1F618D',
+					backgroundColor: '#1F618D',
+					data: generateData(data, 9, 9)
+				}, {
+					label: '10 Countries',
+					pointRadius: 5.25,
+					borderColor: '#1F618D',
+					backgroundColor: '#1F618D',
+					data: generateData(data, 10, 10)
+				}, {
+					label: '11 Countries',
+					pointRadius: 5.5,
+					borderColor: '#1F618D',
+					backgroundColor: '#1F618D',
+					data: generateData(data, 11, 11)
+				}, {
+					label: '12 Countries',
+					pointRadius: 5.75,
+					borderColor: '#1F618D',
+					backgroundColor: '#1F618D',
+					data: generateData(data, 12, 12)
+				}, {
+					label: '13 Countries',
+					pointRadius: 6,
+					borderColor: '#1F618D',
+					backgroundColor: '#1F618D',
+					data: generateData(data, 13, 13)
+				}, {
+					label: '14 Countries',
+					pointRadius: 6.25,
+					borderColor: '#1F618D',
+					backgroundColor: '#1F618D',
+					data: generateData(data, 14, 14)
+				}, {
+					label: '15 Countries',
+					pointRadius: 6.5,
+					borderColor: '#1F618D',
+					backgroundColor: '#1F618D',
+					data: generateData(data, 15, 15)
+				}, {
+					label: '16 Countries',
+					pointRadius: 6.75,
+					borderColor: '#1F618D',
+					backgroundColor: '#1F618D',
+					data: generateData(data, 16, 16)
+				}, {
+					label: '17 Countries',
+					pointRadius: 7,
+					borderColor: '#1F618D',
+					backgroundColor: '#1F618D',
+					data: generateData(data, 17, 17)
+				}, {
+					label: '18 Countries',
+					pointRadius: 7.25,
+					borderColor: '#1F618D',
+					backgroundColor: '#1F618D',
+					data: generateData(data, 18, 18)
+				}, {
+					label: '19 Countries',
+					pointRadius: 7.5,
+					borderColor: '#1F618D',
+					backgroundColor: '#1F618D',
+					data: generateData(data, 19, 19)
+				}, {
+					label: '20 Countryies',
+					pointRadius: 7.75,
+					borderColor: '#1F618D',
+					backgroundColor: '#1F618D',
+					data: generateData(data, 20, 20)
+				}, {
+					label: '21 Countries',
+					pointRadius: 8,
+					borderColor: '#1F618D',
+					backgroundColor: '#1F618D',
+					data: generateData(data, 21, 21)
+				}, {
+					label: '22 Countries',
+					pointRadius: 8.25,
+					borderColor: '#1F618D',
+					backgroundColor: '#1F618D',
+					data: generateData(data, 22,22)
+				}, {
+					label: '23 Countries',
+					pointRadius: 8.5,
+					borderColor: '#1F618D',
+					backgroundColor: '#1F618D',
+					data: generateData(data, 23, 23)
+				}, {
+					label: '24 Countries',
+					pointRadius: 8.75,
+					borderColor: '#1F618D',
+					backgroundColor: '#1F618D',
+					data: generateData(data, 24, 24)
+				}, {
+					label: '25 Countries',
+					pointRadius: 9,
+					borderColor: '#1F618D',
+					backgroundColor: '#1F618D',
+					data: generateData(data, 25, 25)
+				}, {
+					label: '26 Countries',
+					pointRadius: 9.25,
+					borderColor: '#1F618D',
+					backgroundColor: '#1F618D',
+					data: generateData(data, 26, 26)
+				}, {
+					label: '27 Countries',
+					pointRadius: 9.5,
+					borderColor: '#1F618D',
+					backgroundColor: '#1F618D',
+					data: generateData(data, 27, 27)
+				}, {
+					label: '28 Countries',
+					pointRadius: 9.75,
+					borderColor: '#1F618D',
+					backgroundColor: '#1F618D',
+					data: generateData(data, 28, 28)
+				}, {
+					label: '29 Countries',
+					pointRadius: 10,
+					borderColor: '#1F618D',
+					backgroundColor: '#1F618D',
+					data: generateData(data, 29, 29)
+				}, {
+					label: '30 Countries',
+					pointRadius: 10.25,
+					borderColor: '#1F618D',
+					backgroundColor: '#1F618D',
+					data: generateData(data, 30, 30)
+				}, {
+					label: '31 Countries',
+					pointRadius: 10.5,
+					borderColor: '#1F618D',
+					backgroundColor: '#1F618D',
+					data: generateData(data, 31, 31)
+				}, {
+					label: '32 Countries',
+					pointRadius: 10.75,
+					borderColor: '#1F618D',
+					backgroundColor: '#1F618D',
+					data: generateData(data, 32, 32)
+				}, {
+					label: '33 Countries',
+					pointRadius: 11,
+					borderColor: '#1F618D',
+					backgroundColor: '#1F618D',
+					data: generateData(data, 33, 33)
+				}, {
+					label: '34 Countries',
+					pointRadius: 11.25,
+					borderColor: '#1F618D',
+					backgroundColor: '#1F618D',
+					data: generateData(data, 34, 34)
+				}, {
+					label: '35 Countries',
+					pointRadius: 11.5,
+					borderColor: '#1F618D',
+					backgroundColor: '#1F618D',
+					data: generateData(data, 35, 35)
+				}, {
+					label: '36 Countries',
+					pointRadius: 11.75,
+					borderColor: '#1F618D',
+					backgroundColor: '#1F618D',
+					data: generateData(data, 36, 36)
+				}]
+		};
+		window.onload = function onboard() {
+			setTimeout(() => { 
+				var ctx = document.getElementById('canvas').getContext('2d');
+				var myScatter = Chart.Scatter(ctx, {
+					data: scatterChartData,
+					options: {
+						maintainAspectRatio: false,
+						responsive: true,
+						tooltips: {
+						    callbacks: {
+							label: function(tooltipItem, data) {
+							    var label = data.datasets[tooltipItem.datasetIndex].label;
+							    return label;
+							}
+						    }
+						},
+						legend: {
+							display: false,
+						},
+						title: {
+							display: true,
+							text: 'Level of Reopening by Sector Among OECD Countries and Selected US States'
+						},
+						scales: {
+						      yAxes: [{
+							  ticks: {
+							      min: 0,
+							      max: 5,
+							      stepSize: 1,
+							      callback: function(value, index, values) {
+								  return yLabels[value];
+							      }
+							  }
+						      }],
+						      xAxes: [{
+							  ticks: {
+							      min: 0,
+							      max: 11,
+							      stepSize: 1,
+							      callback: function(value, index, values) {
+								  return xLabels[value];
+							      }
+							  }
+						      }]
+						  }
+					}
+				});
+			}, 200);
+		};
+	</script>
+</body>
+
+</html>
