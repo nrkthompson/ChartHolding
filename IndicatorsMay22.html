@@ -42,6 +42,7 @@
 			}, 100);
 		}
 		function generateData(csv, lowerLimit, upperLimit) {
+			console.log(csv);
 			var data = [];
 			for (var i = 0; i < upperLimit+1; i++) {
 				if (i >= lowerLimit && i <= upperLimit) {
@@ -65,6 +66,7 @@
 			return data;
 		}
 		var data = getData("https://nrkthompson.github.io/ChartHolding/Data/HeatMapMay29.csv");
+		console.log(data);
 		var scatterChartData = {
 			datasets: [{
 					label: '1 Country',
