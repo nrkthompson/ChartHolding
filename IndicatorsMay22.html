@@ -32,6 +32,7 @@
 			d3.text(fileName, "text/csv", function(text) {
 				var csvFinal = d3.csv.parseRows(text);
 			});
+			console.log(csvFinal);
 			return csvFinal;
 		}
 		function generateData(csv, lowerLimit, upperLimit) {
