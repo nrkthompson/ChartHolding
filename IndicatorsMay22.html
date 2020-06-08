@@ -30,11 +30,11 @@
 	    };
 		function getData(fileName) {
 			d3.text(fileName, "text/csv", function(text) {
-				var csvFinal = d3.csv.parseRows(text);
+				const csvFinal = d3.csv.parseRows(text);
 			});
 			return csvFinal;
 		}
-		function generateData(csvFile, lowerLimit, upperLimit) {
+		function generateData(csv, lowerLimit, upperLimit) {
 			var data = [];
 			for (var i = 0; i < upperLimit+1; i++) {
 				if (i >= lowerLimit && i <= upperLimit) {
