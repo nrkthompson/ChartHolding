@@ -33,11 +33,7 @@
 			d3.text(fileName, "text/csv", function(text) {
 				var csvRaw = d3.csv.parseRows(text);
 				for (var i = 0, len1 = csvRaw.length; i < len1; i++) {
-				    var csvTemp = [];
-				    for (var z = 0, len2 = csvRaw[i].length; z < len2; z++) {
-					    csvTemp.push(csvRaw[i][z]);
-				    }
-				    csvFinal.push(csvTemp);
+					csvFinal.push(csvRaw[i])
 				}
 			});
 			console.log(csvFinal);
