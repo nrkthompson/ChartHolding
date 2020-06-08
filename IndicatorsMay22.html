@@ -36,8 +36,10 @@
 					csvFinal.push(csvRaw[i]);
 				}
 			});
-			console.log(csvFinal);
-			return csvFinal;
+			setTimeout(() => { 
+				console.log(csvFinal);
+				return csvFinal;
+			}, 100);
 		}
 		function generateData(csv, lowerLimit, upperLimit) {
 			var data = [];
