@@ -36,6 +36,7 @@
 					      } else if (csv1[i][5].includes("55+")) {
 					      young.push((csv1[i][0]*100).toFixed(2));
 									  }
+					  }
 					    d3.text("https://nrkthompson.github.io/ChartHolding/Data/SocDist.csv", "text/csv", function(data) {
 						  var csv2 = d3.csv.parseRows(data);
 						  for (var z = 1, len2 = csv2.length; z <len2; z++) {
