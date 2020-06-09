@@ -12,7 +12,8 @@
           text2.style.display = "inline";
           text4.style.display = "none";
         } else {
-          document.getElementById('indicators').src = "https://nrkthompson.github.io/ChartHolding/IndicatorsJune5.html";
+          var original = document.getElementById('weeks').value;
+          document.getElementById('indicators').src = original;
           text1.style.display = "none";
           text2.style.display = "none";
           text4.style.display = "inline";
