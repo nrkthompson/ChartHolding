@@ -21,11 +21,13 @@
       function dataChanger(inputValue, identifier) {
         document.getElementById(identifier).src = inputValue;
       }
-      function countryChanger(country1, inputSecondary) {
+      function countryChanger(inputCountry, inputSecondary) {
         if (inputSecondary == 1) {
+          var country1 = inputCountry;
           var country2 = document.getElementById('country2').value;
         } else if (inputSecondary == 2) {
-          var country2 = document.getElementById('country1').value;
+          var country1 = document.getElementById('country1').value;
+          var country2 = inputCountry;
         }
         document.getElementById('indicators').src = "https://nrkthompson.github.io/ChartHolding/Countries/".concat(country1).concat(country2).concat(".html");
       }
