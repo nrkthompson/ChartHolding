@@ -27,7 +27,7 @@
 	    var yLabels = {
 	      0: 'Insufficient Data', 1: 'Level 1 (Most Restrictive)', 2: 'Level 2', 3: 'Level 3', 4: 'Level 4', 5: 'Level 5 (Least Restrictive)'
 	    };
-    function generateData(country) {
+    function generateData(country, offset) {
           var data = [];
           d3.text("https://nrkthompson.github.io/ChartHolding/CountryIndicatorsSource.csv", "text/csv", function(text) {
                   var csv = d3.csv.parseRows(text);
@@ -35,35 +35,35 @@
                   var line = csv[i];
                     if (line[0].includes(country)) {
                         data.push({
-                        x: 1,
+                        x: 1+offset,
                         y: line[12]
                         });
                         data.push({
-                        x: 2,
+                        x: 2+offset,
                         y: line[9]
                         });
                         data.push({
-                        x: 3,
+                        x: 3+offset,
                         y: line[8]
                         });
                         data.push({
-                        x: 4,
+                        x: 4+offset,
                         y: line[7]
                         });
                         data.push({
-                        x: 5,
+                        x: 5+offset,
                         y: line[6]
                         });
                         data.push({
-                        x: 6,
+                        x: 6+offset,
                         y: line[5]
                         });
                         data.push({
-                        x: 7,
+                        x: 7+offset,
                         y: line[4]
                         });
                         data.push({
-                        x: 8,
+                        x: 8+offset,
                         y: line[3]
                         });
                         data.push({
@@ -71,7 +71,7 @@
                         y: line[2]
                         });
                         data.push({
-                        x: 10,
+                        x: 10+offset,
                         y: line[1]
                         });
                     } 
@@ -86,13 +86,13 @@
 					pointRadius: 6,
 					borderColor: '#04297a',
 					backgroundColor: '#04297a',
-					data: generateData("France")
+					data: generateData("France", -0.1)
 				}, {
 					label: 'Germany',
 					pointRadius: 6,
 					borderColor: '#34baeb',
 					backgroundColor: '#34baeb',
-					data: generateData("Germany")
+					data: generateData("Germany", 0.1)
 				}]
 		};
 		window.onload = function onboard() {
