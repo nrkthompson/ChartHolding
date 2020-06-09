@@ -32,6 +32,52 @@
 	    window.data1 = [];
 	    window.data2 = [];
 	    window.data3 = [];
+	    		function onboard() {
+			setTimeout(() => { 
+				var ctx = document.getElementById('canvas').getContext('2d');
+				var myScatter = Chart.Scatter(ctx, {
+					data: window.myData,
+					options: {
+						maintainAspectRatio: false,
+						responsive: true,
+						tooltips: {
+						    callbacks: {
+							label: function(tooltipItem, data) {
+							    var label = data.datasets[tooltipItem.datasetIndex].label;
+							    return label;
+							}
+						    }
+						},
+						title: {
+							display: true,
+							text: 'Level of Reopening by Sector Among Selected Countries'
+						},
+						scales: {
+						      yAxes: [{
+							  ticks: {
+							      min: 0,
+							      max: 5,
+							      stepSize: 1,
+							      callback: function(value, index, values) {
+								  return yLabels[value];
+							      }
+							  }
+						      }],
+						      xAxes: [{
+							  ticks: {
+							      min: 0,
+							      max: 11,
+							      stepSize: 1,
+							      callback: function(value, index, values) {
+								  return xLabels[value];
+							      }
+							  }
+						      }]
+						  }
+					}
+				});
+			}, 2000);
+		};
 		window.addEventListener("message", receiveMessage, false);
 		function receiveMessage(event) {
 			console.log(String(event.data));
@@ -172,7 +218,6 @@
 				}
 			});
 		}
-		setTimeout(() => { window.myData = {
 			datasets: [{
 					label: window.country1,
 					pointRadius: 6,
@@ -192,53 +237,7 @@
 					backgroundColor: '#2980B9',
 					data: window.data3
 				}]
-		};
-		}, 1000);
-		window.onload = function onboard() {
-			setTimeout(() => { 
-				var ctx = document.getElementById('canvas').getContext('2d');
-				var myScatter = Chart.Scatter(ctx, {
-					data: window.myData,
-					options: {
-						maintainAspectRatio: false,
-						responsive: true,
-						tooltips: {
-						    callbacks: {
-							label: function(tooltipItem, data) {
-							    var label = data.datasets[tooltipItem.datasetIndex].label;
-							    return label;
-							}
-						    }
-						},
-						title: {
-							display: true,
-							text: 'Level of Reopening by Sector Among Selected Countries'
-						},
-						scales: {
-						      yAxes: [{
-							  ticks: {
-							      min: 0,
-							      max: 5,
-							      stepSize: 1,
-							      callback: function(value, index, values) {
-								  return yLabels[value];
-							      }
-							  }
-						      }],
-						      xAxes: [{
-							  ticks: {
-							      min: 0,
-							      max: 11,
-							      stepSize: 1,
-							      callback: function(value, index, values) {
-								  return xLabels[value];
-							      }
-							  }
-						      }]
-						  }
-					}
-				});
-			}, 2000);
+		onboard();
 		};
 	</script>
 </body>
