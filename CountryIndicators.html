@@ -39,15 +39,12 @@
 			  window.countries.push(String(event.data).split(",")[0]);
 			  window.countries.push(String(event.data).split(",")[1]);
 			  window.countries.push(String(event.data).split(",")[2]);
-			  console.log(window.countries);
 			}
 			d3.text("https://nrkthompson.github.io/ChartHolding/CountryIndicatorsSource.csv", "text/csv", function(text) {
 	      			var csv = d3.csv.parseRows(text);
 				for (var i = 0, len = csv.length; i < len; i++) {
 					var line = csv[i];
-					console.log(window.countries[0]);
 						if (line[0].includes(window.countries[0])) {
-						    console.log("Working1");
 						    window.data1.push({
 								x: 1,
 								y: line[12]
@@ -88,7 +85,6 @@
 								x: 10,
 								y: line[1]
 						    });
-						    console.log(window.data1);
 						} else if (line[0].includes(window.countries[1])) {
 						    window.data2.push({
 								x: 1,
@@ -175,7 +171,7 @@
 				}
 			});
 		}
-		window.myData = {
+		setTimeout(() => { window.myData = {
 			datasets: [{
 					label: window.country1,
 					pointRadius: 6,
@@ -196,6 +192,7 @@
 					data: window.data3
 				}]
 		};
+		}, 1000);
 		window.onload = function onboard() {
 			setTimeout(() => { 
 				console.log(window.myData);
