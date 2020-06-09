@@ -39,7 +39,7 @@
 			var data1 = [];
 			var data2 = [];
 			var data3 = [];
-			d3.text("https://nrkthompson.github.io/ChartHolding/Indicator_Levels_PEARL.csv", "text/csv", function(text) {
+			d3.text("https://nrkthompson.github.io/ChartHolding/CountryIndicatorsSource.csv", "text/csv", function(text) {
 	      			var csv = d3.csv.parseRows(text);
 				for (var i = 0, len = csv.length; i < len; i++) {
 					var line = csv[i];
