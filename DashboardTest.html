@@ -6,18 +6,15 @@
         var checkBox = document.getElementById("myCheck");
         var text1 = document.getElementById("country1");
         var text2 = document.getElementById("country2");
-        var text3 = document.getElementById("country3");
         var text4 = document.getElementById("weeks");
         if (checkBox.checked == true){
           text1.style.display = "inline";
           text2.style.display = "inline";
-          text3.style.display = "inline";
           text4.style.display = "none";
         } else {
           document.getElementById('indicators').src = "https://nrkthompson.github.io/ChartHolding/IndicatorsMay29.html";
           text1.style.display = "none";
           text2.style.display = "none";
-          text3.style.display = "none";
           text4.style.display = "inline";
         }
       }
@@ -27,18 +24,10 @@
       function countryChanger(country1, inputSecondary) {
         if (inputSecondary == 1) {
           var country2 = document.getElementById('country2').value;
-          var country3 = document.getElementById('country3').value;
         } else if (inputSecondary == 2) {
           var country2 = document.getElementById('country1').value;
-          var country3 = document.getElementById('country3').value;
-        } else {
-          var country2 = document.getElementById('country1').value;
-          var country3 = document.getElementById('country2').value;
         }
-        var toTransmit = country1.concat(",").concat(country2).concat(",").concat(country3).concat(",").concat("Verified");
-        document.getElementById('indicators').src = "";
-        document.getElementById('indicators').src = "https://nrkthompson.github.io/ChartHolding/CountryIndicators.html";
-        window.frames[0].postMessage(toTransmit, "*");
+        document.getElementById('indicators').src = "https://nrkthompson.github.io/ChartHolding/Data/".concat(country1).concat(country2).concat(".html");
       }
     </script>
   </head>
@@ -56,10 +45,12 @@
                             </select>
                             <select name="Country 1" id="country1" style="display:none" onchange='countryChanger(this.value, 1)'>
                             <option value="Country">Country/State 1</option>
+                            <option value="Alberta">Alberta (Canada)</option>
                             <option value="Australia">Australia</option>
                             <option value="Austria">Austria</option>
                             <option value="Belgium">Beglium</option>
-                            <option value="California (USA)">California (USA)</option>
+                            <option value="BritishColumbia">British Columbia (Canada)</option>
+                            <option value="California">California (USA)</option>
                             <option value="Chile">Chile</option>
                             <option value="Czech Republic">Czech Republic</option>
                             <option value="Denmark">Denmark</option>
@@ -70,7 +61,7 @@
                             <option value="Greece">Greece</option>
                             <option value="Hungary">Hungary</option>
                             <option value="Iceland">Iceland</option>
-                            <option value="Illinois (USA)">Illinois (USA)</option>
+                            <option value="Illinois">Illinois (USA)</option>
                             <option value="Ireland">Ireland</option>
                             <option value="Israel">Israel</option>
                             <option value="Italy">Italy</option>
@@ -79,29 +70,34 @@
                             <option value="Lithuania">Lithuania</option>
                             <option value="Luxembourg">Luxembourg</option>
                             <option value="Mexico">Mexico</option>
-                            <option value="Michigan (USA)">Michigan (USA)</option>
+                            <option value="Michigan">Michigan (USA)</option>
                             <option value="Netherlands">Netherlands</option>
-                            <option value="New York (USA)">New York (USA)</option>
+                            <option value="NewBrunswick">New Brunswick (Canada)</option>
+                            <option value="New York">New York (USA)</option>
                             <option value="New Zealand">New Zealand</option>
                             <option value="Norway">Norway</option>
+                            <option value="Ontario">Ontario (Canada)</option>
                             <option value="Poland">Poland</option>
                             <option value="Portugal">Portugal</option>
+                            <option value="Quebec">Quebec (Canada)</option>
                             <option value="Slovakia">Slovakia</option>
                             <option value="Slovenia">Slovenia</option>
                             <option value="Spain">Spain</option>
-                            <option value="South Korea">South Korea</option>
+                            <option value="SouthKorea">South Korea</option>
                             <option value="Sweden">Sweden</option>
                             <option value="Switzerland">Switzerland</option>
-                            <option value="Texas (USA)">Texas (USA)</option>
+                            <option value="Texas">Texas (USA)</option>
                             <option value="Turkey">Turkey</option>
-                            <option value="United Kingdom">United Kingdom</option>
+                            <option value="UnitedKingdom">United Kingdom</option>
                             </select>
                             <select name="Country 2" id="country2" style="display:none" onchange='countryChanger(this.value, 2)'>
-                            <option value="Country">Country/State 2</option>
+                            <option value="Country">Country/State 1</option>
+                            <option value="Alberta">Alberta (Canada)</option>
                             <option value="Australia">Australia</option>
                             <option value="Austria">Austria</option>
                             <option value="Belgium">Beglium</option>
-                            <option value="California (USA)">California (USA)</option>
+                            <option value="BritishColumbia">British Columbia (Canada)</option>
+                            <option value="California">California (USA)</option>
                             <option value="Chile">Chile</option>
                             <option value="Czech Republic">Czech Republic</option>
                             <option value="Denmark">Denmark</option>
@@ -112,7 +108,7 @@
                             <option value="Greece">Greece</option>
                             <option value="Hungary">Hungary</option>
                             <option value="Iceland">Iceland</option>
-                            <option value="Illinois (USA)">Illinois (USA)</option>
+                            <option value="Illinois">Illinois (USA)</option>
                             <option value="Ireland">Ireland</option>
                             <option value="Israel">Israel</option>
                             <option value="Italy">Italy</option>
@@ -121,64 +117,25 @@
                             <option value="Lithuania">Lithuania</option>
                             <option value="Luxembourg">Luxembourg</option>
                             <option value="Mexico">Mexico</option>
-                            <option value="Michigan (USA)">Michigan (USA)</option>
+                            <option value="Michigan">Michigan (USA)</option>
                             <option value="Netherlands">Netherlands</option>
-                            <option value="New York (USA)">New York (USA)</option>
+                            <option value="NewBrunswick">New Brunswick (Canada)</option>
+                            <option value="New York">New York (USA)</option>
                             <option value="New Zealand">New Zealand</option>
                             <option value="Norway">Norway</option>
+                            <option value="Ontario">Ontario (Canada)</option>
                             <option value="Poland">Poland</option>
                             <option value="Portugal">Portugal</option>
+                            <option value="Quebec">Quebec (Canada)</option>
                             <option value="Slovakia">Slovakia</option>
                             <option value="Slovenia">Slovenia</option>
                             <option value="Spain">Spain</option>
-                            <option value="South Korea">South Korea</option>
+                            <option value="SouthKorea">South Korea</option>
                             <option value="Sweden">Sweden</option>
                             <option value="Switzerland">Switzerland</option>
-                            <option value="Texas (USA)">Texas (USA)</option>
+                            <option value="Texas">Texas (USA)</option>
                             <option value="Turkey">Turkey</option>
-                            <option value="United Kingdom">United Kingdom</option>
-                            </select>
-                            <select name="Country 3" id="country3" style="display:none" onchange='countryChanger(this.value, 3)'>
-                            <option value="Country">Country/State 3</option>
-                            <option value="Australia">Australia</option>
-                            <option value="Austria">Austria</option>
-                            <option value="Belgium">Beglium</option>
-                            <option value="California (USA)">California (USA)</option>
-                            <option value="Chile">Chile</option>
-                            <option value="Czech Republic">Czech Republic</option>
-                            <option value="Denmark">Denmark</option>
-                            <option value="Estonia">Estonia</option>
-                            <option value="Finland">Finland</option>
-                            <option value="France">France</option>
-                            <option value="Germany">Germany</option>
-                            <option value="Greece">Greece</option>
-                            <option value="Hungary">Hungary</option>
-                            <option value="Iceland">Iceland</option>
-                            <option value="Illinois (USA)">Illinois (USA)</option>
-                            <option value="Ireland">Ireland</option>
-                            <option value="Israel">Israel</option>
-                            <option value="Italy">Italy</option>
-                            <option value="Japan">Japan</option>
-                            <option value="Latvia">Latvia</option>
-                            <option value="Lithuania">Lithuania</option>
-                            <option value="Luxembourg">Luxembourg</option>
-                            <option value="Mexico">Mexico</option>
-                            <option value="Michigan (USA)">Michigan (USA)</option>
-                            <option value="Netherlands">Netherlands</option>
-                            <option value="New York (USA)">New York (USA)</option>
-                            <option value="New Zealand">New Zealand</option>
-                            <option value="Norway">Norway</option>
-                            <option value="Poland">Poland</option>
-                            <option value="Portugal">Portugal</option>
-                            <option value="Slovakia">Slovakia</option>
-                            <option value="Slovenia">Slovenia</option>
-                            <option value="Spain">Spain</option>
-                            <option value="South Korea">South Korea</option>
-                            <option value="Sweden">Sweden</option>
-                            <option value="Switzerland">Switzerland</option>
-                            <option value="Texas (USA)">Texas (USA)</option>
-                            <option value="Turkey">Turkey</option>
-                            <option value="United Kingdom">United Kingdom</option>
+                            <option value="UnitedKingdom">United Kingdom</option>
                             </select>
                         </td>
                     </tr>
