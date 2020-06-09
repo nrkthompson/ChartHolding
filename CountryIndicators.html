@@ -86,6 +86,7 @@
 								x: 10,
 								y: line[1]
 						    });
+						    console.log(window.data1);
 						} else if (line[0].includes(window.countries[1])) {
 						    window.data2.push({
 								x: 1,
@@ -171,6 +172,7 @@
 						}
 				}
 			});
+		}
 		window.myData = {
 			datasets: [{
 					label: window.country1,
@@ -192,7 +194,6 @@
 					data: window.data3
 				}]
 		};
-		}
 		window.onload = function onboard() {
 			setTimeout(() => { 
 				console.log(window.myData);
