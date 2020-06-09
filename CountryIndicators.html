@@ -29,6 +29,9 @@
 	      0: 'Insufficient Data', 1: 'Level 1 (Most Restrictive)', 2: 'Level 2', 3: 'Level 3', 4: 'Level 4', 5: 'Level 5 (Least Restrictive)'
 	    };
 	    window.countries = [];
+	    window.data1 = [];
+	    window.data2 = [];
+	    window.data3 = [];
 		window.addEventListener("message", receiveMessage, false);
 		function receiveMessage(event) {
 			console.log(String(event.data));
@@ -37,9 +40,6 @@
 			  window.countries.push(String(event.data).split(",")[1]);
 			  window.countries.push(String(event.data).split(",")[2]);
 			}
-			window.data1 = [];
-			window.data2 = [];
-			window.data3 = [];
 			d3.text("https://nrkthompson.github.io/ChartHolding/CountryIndicatorsSource.csv", "text/csv", function(text) {
 	      			var csv = d3.csv.parseRows(text);
 				for (var i = 0, len = csv.length; i < len; i++) {
