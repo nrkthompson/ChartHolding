@@ -166,7 +166,8 @@
 						    window.data3.push({
 								x: 10,
 								y: line[1]
-						    });   
+						    });  
+						    console.log(window.data3);
 						}
 				}
 			});
@@ -195,7 +196,6 @@
 		}, 1000);
 		window.onload = function onboard() {
 			setTimeout(() => { 
-				console.log(window.myData);
 				var ctx = document.getElementById('canvas').getContext('2d');
 				var myScatter = Chart.Scatter(ctx, {
 					data: window.myData,
