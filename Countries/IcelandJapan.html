@@ -1,0 +1,151 @@
+  
+<!doctype html>
+<html style="margin: 0 auto; disaply: block; height: 98%;  width: 95%;">
+
+<head>
+	<title>Scatter Chart</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+	<style>
+	canvas {
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		-ms-user-select: none;
+	}
+	</style>
+</head>
+
+<body style="margin: 0 auto; disaply: block; height: 100%;" id="bodyID">
+	<div style="margin: 0 auto; disaply: block; height: 100%;">
+		<canvas id="canvas"></canvas>
+	</div>
+	<script>
+	    var xLabels = {
+	      0: '', 1: 'Country Average', 2: 'Stores/Non-Essential Businesses', 3: 'Schooling/Youth Activities',
+	      4: 'Eateries', 5: 'Leisure Activities', 6: 'Contact Services', 7: 'Manufacturing/Construction',
+	      8: 'Gatherings', 9: 'Borders/Movement', 10: 'Cultural', 11: ''
+	    };
+	    var yLabels = {
+	      0: 'Insufficient Data', 1: 'Level 1 (Most Restrictive)', 2: 'Level 2', 3: 'Level 3', 4: 'Level 4', 5: 'Level 5 (Least Restrictive)'
+	    };
+    function generateData(country, offset) {
+          var data = [];
+          d3.text("https://nrkthompson.github.io/ChartHolding/Data/CountryIndicatorsSource.csv", "text/csv", function(text) {
+                  var csv = d3.csv.parseRows(text);
+                  for (var i = 0, len = csv.length; i < len; i++) {
+                  var line = csv[i];
+                    if (line[0].includes(country)) {
+                        data.push({
+                        x: 1+offset,
+                        y: line[12]
+                        });
+                        data.push({
+                        x: 2+offset,
+                        y: line[9]
+                        });
+                        data.push({
+                        x: 3+offset,
+                        y: line[8]
+                        });
+                        data.push({
+                        x: 4+offset,
+                        y: line[7]
+                        });
+                        data.push({
+                        x: 5+offset,
+                        y: line[6]
+                        });
+                        data.push({
+                        x: 6+offset,
+                        y: line[5]
+                        });
+                        data.push({
+                        x: 7+offset,
+                        y: line[4]
+                        });
+                        data.push({
+                        x: 8+offset,
+                        y: line[3]
+                        });
+                        data.push({
+                        x: 9,
+                        y: line[2]
+                        });
+                        data.push({
+                        x: 10+offset,
+                        y: line[1]
+                        });
+                    } 
+		  }
+          });
+          return data;
+        }
+    var URL = "https://nrkthompson.github.io/ChartHolding/Data/CountryIndicatorsSource.csv";
+		var scatterChartData = {
+			datasets: [{
+					label: 'Iceland',
+					pointRadius: 6,
+					borderColor: '#04297a',
+					backgroundColor: '#04297a',
+					data: generateData("Iceland", -0.05)
+				}, {
+					label: 'Japan',
+					pointRadius: 6,
+					borderColor: '#34baeb',
+					backgroundColor: '#34baeb',
+					data: generateData("Japan", 0.05)
+				}]
+		};
+		window.onload = function onboard() {
+			setTimeout(() => { 
+				var ctx = document.getElementById('canvas').getContext('2d');
+				var myScatter = Chart.Scatter(ctx, {
+					data: scatterChartData,
+					options: {
+						maintainAspectRatio: false,
+						responsive: true,
+						tooltips: {
+						    callbacks: {
+							label: function(tooltipItem, data) {
+							    var label = data.datasets[tooltipItem.datasetIndex].label;
+							    return label;
+							}
+						    }
+						},
+						legend: {
+							display: true
+						},
+						title: {
+							display: true,
+							text: 'Comparison of Level of Reopening by Sector Among Selected Regions'
+						},
+						scales: {
+						      yAxes: [{
+							  ticks: {
+							      min: 0,
+							      max: 5,
+							      stepSize: 1,
+							      callback: function(value, index, values) {
+								  return yLabels[value];
+							      }
+							  }
+						      }],
+						      xAxes: [{
+							  ticks: {
+							      min: 0,
+							      max: 11,
+							      stepSize: 1,
+							      callback: function(value, index, values) {
+								  return xLabels[value];
+							      }
+							  }
+						      }]
+						  }
+					}
+				});
+			}, 500);
+		};
+	</script>
+</body>
+
+</html>
