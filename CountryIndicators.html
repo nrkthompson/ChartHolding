@@ -44,6 +44,7 @@
 				for (var i = 0, len = csv.length; i < len; i++) {
 					var line = csv[i];
 						if (line[0].includes(window.country1)) {
+						    console.log("Working1");
 						    data1.push({
 								x: 1,
 								y: line[12]
@@ -196,6 +197,7 @@
 		};
 		window.onload = function onboard() {
 			setTimeout(() => { 
+				console.log(window.myData);
 				var ctx = document.getElementById('canvas').getContext('2d');
 				var myScatter = Chart.Scatter(ctx, {
 					data: window.myData,
@@ -238,7 +240,7 @@
 						  }
 					}
 				});
-			}, 500);
+			}, 1000);
 		};
 	</script>
 </body>
