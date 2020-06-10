@@ -36,11 +36,21 @@ body {font-family: Arial;}
 
 /* Style the tab content */
 .tabcontent {
-  display: none;
+  display: block;
   border: 1px solid #ccc;
   border-top: none;
 }
 </style>
+<script>
+  function openTab(evt, URL) {
+    document.getElementById("displayPage").src = URL;
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    evt.currentTarget.className += " active"
+  }
+</script>
 </head>
 <body>
 <div class="tab" style="height:5%; width:100%;">
@@ -51,18 +61,6 @@ body {font-family: Arial;}
 <div class="tabcontent" style="height:95%; width:100%;">
   <iframe id="displayPage" src="https://nrkthompson.github.io/ChartHolding/IndicatorsJune5.html" style="margin: 0 auto; disaply: block; height:100%; width:100%;" frameBorder="0">
 </div>
-
-
-<script>
-function openTab(evt, URL) {
-  document.getElementById("displayPage").src = URL;
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  evt.currentTarget.className += " active"
-}
-</script>
    
 </body>
 </html>
