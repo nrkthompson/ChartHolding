@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html style="margin: 0 auto; display:block; height:99%; width:99%;">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: block;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+</style>
+<script>
+  function openTab(evt, URL) {
+    document.getElementById("displayPage").src = URL;
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    evt.currentTarget.className += " active"
+  }
+</script>
+</head>
+<body style="margin: 0 auto; display: block; height:100%; width:100%;">
+<div class="tab" style="height:5%; width:100%;">
+  <button class="tablinks" onclick="openTab(event, '')">Foreword</button>
+  <button class="tablinks active" onclick="openTab(event, 'https://nrkthompson.github.io/ChartHolding/Dashboard.html')">Main Dashboard</button>
+  <button class="tablinks" onclick="openTab(event, '')">Country Summaries</button>
+  <button class="tablinks" onclick="openTab(event, '')">About</button>
+</div>
+<div class="tabcontent" style="height:95%; width:100%;">
+  <iframe id="displayPage" src="https://nrkthompson.github.io/ChartHolding/Dashboard.html" style="margin: 0 auto; disaply: block; height:100%; width:100%;" frameBorder="0">
+</div>
+   
+</body>
+</html>
