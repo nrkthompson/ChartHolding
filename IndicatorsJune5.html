@@ -12,17 +12,6 @@
 		-ms-user-select: none;
 	}
 	</style>
-	<script>
-	      var myVar;
-	      function myFunction2() {
-		myVar = setTimeout(showPage, 3000);
-	      }
-
-	      function showPage() {
-		document.getElementById("loader").style.display = "none";
-		document.getElementById("page").style.display = "block";
-	      }
-    	</script>
 
 </head>
 <style>
@@ -55,9 +44,8 @@
   }
     
 </style>
-<body style="margin: 0 auto; disaply: block; height: 100%;" id="bodyID" onload="myFunction2()">
-	<div id="loader"></div>
-	<div class="animate-bottom" id="page" style="margin: 0 auto; display: none; height: 100%;">
+<body style="margin: 0 auto; disaply: block; height: 100%;" id="bodyID">
+	<div style="margin: 0 auto; display: block; height: 100%;">
 		<canvas id="canvas"></canvas>
 	</div>
 	<script>
