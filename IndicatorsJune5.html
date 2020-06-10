@@ -12,10 +12,52 @@
 		-ms-user-select: none;
 	}
 	</style>
-</head>
+	<script>
+	      var myVar;
+	      function myFunction2() {
+		myVar = setTimeout(showPage, 3000);
+	      }
 
+	      function showPage() {
+		document.getElementById("loader").style.display = "none";
+		document.getElementById("page").style.display = "block";
+	      }
+    	</script>
+
+</head>
+<style>
+  /* Center the loader */
+  #loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+    
+</style>
 <body style="margin: 0 auto; disaply: block; height: 100%;" id="bodyID">
-	<div style="margin: 0 auto; disaply: block; height: 100%;">
+	<div id="loader"></div>
+	<div class="animate-bottom" id="page" style="margin: 0 auto; disaply: none; height: 100%;">
 		<canvas id="canvas"></canvas>
 	</div>
 	<script>
