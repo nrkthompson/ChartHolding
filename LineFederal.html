@@ -43,7 +43,7 @@
 					    d3.text("https://nrkthompson.github.io/ChartHolding/Data/SocDist.csv", "text/csv", function(data) {
 						  var csv2 = d3.csv.parseRows(data);
 						  for (var z = 1, len2 = csv2.length; z <len2; z++) {
-						  	national.push((csv2[z][1]*100).toFixed(2));
+						  	national.push((csv2[z][1]*1).toFixed(2));
 						  }
 						  window.myData = {
 						  labels: labelNames,
