@@ -31,13 +31,13 @@
 					  for (var i = 0, len = csv1.length; i < len; i++) {
 					  	if (csv1[i][5].includes("Ontario")) {
 							labelNames.push(String(csv1[i][4]));
-							on.push((csv1[i][2]).toFixed(2));
+							on.push((csv1[i][2]*1).toFixed(2));
 					  	} else if (csv1[i][5].includes("Quebec")) {
-					      qc.push((csv1[i][2]).toFixed(2));
+					      qc.push((csv1[i][2]*1).toFixed(2));
 					      } else if (csv1[i][5].includes("West")) {
-					      west.push((csv1[i][2]).toFixed(2));
+					      west.push((csv1[i][2]*1).toFixed(2));
 					      } else if (csv1[i][5].includes("Atlantic")) {
-					      atlantic.push((csv1[i][2]).toFixed(2));
+					      atlantic.push((csv1[i][2]*1).toFixed(2));
 					      }
 									  }
 					    d3.text("https://nrkthompson.github.io/ChartHolding/Data/SocDist.csv", "text/csv", function(data) {
