@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html style="margin: 0 auto; display:block; height:99%; width:99%;">
+<head>
+  <script>
+    function countryChanger(inputCountry) {
+        if (inputCountry != "Country") {
+          document.getElementById('frame').src = "https://nrkthompson.github.io/ChartHolding/Summaries/".concat(inputCountry).concat(".html");
+          }
+      }
+  </script>
+</head>
+<body style="margin: 0 auto; display:block; height:100%; width:100%; font-family: Helvetica Neue, Helvetica, Arial, sans-serif; color: #666;">
+<table style="margin: 0 auto; display:block; height:75%; width:75%; padding: 70px; table-layout:fixed; border-collapse: collapse;">
+  <tbody style="height:100%; width:100%; display:block;">
+    <tr style="height:5%; width:100%; display:block;">
+      <td style="width:100%">
+                                  <select id="country" style="display:inline" onchange='countryChanger(this.value)'>
+                                  <option value="Country">Jurisdiction</option>
+                                  <option value="TheEastCoastandMidwest">The East Coast and Midwest (USA)</option>
+                                  <option value="TheWestCoastandSouth">The West Coast and South (USA)</option>
+                                  <option value="Australia">Australia</option>
+                                  <option value="Austria">Austria</option>
+                                  <option value="Belgium">Belgium</option>
+                                  <option value="Chile">Chile</option>
+                                  <option value="CzechRepublic">Czech Republic</option>
+                                  <option value="Denmark">Denmark</option>
+                                  <option value="Estonia">Estonia</option>
+                                  <option value="Finland">Finland</option>
+                                  <option value="France">France</option>
+                                  <option value="Germany">Germany</option>
+                                  <option value="Greece">Greece</option>
+                                  <option value="Hungary">Hungary</option>
+                                  <option value="Iceland">Iceland</option>
+                                  <option value="Ireland">Ireland</option>
+                                  <option value="Israel">Israel</option>
+                                  <option value="Italy">Italy</option>
+                                  <option value="Japan">Japan</option>
+                                  <option value="Latvia">Latvia</option>
+                                  <option value="Lithuania">Lithuania</option>
+                                  <option value="Luxembourg">Luxembourg</option>
+                                  <option value="Mexico">Mexico</option>
+                                  <option value="Netherlands">Netherlands</option>
+                                  <option value="NewZealand">New Zealand</option>
+                                  <option value="Norway">Norway</option>
+                                  <option value="Poland">Poland</option>
+                                  <option value="Portugal">Portugal</option>
+                                  <option value="Slovakia">Slovakia</option>
+                                  <option value="Slovenia">Slovenia</option>
+                                  <option value="Spain">Spain</option>
+                                  <option value="SouthKorea">South Korea</option>
+                                  <option value="Sweden">Sweden</option>
+                                  <option value="Switzerland">Switzerland</option>
+                                  <option value="Turkey">Turkey</option>
+                                  <option value="TheUnitedKingdom">United Kingdom</option>
+                                  </select>
+      </td>
+    </tr>
+    <tr style="height:95%; width:100%; display:block;">
+      <td style="height:100%; width:100%; display:block;">
+        <iframe id="frame" src="https://nrkthompson.github.io/ChartHolding/SummariesTest.html" style="height:100%; width:100%; display:block;" frameBorder="0"></iframe>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
