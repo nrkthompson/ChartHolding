@@ -4,14 +4,7 @@
   <script>
     function countryChanger(inputCountry) {
         if (inputCountry != "Country") {
-          var date = document.getElementById('date').value;
-          document.getElementById('frame').src = "https://nrkthompson.github.io/ChartHolding/Summaries/".concat(inputCountry).concat(date).concat(".html");
-          }
-      }
-    function dateChanger(date) {
-        var inputCountry = document.getElementById('country').value;
-        if (inputCountry != "Country") {
-          document.getElementById('frame').src = "https://nrkthompson.github.io/ChartHolding/Summaries/".concat(inputCountry).concat(date).concat(".html");
+          document.getElementById('frame').src = "https://nrkthompson.github.io/ChartHolding/Summaries/".concat(inputCountry).concat(".html");
           }
       }
   </script>
@@ -59,13 +52,6 @@
                                   <option value="Switzerland">Switzerland</option>
                                   <option value="Turkey">Turkey</option>
                                   <option value="TheUnitedKingdom">United Kingdom</option>
-                                  </select>
-                                  <select id="date" style="display:inline" onchange='dateChanger(this.value)'>
-                                  <option value="5">June 19, 2020</option>
-                                  <option value="4">June 12, 2020</option>
-                                  <option value="3">June 5, 2020</option>
-                                  <option value="2">May 29, 2020</option>
-                                  <option value="1">May 22, 2020</option>
                                   </select>
       </td>
     </tr>
