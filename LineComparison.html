@@ -1,0 +1,90 @@
+<!doctype html>
+<html style="margin: 0 auto; disaply: block; height:98%;  width:98%;">
+
+	<head>
+		<title>Line Chart Multiple Axes</title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+		<style>
+		canvas {
+			-moz-user-select: none;
+			-webkit-user-select: none;
+			-ms-user-select: none;
+		}
+		</style>
+	</head>
+
+	<body style="margin: 0 auto; disaply: block; height: 100%;  width: 100%;">
+		<div style="margin: 0 auto; disaply: block; height: 100%;  width: 100%;">
+			<canvas id="canvas"></canvas>
+		</div>
+		<script>
+			function dataMaker() {
+				d3.text("https://nrkthompson.github.io/ChartHolding/Data/SocDistAge.csv", "text/csv", function(text) {
+					  var csv1 = d3.csv.parseRows(text);
+					  var labelNames = [];
+            var overall = [];
+					  var youngest = [];
+					  for (var i = 0, len = csv1.length; i < len; i++) {
+					  	if (csv1[i][5].includes("18-34")) {
+							labelNames.push(String(csv1[i][4]));
+							youngest.push((csv1[i][0]*100).toFixed(2));
+					  	} else if (csv1[i][5].includes("35-54")) {
+					      younger.push((csv1[i][0]*100).toFixed(2));
+					      } else if (csv1[i][5].includes("55+")) {
+					      young.push((csv1[i][0]*100).toFixed(2));
+									  }
+					  }
+				});
+			}
+			dataMaker();
+			window.onload = function() {
+						setTimeout(() => { 
+							var ctx = document.getElementById('canvas').getContext('2d');
+							window.myLine = Chart.Line(ctx, {
+							  data: window.myData,
+							  options: {
+							    responsive: true,
+							    hoverMode: 'index',
+							    stacked: false,
+							    maintainAspectRatio: false,
+							    tooltips: {
+								callbacks: {
+								    label: function(tooltipItem, data) {
+									return data.datasets[tooltipItem.datasetIndex].label.concat(" - ").concat(data.datasets[tooltipItem.datasetIndex]['data'][tooltipItem.index] + '%');
+								    }
+								}
+							    },
+							    legend: {
+								    display: true
+							    },
+							    title: {
+								display: false,
+								text: 'Western Canada',
+								padding: 5
+							     },
+							     scales: {
+								      yAxes: [{
+									  ticks: {
+									      min: 0,
+									      max: 100,
+									      stepSize: 25,
+									      callback: function(value, index, values) {
+										  return value + '%';
+									      }
+									  }
+								      }],
+								      xAxes: [{
+									  ticks: {
+									      display: true
+									  }
+								      }]
+								  }
+							   }
+							 });
+						}, 3000);
+				};
+		</script>
+	</body>
+
+</html>
