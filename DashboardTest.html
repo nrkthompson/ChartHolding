@@ -14,6 +14,19 @@
           text4.style.display = "none";
           text5.style.display = "none";
           document.getElementById('indicators').src = "https://nrkthompson.github.io/ChartHolding/Countries/CountryCountry.html";
+          document.getElementById('bottomRow').innerHTML = `
+                 <td>
+                    <table style="width:100%; height:100%; font-family: Helvetica Neue, Helvetica, Arial, sans-serif; text-align:center; table-layout:fixed;  border: 1px solid black; border-collapse: collapse;">
+                        <tr style="height:100%;  border: 1px solid black;">
+                            <td style="width:33%;  border: 1px solid black;">
+                            </td>
+                            <td style="width:34%;  border: 1px solid black;">
+                            </td>
+                            <td style="width:33%;  border: 1px solid black;">
+                            </td>
+                        </tr>
+                    </table>
+                </td>`
         } else {
           var original = document.getElementById('weeks').value;
           document.getElementById('indicators').src = original;
@@ -21,6 +34,85 @@
           text2.style.display = "none";
           text4.style.display = "inline";
           text5.style.display = "inline";
+          document.getElementById('bottomRow').innerHTML = `
+                 <td>
+                    <table style="width:100%; height:100%; font-family: Helvetica Neue, Helvetica, Arial, sans-serif; text-align:center; table-layout:fixed;  border: 1px solid black; border-collapse: collapse;">
+                        <tr style="height:100%;  border: 1px solid black;">
+                            <td style="width:33%;  border: 1px solid black;">
+                                <table style="table-layout:fixed; height:100%; width:100%; margin: 0 auto; disaply: block;">
+                                <tr style="height:4%;">
+                                    <th style="width:100%" colspan="3">
+                                        Aggregate Measure of Participation in Social Distancing (Canada)
+                                    </th>
+                                </tr>
+                                <tr style="height:4%;">
+                                    <td style="width:100%; text-align:left;" colspan="3">
+                                        <select name="Keyword" id="Keyword" style="display:inline" onchange="dataChanger(this.value, 'socialMedia')">
+                                        <option value="https://nrkthompson.github.io/ChartHolding/LineByAge.html">By Age</option>
+                                        <option value="https://nrkthompson.github.io/ChartHolding/LineByRegion.html">By Region</option>
+                                        <option value="https://nrkthompson.github.io/ChartHolding/LineByGender.html">By Gender</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr style="height:92%;">
+                                    <td style="width:100%" colspan="3">
+                                        <iframe id="socialMedia" src="https://nrkthompson.github.io/ChartHolding/LineByAge.html" style="height:100%; width:100%; display:inline;" frameBorder="0"></iframe>
+                                    </td>
+                                </tr>
+                                </table>
+                            </td>
+                            <td style="width:34%;  border: 1px solid black;">
+                              <table style="height:100%; width:100%;">
+                                   <tr style="height:4%;">
+                                          <th style="width:100%" colspan="2">
+                                              Daily Percent of Tweets by Topic (Canada)
+                                          </th>
+                                    </tr>
+                                    <tr style="height:48%;">
+                                          <td style="width:50%">
+                                              <iframe src="https://nrkthompson.github.io/ChartHolding/LineCOVID.html" style="height:100%; width:100%;" frameBorder="0"></iframe>
+                                          </td>
+                                          <td style="width:50%">
+                                              <iframe src="https://nrkthompson.github.io/ChartHolding/LineEconomy.html" style="height:100%; width:100%;" frameBorder="0"></iframe>
+                                          </td>
+                                    </tr>
+                                    <tr style="height:48%;">
+                                          <td style="width:50%">
+                                              <iframe src="https://nrkthompson.github.io/ChartHolding/LineEnvironment.html" style="height:100%; width:100%;" frameBorder="0"></iframe>
+                                          </td>
+                                          <td style="width:50%">
+                                              <iframe src="https://nrkthompson.github.io/ChartHolding/LineHealth.html" style="height:100%; width:100%;" frameBorder="0"></iframe>
+                                          </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td style="width:33%;  border: 1px solid black;">
+                                <table style="height:100%; width:100%;">
+                                   <tr style="height:4%;">
+                                          <th style="width:100%">
+                                              Net Approval of Government Handling of the Pandemic - By Region
+                                          </th>
+                                    </tr>
+                                    <tr style="height:4%;">
+                                          <td style="width:100%; text-align:left; font-size: 12px;" colspan="3">
+                                              Choose Level of Government Rated:
+                                              <select name="Region" id="Region" style="display:inline" onchange="dataChanger(this.value, 'Approval')">
+                                              <option value="https://nrkthompson.github.io/ChartHolding/LineFederal.html">Federal</option>
+                                              <option value="https://nrkthompson.github.io/ChartHolding/LineProvincial.html">Provincial</option>
+                                              <option value="https://nrkthompson.github.io/ChartHolding/LineLocal.html">Local</option>
+                                              </select>
+                                          </td>
+                                      </tr>
+                                      <tr style="height:92%;">
+                                          <td style="width:100%" colspan="3">
+                                              <iframe id="Approval" src="https://nrkthompson.github.io/ChartHolding/LineFederal.html" style="height:100%; width:100%; display:inline;" frameBorder="0"></iframe>
+                                          </td>
+                                       </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>`
         }
       }
       function dataChanger(inputValue, identifier) {
@@ -200,7 +292,7 @@
                     </table>
                 </td>
             </tr>
-            <tr style="width:100%; height:55%; font-family: Helvetica Neue, Helvetica, Arial, sans-serif; text-align:center;">
+            <tr id="bottomRow" style="width:100%; height:55%; font-family: Helvetica Neue, Helvetica, Arial, sans-serif; text-align:center;">
                 <td>
                     <table style="width:100%; height:100%; font-family: Helvetica Neue, Helvetica, Arial, sans-serif; text-align:center; table-layout:fixed;  border: 1px solid black; border-collapse: collapse;">
                         <tr style="height:100%;  border: 1px solid black;">
