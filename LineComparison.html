@@ -26,26 +26,24 @@
             				  var country1 = [];
 					  var country2 = [];
 					  for (var i = 1, len = csv1.length; i < len; i++) {
-						console.log(csv1[i][13]);
-					  	if (csv1[i][-1]*1 == 1) {
-							console.log(csv1[i][0]);
+					  	if (csv1[i][13]*1 == 1) {
 							if (csv1[i][0].includes("France")) {
 								labelNames.push("May 22");
-								if (csv1[i][-2].includes("insufficient")) {
+								if (csv1[i][12].includes("insufficient")) {
 									country1.push(null);
 								} else {
-									country1.push(csv1[i][-2]*1);
+									country1.push(csv1[i][12]*1);
 								}
 							}
 							if (csv1[i][0].includes("Germany")) {
-								if (csv1[i][-2].includes("insufficient")) {
+								if (csv1[i][12].includes("insufficient")) {
 									country2.push(null);
 								} else {
-									country2.push(csv1[i][-2]*1);
+									country2.push(csv1[i][12]*1);
 								};
 							}
 						}
-						if (csv1[i][-1]*1 == 2) {
+						if (csv1[i][13]*1 == 2) {
 							if (labelNames.length == 0) {
 								labelNames.push("May 22")
 							}
@@ -57,21 +55,21 @@
 							}
 							if (csv1[i][0].includes("France")) {
 								labelNames.push("May 29");
-								if (csv1[i][-2].includes("insufficient")) {
+								if (csv1[i][12].includes("insufficient")) {
 									country1.push(null);
 								} else {
-									country1.push(csv1[i][-2]*1);
+									country1.push(csv1[i][12]*1);
 								}
 							}
 							if (csv1[i][0].includes("Germany")) {
-								if (csv1[i][-2].includes("insufficient")) {
+								if (csv1[i][12].includes("insufficient")) {
 									country2.push(null);
 								} else {
-									country2.push(csv1[i][-2]*1);
+									country2.push(csv1[i][12]*1);
 								};
 							}
 						}
-						if (csv1[i][-1]*1 == 3) {
+						if (csv1[i][13]*1 == 3) {
 							if (labelNames.length == 1) {
 								labelNames.push("May 29")
 							}
@@ -83,21 +81,21 @@
 							}
 							if (csv1[i][0].includes("France")) {
 								labelNames.push("June 5");
-								if (csv1[i][-2].includes("insufficient")) {
+								if (csv1[i][12].includes("insufficient")) {
 									country1.push(null);
 								} else {
-									country1.push(csv1[i][-2]*1);
+									country1.push(csv1[i][12]*1);
 								}
 							}
 							if (csv1[i][0].includes("Germany")) {
-								if (csv1[i][-2].includes("insufficient")) {
+								if (csv1[i][12].includes("insufficient")) {
 									country2.push(null);
 								} else {
-									country2.push(csv1[i][-2]*1);
+									country2.push(csv1[i][12]*1);
 								};
 							}
 						}
-						if (csv1[i][-1]*1 == 4) {
+						if (csv1[i][13]*1 == 4) {
 							if (labelNames.length == 2) {
 								labelNames.push("June 5")
 							}
@@ -109,21 +107,21 @@
 							}
 							if (csv1[i][0].includes("France")) {
 								labelNames.push("June 12");
-								if (csv1[i][-2].includes("insufficient")) {
+								if (csv1[i][12].includes("insufficient")) {
 									country1.push(null);
 								} else {
-									country1.push(csv1[i][-2]*1);
+									country1.push(csv1[i][12]*1);
 								}
 							}
 							if (csv1[i][0].includes("Germany")) {
-								if (csv1[i][-2].includes("insufficient")) {
+								if (csv1[i][12].includes("insufficient")) {
 									country2.push(null);
 								} else {
-									country2.push(csv1[i][-2]*1);
+									country2.push(csv1[i][12]*1);
 								};
 							}
 						}
-						if (csv1[i][-1]*1 == 5) {
+						if (csv1[i][13]*1 == 5) {
 							if (labelNames.length == 3) {
 								labelNames.push("June 12")
 							}
@@ -135,17 +133,17 @@
 							}
 							if (csv1[i][0].includes("France")) {
 								labelNames.push("June 19");
-								if (csv1[i][-2].includes("insufficient")) {
+								if (csv1[i][12].includes("insufficient")) {
 									country1.push(null);
 								} else {
-									country1.push(csv1[i][-2]*1);
+									country1.push(csv1[i][12]*1);
 								}
 							}
 							if (csv1[i][0].includes("Germany")) {
-								if (csv1[i][-2].includes("insufficient")) {
+								if (csv1[i][12].includes("insufficient")) {
 									country2.push(null);
 								} else {
-									country2.push(csv1[i][-2]*1);
+									country2.push(csv1[i][12]*1);
 								};
 							}
 						}
