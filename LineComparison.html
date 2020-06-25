@@ -174,7 +174,7 @@
 			window.onload = function() {
 						setTimeout(() => { 
 							var yLabels = {
-							      0: '', 1: 'Level 1 (Most Restrictive)', 2: 'Level 2', 3: 'Level 3', 4: 'Level 4', 5: 'Level 5 (Least Restrictive)'
+							      1: 'Level 1 (Most Restrictive)', 2: 'Level 2', 3: 'Level 3', 4: 'Level 4', 5: 'Level 5 (Least Restrictive)'
 							};
 							var ctx = document.getElementById('canvas').getContext('2d');
 							window.myLine = Chart.Line(ctx, {
@@ -187,7 +187,7 @@
 							    tooltips: {
 								callbacks: {
 								    label: function(tooltipItem, data) {
-									return data.datasets[tooltipItem.datasetIndex].label.concat(" - ").concat(data.datasets[tooltipItem.datasetIndex]['data'][tooltipItem.index] + '%');
+									return data.datasets[tooltipItem.datasetIndex].label.concat(" - Level ").concat(data.datasets[tooltipItem.datasetIndex]['data'][tooltipItem.index]);
 								    }
 								}
 							    },
