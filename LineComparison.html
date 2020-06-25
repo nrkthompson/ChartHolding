@@ -25,7 +25,8 @@
 					  var labelNames = [];
             				  var country1 = [];
 					  var country2 = [];
-					  for (var i = 0, len = csv1.length; i < len; i++) {
+					  for (var i = 1, len = csv1.length; i < len; i++) {
+						console.log(csv1[i][-1]);
 					  	if (csv1[i][-1]*1 == 1) {
 							console.log(csv1[i][0]);
 							if (csv1[i][0].includes("France")) {
