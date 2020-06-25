@@ -27,6 +27,7 @@
 					  var country2 = [];
 					  for (var i = 0, len = csv1.length; i < len; i++) {
 					  	if (csv1[i][-1]*1 == 1) {
+							console.log(csv1[i][0]);
 							if (csv1[i][0].includes("France")) {
 								labelNames.push("May 22");
 								if (csv1[i][-2].includes("insufficient")) {
@@ -148,8 +149,8 @@
 							}
 						}
 					  }
-					console.log(country1)
-					console.log(country2)
+					console.log(country1);
+					console.log(country2);
 					window.myData = {
 						  labels: labelNames,
 						  datasets: [{
