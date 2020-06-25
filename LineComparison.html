@@ -20,20 +20,133 @@
 		</div>
 		<script>
 			function dataMaker() {
-				d3.text("https://nrkthompson.github.io/ChartHolding/Data/SocDistAge.csv", "text/csv", function(text) {
+				d3.text("https://nrkthompson.github.io/ChartHolding/Data/CountryIndicatorsHistorical.csv", "text/csv", function(text) {
 					  var csv1 = d3.csv.parseRows(text);
 					  var labelNames = [];
-            var overall = [];
-					  var youngest = [];
+            				  var country1 = [];
+					  var country2 = [];
 					  for (var i = 0, len = csv1.length; i < len; i++) {
-					  	if (csv1[i][5].includes("18-34")) {
-							labelNames.push(String(csv1[i][4]));
-							youngest.push((csv1[i][0]*100).toFixed(2));
-					  	} else if (csv1[i][5].includes("35-54")) {
-					      younger.push((csv1[i][0]*100).toFixed(2));
-					      } else if (csv1[i][5].includes("55+")) {
-					      young.push((csv1[i][0]*100).toFixed(2));
-									  }
+					  	if (csv1[i][-1]*1 == 1) {
+							if (csv1[i][0].includes("France")) {
+								labelNames.push("May 22");
+								if (csv1[i][-2].includes("insufficient")) {
+									country1.push(null);
+								} else {
+									country1.push(csv1[i][-2]*1);
+								}
+							}
+							if (csv1[i][0].includes("Germany")) {
+								if (csv1[i][-2].includes("insufficient")) {
+									country2.push(null);
+								} else {
+									country2.push(csv1[i][-2]*1);
+								};
+							}
+						}
+						if (csv1[i][-1]*1 == 2) {
+							if (labelNames.length == 0) {
+								labelNames.push("May 22")
+							}
+							if (country1.length == 0) {
+								labelNames.push(null)
+							}
+							if (country2.length == 0) {
+								labelNames.push(null)
+							}
+							if (csv1[i][0].includes("France")) {
+								labelNames.push("May 29");
+								if (csv1[i][-2].includes("insufficient")) {
+									country1.push(null);
+								} else {
+									country1.push(csv1[i][-2]*1);
+								}
+							}
+							if (csv1[i][0].includes("Germany")) {
+								if (csv1[i][-2].includes("insufficient")) {
+									country2.push(null);
+								} else {
+									country2.push(csv1[i][-2]*1);
+								};
+							}
+						}
+						if (csv1[i][-1]*1 == 3) {
+							if (labelNames.length == 1) {
+								labelNames.push("May 29")
+							}
+							if (country1.length == 1) {
+								labelNames.push(null)
+							}
+							if (country2.length == 1) {
+								labelNames.push(null)
+							}
+							if (csv1[i][0].includes("France")) {
+								labelNames.push("June 5");
+								if (csv1[i][-2].includes("insufficient")) {
+									country1.push(null);
+								} else {
+									country1.push(csv1[i][-2]*1);
+								}
+							}
+							if (csv1[i][0].includes("Germany")) {
+								if (csv1[i][-2].includes("insufficient")) {
+									country2.push(null);
+								} else {
+									country2.push(csv1[i][-2]*1);
+								};
+							}
+						}
+						if (csv1[i][-1]*1 == 4) {
+							if (labelNames.length == 2) {
+								labelNames.push("June 5")
+							}
+							if (country1.length == 2) {
+								labelNames.push(null)
+							}
+							if (country2.length == 2) {
+								labelNames.push(null)
+							}
+							if (csv1[i][0].includes("France")) {
+								labelNames.push("June 12");
+								if (csv1[i][-2].includes("insufficient")) {
+									country1.push(null);
+								} else {
+									country1.push(csv1[i][-2]*1);
+								}
+							}
+							if (csv1[i][0].includes("Germany")) {
+								if (csv1[i][-2].includes("insufficient")) {
+									country2.push(null);
+								} else {
+									country2.push(csv1[i][-2]*1);
+								};
+							}
+						}
+						if (csv1[i][-1]*1 == 5) {
+							if (labelNames.length == 3) {
+								labelNames.push("June 12")
+							}
+							if (country1.length == 3) {
+								labelNames.push(null)
+							}
+							if (country2.length == 3) {
+								labelNames.push(null)
+							}
+							if (csv1[i][0].includes("France")) {
+								labelNames.push("June 19");
+								if (csv1[i][-2].includes("insufficient")) {
+									country1.push(null);
+								} else {
+									country1.push(csv1[i][-2]*1);
+								}
+							}
+							if (csv1[i][0].includes("Germany")) {
+								if (csv1[i][-2].includes("insufficient")) {
+									country2.push(null);
+								} else {
+									country2.push(csv1[i][-2]*1);
+								};
+							}
+						}
 					  }
 				});
 			}
