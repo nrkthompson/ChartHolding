@@ -30,13 +30,13 @@
                                         <select name="sector1" id="sector1" style="display:inline" onchange="linkChanger(this.value, 'country1')">
                                         <option value="Stores">Stores/Non-Essential Businesses</option>
                                         <option value="Schools">Schooling/Youth Activities</option>
-                                        <option value="Activities">Eateries</option>
+                                        <option value="Eateries">Eateries</option>
                                         <option value="Leisure">Leisure Activities</option>
-                                        <option value="Contact.html">Contact Services</option>
+                                        <option value="Contact">Contact Services</option>
                                         <option value="Manufacturing">Manufacturing/Construction</option>
                                         <option value="Gatherings">Gatherings</option>
-                                        <option value="Borders.html">Borders/Movement</option>
-                                        <option value="Cultural.html">Cultural</option>
+                                        <option value="Borders">Borders/Movement</option>
+                                        <option value="Cultural">Cultural</option>
                                         </select>
                                     </td>
                                 </tr>
@@ -56,17 +56,17 @@
                                 </tr>
                                 <tr style="height:4%;">
                                     <td style="width:100%; text-align:left;" colspan="3">
-                                        <select name="sectorcomparison" id="sectorcomparison" style="display:inline" onchange="linkChanger(this.value, 'countryiesovertime')">
+                                        <select name="sectorComparison" id="sectorcomparison" style="display:inline" onchange="linkChanger(this.value, 'countryiesovertime')">
                                         <option value="Average">Jurisdiction Average</option>
                                         <option value="Stores">Stores/Non-Essential Businesses</option>
                                         <option value="Schools">Schooling/Youth Activities</option>
                                         <option value="Activities">Eateries</option>
                                         <option value="Leisure">Leisure Activities</option>
-                                        <option value="Contact.html">Contact Services</option>
+                                        <option value="Contact">Contact Services</option>
                                         <option value="Manufacturing">Manufacturing/Construction</option>
                                         <option value="Gatherings">Gatherings</option>
-                                        <option value="Borders.html">Borders/Movement</option>
-                                        <option value="Cultural.html">Cultural</option>
+                                        <option value="Borders">Borders/Movement</option>
+                                        <option value="Cultural">Cultural</option>
                                         </select>
                                     </td>
                                 </tr>
@@ -89,13 +89,13 @@
                                         <select name="sector2" id="sector2" style="display:inline" onchange="linkChanger(this.value, 'country2')">
                                         <option value="Stores">Stores/Non-Essential Businesses</option>
                                         <option value="Schools">Schooling/Youth Activities</option>
-                                        <option value="Activities">Eateries</option>
+                                        <option value="Eateries">Eateries</option>
                                         <option value="Leisure">Leisure Activities</option>
-                                        <option value="Contact.html">Contact Services</option>
+                                        <option value="Contact">Contact Services</option>
                                         <option value="Manufacturing">Manufacturing/Construction</option>
                                         <option value="Gatherings">Gatherings</option>
-                                        <option value="Borders.html">Borders/Movement</option>
-                                        <option value="Cultural.html">Cultural</option>
+                                        <option value="Borders">Borders/Movement</option>
+                                        <option value="Cultural">Cultural</option>
                                         </select>
                                     </td>
                                 </tr>
@@ -225,7 +225,13 @@
           var country1 = document.getElementById('country1').value;
           var country2 = inputCountry;
         }
+        var sector1 = document.getElementById('sector1').value;
+        var sector2 = document.getElementById('sector2').value;
+        var sectorComparison = document.getElementById('sectorComparison').value;
         document.getElementById('indicators').src = "https://nrkthompson.github.io/ChartHolding/Countries/".concat(country1).concat(country2).concat(".html");
+        document.getElementById('countrysector1').src = "https://nrkthompson.github.io/ChartHolding/Countries/".concat(country1).concat(sector1).concat(".html");
+        document.getElementById('countrysector2').src = "https://nrkthompson.github.io/ChartHolding/Countries/".concat(country2).concat(sector2).concat(".html");
+        document.getElementById('countriesovertime').src = "https://nrkthompson.github.io/ChartHolding/Countries/".concat(country1).concat(country2).concat(sectorComparison).concat(".html");
       }
       var myVar;
       function myFunction2() {
