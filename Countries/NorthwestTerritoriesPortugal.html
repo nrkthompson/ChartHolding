@@ -35,48 +35,118 @@
                   for (var i = 0, len = csv.length; i < len; i++) {
                   var line = csv[i];
                     if (line[0].includes(country)) {
-                        data.push({
-                        x: 1+offset,
-                        y: line[12]
-                        });
-                        data.push({
-                        x: 2+offset,
-                        y: line[9]
-                        });
-                        data.push({
-                        x: 3+offset,
-                        y: line[8]
-                        });
-                        data.push({
-                        x: 4+offset,
-                        y: line[7]
-                        });
-                        data.push({
-                        x: 5+offset,
-                        y: line[6]
-                        });
-                        data.push({
-                        x: 6+offset,
-                        y: line[5]
-                        });
-                        data.push({
-                        x: 7+offset,
-                        y: line[4]
-                        });
-                        data.push({
-                        x: 8+offset,
-                        y: line[3]
-                        });
-                        data.push({
-                        x: 9+offset,
-                        y: line[2]
-                        });
-                        data.push({
-                        x: 10+offset,
-                        y: line[1]
-                        });
-                    } 
+			if (line[12].includes("insufficient")) {
+				data.push({
+                        	x: 1+offset,
+                        	y: 0
+                        	});
+			} else {
+                        	data.push({
+                        	x: 1+offset,
+                        	y: line[12]
+                        	});
+			}
+			if (line[9].includes("insufficient")) {
+				data.push({
+                        	x: 2+offset,
+                        	y: 0
+                        	});
+			} else {
+                        	data.push({
+                        	x: 2+offset,
+                        	y: line[9]
+                        	});
+			}
+			if (line[8].includes("insufficient")) {
+				data.push({
+                        	x: 3+offset,
+                        	y: 0
+                        	});
+			} else {
+                        	data.push({
+                        	x: 3+offset,
+                        	y: line[8]
+                        	});
+			}
+			if (line[7].includes("insufficient")) {
+				data.push({
+                        	x: 4+offset,
+                        	y: 0
+                        	});
+			} else {
+                        	data.push({
+                        	x: 4+offset,
+                        	y: line[7]
+                        	});
+			}
+			if (line[6].includes("insufficient")) {
+				data.push({
+                        	x: 5+offset,
+                        	y: 0
+                        	});
+			} else {
+                        	data.push({
+                        	x: 5+offset,
+                        	y: line[6]
+                        	});
+			}
+			if (line[5].includes("insufficient")) {
+				data.push({
+                        	x: 6+offset,
+                        	y: 0
+                        	});
+			} else {
+                        	data.push({
+                        	x: 6+offset,
+                        	y: line[5]
+                        	});
+			}
+			if (line[4].includes("insufficient")) {
+				data.push({
+                        	x: 7+offset,
+                        	y: 0
+                        	});
+			} else {
+                        	data.push({
+                        	x: 7+offset,
+                        	y: line[4]
+                        	});
+			}
+			if (line[3].includes("insufficient")) {
+				data.push({
+                        	x: 8+offset,
+                        	y: 0
+                        	});
+			} else {
+                        	data.push({
+                        	x: 8+offset,
+                        	y: line[3]
+                        	});
+			}
+			if (line[2].includes("insufficient")) {
+				data.push({
+                        	x: 9+offset,
+                        	y: 0
+                        	});
+			} else {
+                        	data.push({
+                        	x: 9+offset,
+                        	y: line[2]
+                        	});
+			}
+			if (line[1].includes("insufficient")) {
+				data.push({
+                        	x: 10+offset,
+                        	y: 0
+                        	});
+			} else {
+                        	data.push({
+                        	x: 10+offset,
+                        	y: line[1]
+                        	});
+			}
 		  }
+		}
           });
           return data;
         }
