@@ -27,7 +27,7 @@
 					  var country2 = [];
 					  for (var i = 1, len = csv1.length; i < len; i++) {
 					  	if (csv1[i][13]*1 == 1) {
-							if (csv1[i][0].includes("France")) {
+							if (csv1[i][0].includes("Alberta")) {
 								labelNames.push("May 22");
 								if (csv1[i][12].includes("insufficient")) {
 									country1.push(null);
@@ -53,7 +53,7 @@
 							if (country2.length == 0) {
 								labelNames.push(null)
 							}
-							if (csv1[i][0].includes("France")) {
+							if (csv1[i][0].includes("Alberta")) {
 								labelNames.push("May 29");
 								if (csv1[i][12].includes("insufficient")) {
 									country1.push(null);
@@ -79,7 +79,7 @@
 							if (country2.length == 1) {
 								labelNames.push(null)
 							}
-							if (csv1[i][0].includes("France")) {
+							if (csv1[i][0].includes("Alberta")) {
 								labelNames.push("June 5");
 								if (csv1[i][12].includes("insufficient")) {
 									country1.push(null);
@@ -105,7 +105,7 @@
 							if (country2.length == 2) {
 								labelNames.push(null)
 							}
-							if (csv1[i][0].includes("France")) {
+							if (csv1[i][0].includes("Alberta")) {
 								labelNames.push("June 12");
 								if (csv1[i][12].includes("insufficient")) {
 									country1.push(null);
@@ -131,7 +131,7 @@
 							if (country2.length == 3) {
 								labelNames.push(null)
 							}
-							if (csv1[i][0].includes("France")) {
+							if (csv1[i][0].includes("Alberta")) {
 								labelNames.push("June 19");
 								if (csv1[i][12].includes("insufficient")) {
 									country1.push(null);
@@ -153,7 +153,7 @@
 					window.myData = {
 						  labels: labelNames,
 						  datasets: [{
-						    label: 'France',
+						    label: 'Alberta',
 						    borderColor: '#04297a',
 						    backgroundColor: '#04297a',
 						    fill: false,
