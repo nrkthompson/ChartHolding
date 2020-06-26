@@ -1,0 +1,455 @@
+<!doctype html>
+<html style="margin: 0 auto; disaply: block; height: 98%;  width: 95%;">
+
+<head>
+	<title>Scatter Chart</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+	<style>
+	canvas {
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		-ms-user-select: none;
+	}
+	</style>
+
+</head>
+<style>
+  /* Center the loader */
+  #loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+    
+</style>
+<body style="margin: 0 auto; disaply: block; height: 100%;" id="bodyID">
+	<div style="margin: 0 auto; display: block; height: 100%;">
+		<canvas id="canvas"></canvas>
+	</div>
+	<script>
+	    var xLabels = {
+	      0: '', 1: 'Country Average', 2: 'Stores/Non-Essential Businesses', 3: 'Schooling/Youth Activities',
+	      4: 'Eateries', 5: 'Leisure Activities', 6: 'Contact Services', 7: 'Manufacturing/Construction',
+	      8: 'Gatherings', 9: 'Borders/Movement', 10: 'Cultural', 11: ''
+	    };
+	    var yLabels = {
+	      0: 'Insufficient Data', 1: 'Level 1 (Most Restrictive)', 2: 'Level 2', 3: 'Level 3', 4: 'Level 4', 5: 'Level 5 (Least Restrictive)'
+	    };
+		function generateData(fileName, lowerLimit, upperLimit) {
+			var data = [];
+			d3.text(fileName, "text/csv", function(text) {
+	      			var csv = d3.csv.parseRows(text);
+			for (var i = 0; i < upperLimit+1; i++) {
+				if (i >= lowerLimit && i <= upperLimit) {
+					var preData = csv[i-1];
+					var tracker = 1;
+					for (var z = 1, len = preData.length; z < len; z++) {
+						if (tracker == 1) {
+							var yValue = parseInt(preData[z], 10);
+						} else {
+							var xValue = parseInt(preData[z], 10)+1;
+							data.push({
+								x: xValue,
+								y: yValue
+							});
+						}
+						var tracker = tracker * -1
+					}
+				}
+			}
+			console.log(data)
+			});
+			return data;
+		}
+    var URL = "https://nrkthompson.github.io/ChartHolding/Data/HeatMapJune26.csv";
+		var scatterChartData = {
+			datasets: [{
+					label: '1 Jurisdiction',
+					pointRadius: 3,
+					borderColor: '#D4E6F1',
+					backgroundColor: '#D4E6F1',
+					data: generateData(URL, 1, 1)
+				}, {
+					label: '2 Jurisdictions',
+					pointRadius: 3.25,
+					borderColor: '#D4E6F1',
+					backgroundColor: '#D4E6F1',
+					data: generateData(URL, 2, 2)
+				}, {
+					label: '3 Jurisdictions',
+					pointRadius: 3.5,
+					borderColor: '#D4E6F1',
+					backgroundColor: '#D4E6F1',
+					data: generateData(URL, 3, 3)
+				}, {
+					label: '4 Jurisdictions',
+					pointRadius: 3.75,
+					borderColor: '#D4E6F1',
+					backgroundColor: '#D4E6F1',
+					data: generateData(URL, 4, 4)
+				}, {
+					label: '5 Jurisdictions',
+					pointRadius: 4,
+					borderColor: '#A9CCE3',
+					backgroundColor: '#A9CCE3',
+					data: generateData(URL, 5, 5)
+				}, {
+					label: '6 Jurisdictions',
+					pointRadius: 4.25,
+					borderColor: '#A9CCE3',
+					backgroundColor: '#A9CCE3',
+					data: generateData(URL, 6, 6)
+				}, {
+					label: '7 Jurisdictions',
+					pointRadius: 4.5,
+					borderColor: '#A9CCE3',
+					backgroundColor: '#A9CCE3',
+					data: generateData(URL, 7, 7)
+				}, {
+					label: '8 Jurisdictions',
+					pointRadius: 4.75,
+					borderColor: '#A9CCE3',
+					backgroundColor: '#A9CCE3',
+					data: generateData(URL, 8, 8)
+				}, {
+					label: '9 Jurisdictions',
+					pointRadius: 5,
+					borderColor: '#7FB3D5',
+					backgroundColor: '#7FB3D5',
+					data: generateData(URL, 9, 9)
+				}, {
+					label: '10 Jurisdictions',
+					pointRadius: 5.25,
+					borderColor: '#7FB3D5',
+					backgroundColor: '#7FB3D5',
+					data: generateData(URL, 10, 10)
+				}, {
+					label: '11 Jurisdictions',
+					pointRadius: 5.5,
+					borderColor: '#7FB3D5',
+					backgroundColor: '#7FB3D5',
+					data: generateData(URL, 11, 11)
+				}, {
+					label: '12 Jurisdictions',
+					pointRadius: 5.75,
+					borderColor: '#7FB3D5',
+					backgroundColor: '#7FB3D5',
+					data: generateData(URL, 12, 12)
+				}, {
+					label: '13 Jurisdictions',
+					pointRadius: 6,
+					borderColor: '#5499C7',
+					backgroundColor: '#5499C7',
+					data: generateData(URL, 13, 13)
+				}, {
+					label: '14 Jurisdictions',
+					pointRadius: 6.25,
+					borderColor: '#5499C7',
+					backgroundColor: '#5499C7',
+					data: generateData(URL, 14, 14)
+				}, {
+					label: '15 Jurisdictions',
+					pointRadius: 6.5,
+					borderColor: '#5499C7',
+					backgroundColor: '#5499C7',
+					data: generateData(URL, 15, 15)
+				}, {
+					label: '16 Jurisdictions',
+					pointRadius: 6.75,
+					borderColor: '#5499C7',
+					backgroundColor: '#5499C7',
+					data: generateData(URL, 16, 16)
+				}, {
+					label: '17 Jurisdictions',
+					pointRadius: 7,
+					borderColor: '#2980B9',
+					backgroundColor: '#2980B9',
+					data: generateData(URL, 17, 17)
+				}, {
+					label: '18 Jurisdictions',
+					pointRadius: 7.25,
+					borderColor: '#2980B9',
+					backgroundColor: '#2980B9',
+					data: generateData(URL, 18, 18)
+				}, {
+					label: '19 Jurisdictions',
+					pointRadius: 7.5,
+					borderColor: '#2980B9',
+					backgroundColor: '#2980B9',
+					data: generateData(URL, 19, 19)
+				}, {
+					label: '20 Jurisdictions',
+					pointRadius: 7.75,
+					borderColor: '#2980B9',
+					backgroundColor: '#2980B9',
+					data: generateData(URL, 20, 20)
+				}, {
+					label: '21 Jurisdictions',
+					pointRadius: 8,
+					borderColor: '#2471A3',
+					backgroundColor: '#2471A3',
+					data: generateData(URL, 21, 21)
+				}, {
+					label: '22 Jurisdictions',
+					pointRadius: 8.25,
+					borderColor: '#2471A3',
+					backgroundColor: '#2471A3',
+					data: generateData(URL, 22,22)
+				}, {
+					label: '23 Jurisdictions',
+					pointRadius: 8.5,
+					borderColor: '#2471A3',
+					backgroundColor: '#2471A3',
+					data: generateData(URL, 23, 23)
+				}, {
+					label: '24 Jurisdictions',
+					pointRadius: 8.75,
+					borderColor: '#2471A3',
+					backgroundColor: '#2471A3',
+					data: generateData(URL, 24, 24)
+				}, {
+					label: '25 Jurisdictions',
+					pointRadius: 9,
+					borderColor: '#1F618D',
+					backgroundColor: '#1F618D',
+					data: generateData(URL, 25, 25)
+				}, {
+					label: '26 Jurisdictions',
+					pointRadius: 9.25,
+					borderColor: '#1F618D',
+					backgroundColor: '#1F618D',
+					data: generateData(URL, 26, 26)
+				}, {
+					label: '27 Jurisdictions',
+					pointRadius: 9.5,
+					borderColor: '#1F618D',
+					backgroundColor: '#1F618D',
+					data: generateData(URL, 27, 27)
+				}, {
+					label: '28 Jurisdictions',
+					pointRadius: 9.75,
+					borderColor: '#1F618D',
+					backgroundColor: '#1F618D',
+					data: generateData(URL, 28, 28)
+				}, {
+					label: '29 Jurisdictions',
+					pointRadius: 10,
+					borderColor: '#1A5276',
+					backgroundColor: '#1A5276',
+					data: generateData(URL, 29, 29)
+				}, {
+					label: '30 Jurisdictions',
+					pointRadius: 10.25,
+					borderColor: '#1A5276',
+					backgroundColor: '#1A5276',
+					data: generateData(URL, 30, 30)
+				}, {
+					label: '31 Jurisdictions',
+					pointRadius: 10.5,
+					borderColor: '#1A5276',
+					backgroundColor: '#1A5276',
+					data: generateData(URL, 31, 31)
+				}, {
+					label: '32 Jurisdictions',
+					pointRadius: 10.75,
+					borderColor: '#1A5276',
+					backgroundColor: '#1A5276',
+					data: generateData(URL, 32, 32)
+				}, {
+					label: '33 Jurisdictions',
+					pointRadius: 11,
+					borderColor: '#154360',
+					backgroundColor: '#154360',
+					data: generateData(URL, 33, 33)
+				}, {
+					label: '34 Jurisdictions',
+					pointRadius: 11.25,
+					borderColor: '#154360',
+					backgroundColor: '#154360',
+					data: generateData(URL, 34, 34)
+				}, {
+					label: '35 Jurisdictions',
+					pointRadius: 11.5,
+					borderColor: '#154360',
+					backgroundColor: '#154360',
+					data: generateData(URL, 35, 35)
+				}, {
+					label: '36 Jurisdictions',
+					pointRadius: 11.75,
+					borderColor: '#154360',
+					backgroundColor: '#154360',
+					data: generateData(URL, 36, 36)
+				}, {
+					label: '37 Jurisdictions',
+					pointRadius: 12,
+					borderColor: '#0d2c40',
+					backgroundColor: '#0d2c40',
+					data: generateData(URL, 37, 37)
+				}, {
+					label: '38 Jurisdictions',
+					pointRadius: 12.25,
+					borderColor: '#0d2c40',
+					backgroundColor: '#0d2c40',
+					data: generateData(URL, 38, 38)
+				}, {
+					label: '39 Jurisdictions',
+					pointRadius: 12.5,
+					borderColor: '#0d2c40',
+					backgroundColor: '#0d2c40',
+					data: generateData(URL, 39, 39)
+				}, {
+					label: '40 Jurisdictions',
+					pointRadius: 12.75,
+					borderColor: '#0d2c40',
+					backgroundColor: '#0d2c40',
+					data: generateData(URL, 40, 40)
+				}, {
+					label: '41 Jurisdictions',
+					pointRadius: 13,
+					borderColor: '#091c29',
+					backgroundColor: '#091c29',
+					data: generateData(URL, 41, 41)
+				}, {
+					label: '42 Jurisdictions',
+					pointRadius: 13.25,
+					borderColor: '#091c29',
+					backgroundColor: '#091c29',
+					data: generateData(URL, 42, 42)
+				}, {
+					label: '43 Jurisdictions',
+					pointRadius: 13.5,
+					borderColor: '#091c29',
+					backgroundColor: '#091c29',
+					data: generateData(URL, 43, 43)
+				}, {
+					label: '44 Jurisdictions',
+					pointRadius: 13.75,
+					borderColor: '#091c29',
+					backgroundColor: '#091c29',
+					data: generateData(URL, 44, 44)
+				}, {
+					label: '45 Jurisdictions',
+					pointRadius: 14,
+					borderColor: '#06131c',
+					backgroundColor: '#06131c',
+					data: generateData(URL, 45, 45)
+				}, {
+					label: '46 Jurisdictions',
+					pointRadius: 14.25,
+					borderColor: '#06131c',
+					backgroundColor: '#06131c',
+					data: generateData(URL, 46, 46)
+				}, {
+					label: '47 Jurisdictions',
+					pointRadius: 14.5,
+					borderColor: '#06131c',
+					backgroundColor: '#06131c',
+					data: generateData(URL, 47, 47)
+				}, {
+					label: '48 Jurisdictions',
+					pointRadius: 14.75,
+					borderColor: '#06131c',
+					backgroundColor: '#06131c',
+					data: generateData(URL, 48, 48)
+				}, {
+					label: '49 Jurisdictions',
+					pointRadius: 15,
+					borderColor: '#010305',
+					backgroundColor: '#010305',
+					data: generateData(URL, 49, 49)
+				}, {
+					label: '50 Jurisdictions',
+					pointRadius: 15.25,
+					borderColor: '#010305',
+					backgroundColor: '#010305',
+					data: generateData(URL, 50, 50)
+				}, {
+					label: '51 Jurisdictions',
+					pointRadius: 15.5,
+					borderColor: '#010305',
+					backgroundColor: '#010305',
+					data: generateData(URL, 51, 15)
+				}, {
+					label: '52 Jurisdictions',
+					pointRadius: 15.75,
+					borderColor: '#010305',
+					backgroundColor: '#010305',
+					data: generateData(URL, 52, 53)
+				}]
+		}; 
+		window.onload = function onboard() {
+			setTimeout(() => { 
+				var ctx = document.getElementById('canvas').getContext('2d');
+				var myScatter = Chart.Scatter(ctx, {
+					data: scatterChartData,
+					options: {
+						maintainAspectRatio: false,
+						responsive: true,
+						tooltips: {
+						    callbacks: {
+							label: function(tooltipItem, data) {
+							    var label = data.datasets[tooltipItem.datasetIndex].label;
+							    return label;
+							}
+						    }
+						},
+						legend: {
+							display: false
+						},
+						title: {
+							fontSize: 20,
+							display: true,
+							text: 'Level of Reopening by Sector Among OECD Countries and Selected Canadian Provinces and US States'
+						},
+						scales: {
+						      yAxes: [{
+							  ticks: {
+							      min: 0,
+							      max: 5,
+							      stepSize: 1,
+							      callback: function(value, index, values) {
+								  return yLabels[value];
+							      }
+							  }
+						      }],
+						      xAxes: [{
+							  ticks: {
+							      min: 0,
+							      max: 11,
+							      stepSize: 1,
+							      callback: function(value, index, values) {
+								  return xLabels[value];
+							      }
+							  }
+						      }]
+						  }
+					}
+				});
+			}, 3000);
+		};
+	</script>
+</body>
+
+</html>
