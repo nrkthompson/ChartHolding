@@ -22,7 +22,7 @@
                                 <table style="table-layout:fixed; height:100%; width:100%; margin: 0 auto; disaply: block;">
                                 <tr style="height:4%;">
                                     <th style="width:100%" colspan="3">
-                                        Average vs. Selected Sector in Selected Country 1
+                                        Overall Reopening vs. Selected Sector Reopening in Selected Jurisdiction 1
                                     </th>
                                 </tr>
                                 <tr style="height:4%;">
@@ -42,14 +42,69 @@
                                 </tr>
                                 <tr style="height:92%;">
                                     <td style="width:100%" colspan="3">
-                                        <iframe id="linesector1" src="https://nrkthompson.github.io/ChartHolding/InternalComparison/CountryStores.html" style="height:100%; width:100%; display:inline;" frameBorder="0"></iframe>
+                                        <iframe id="countrysector1" src="https://nrkthompson.github.io/ChartHolding/InternalComparison/CountryStores.html" style="height:100%; width:100%; display:inline;" frameBorder="0"></iframe>
                                     </td>
                                 </tr>
                                 </table>
                             </td>
                             <td style="width:34%;  border: 1px solid black;">
+                                <table style="table-layout:fixed; height:100%; width:100%; margin: 0 auto; disaply: block;">
+                                <tr style="height:4%;">
+                                    <th style="width:100%" colspan="3">
+                                        Comparison of Selected Jurisdictions Over Time on Selected Metric
+                                    </th>
+                                </tr>
+                                <tr style="height:4%;">
+                                    <td style="width:100%; text-align:left;" colspan="3">
+                                        <select name="sectorcomparison" id="sectorcomparison" style="display:inline" onchange="linkChanger(this.value, 'countryiesovertime')">
+                                        <option value="Average">Jurisdiction Average</option>
+                                        <option value="Stores">Stores/Non-Essential Businesses</option>
+                                        <option value="Schools">Schooling/Youth Activities</option>
+                                        <option value="Activities">Eateries</option>
+                                        <option value="Leisure">Leisure Activities</option>
+                                        <option value="Contact.html">Contact Services</option>
+                                        <option value="Manufacturing">Manufacturing/Construction</option>
+                                        <option value="Gatherings">Gatherings</option>
+                                        <option value="Borders.html">Borders/Movement</option>
+                                        <option value="Cultural.html">Cultural</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr style="height:92%;">
+                                    <td style="width:100%" colspan="3">
+                                        <iframe id="countriesovertime" src="https://nrkthompson.github.io/ChartHolding/LineComparison/CountryCountryAverage.html" style="height:100%; width:100%; display:inline;" frameBorder="0"></iframe>
+                                    </td>
+                                </tr>
+                                </table>
                             </td>
                             <td style="width:33%;  border: 1px solid black;">
+                                <table style="table-layout:fixed; height:100%; width:100%; margin: 0 auto; disaply: block;">
+                                <tr style="height:4%;">
+                                    <th style="width:100%" colspan="3">
+                                        Overall Reopening vs. Selected Sector Reopening in Selected Jurisdiction 2
+                                    </th>
+                                </tr>
+                                <tr style="height:4%;">
+                                    <td style="width:100%; text-align:left;" colspan="3">
+                                        <select name="sector2" id="sector2" style="display:inline" onchange="linkChanger(this.value, 'country2')">
+                                        <option value="Stores">Stores/Non-Essential Businesses</option>
+                                        <option value="Schools">Schooling/Youth Activities</option>
+                                        <option value="Activities">Eateries</option>
+                                        <option value="Leisure">Leisure Activities</option>
+                                        <option value="Contact.html">Contact Services</option>
+                                        <option value="Manufacturing">Manufacturing/Construction</option>
+                                        <option value="Gatherings">Gatherings</option>
+                                        <option value="Borders.html">Borders/Movement</option>
+                                        <option value="Cultural.html">Cultural</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr style="height:92%;">
+                                    <td style="width:100%" colspan="3">
+                                        <iframe id="countrysector2" src="https://nrkthompson.github.io/ChartHolding/InternalComparison/CountryStores.html" style="height:100%; width:100%; display:inline;" frameBorder="0"></iframe>
+                                    </td>
+                                </tr>
+                                </table>
                             </td>
                         </tr>
                     </table>
@@ -150,6 +205,17 @@
         document.getElementById(identifier).src = inputValue;
       }
       function linkChanger(inputValue, identifier) {
+        if (identifier.includes("country1")) {
+          var country1 = document.getElementById('country1').value; 
+          document.getElementById('countrysector1').src = "https://nrkthompson.github.io/ChartHolding/InternalComparison/".concat(country1).concat(inputValue).concat(".html");
+        } else if (identifier.includes("country2")) {
+          var country2 = document.getElementById('country2').value; 
+          document.getElementById('countrysector2').src = "https://nrkthompson.github.io/ChartHolding/InternalComparison/".concat(country2).concat(inputValue).concat(".html");
+        } else {
+          var country1 = document.getElementById('country1').value; 
+          var country2 = document.getElementById('country2').value; 
+          document.getElementById('countriesovertime').src = "https://nrkthompson.github.io/ChartHolding/LineComparison/".concat(country1).concat(country2).concat(inputValue).concat(".html");
+        }
       }
       function countryChanger(inputCountry, inputSecondary) {
         if (inputSecondary == 1) {
