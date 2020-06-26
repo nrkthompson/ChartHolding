@@ -19,6 +19,33 @@
                     <table style="width:100%; height:100%; font-family: Helvetica Neue, Helvetica, Arial, sans-serif; text-align:center; table-layout:fixed;  border: 1px solid black; border-collapse: collapse;">
                         <tr style="height:100%;  border: 1px solid black;">
                             <td style="width:33%;  border: 1px solid black;">
+                                <table style="table-layout:fixed; height:100%; width:100%; margin: 0 auto; disaply: block;">
+                                <tr style="height:4%;">
+                                    <th style="width:100%" colspan="3">
+                                        Average vs. Selected Sector in Selected Country 1
+                                    </th>
+                                </tr>
+                                <tr style="height:4%;">
+                                    <td style="width:100%; text-align:left;" colspan="3">
+                                        <select name="sector1" id="sector1" style="display:inline" onchange="linkChanger(this.value, 'country1')">
+                                        <option value="Stores">Stores/Non-Essential Businesses</option>
+                                        <option value="Schools">Schooling/Youth Activities</option>
+                                        <option value="Activities">Eateries</option>
+                                        <option value="Leisure">Leisure Activities</option>
+                                        <option value="Contact.html">Contact Services</option>
+                                        <option value="Manufacturing">Manufacturing/Construction</option>
+                                        <option value="Gatherings">Gatherings</option>
+                                        <option value="Borders.html">Borders/Movement</option>
+                                        <option value="Cultural.html">Cultural</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr style="height:92%;">
+                                    <td style="width:100%" colspan="3">
+                                        <iframe id="linesector1" src="https://nrkthompson.github.io/ChartHolding/InternalComparison/CountryStores.html" style="height:100%; width:100%; display:inline;" frameBorder="0"></iframe>
+                                    </td>
+                                </tr>
+                                </table>
                             </td>
                             <td style="width:34%;  border: 1px solid black;">
                             </td>
@@ -121,6 +148,8 @@
       }
       function dataChanger(inputValue, identifier) {
         document.getElementById(identifier).src = inputValue;
+      }
+      function linkChanger(inputValue, identifier) {
       }
       function countryChanger(inputCountry, inputSecondary) {
         if (inputSecondary == 1) {
