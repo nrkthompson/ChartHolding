@@ -18,7 +18,7 @@
 }
 
 .year.label {
-  	font: 500 196px "Helvetica Neue";
+  	font: 250 100px "Helvetica Neue";
   	fill: #ddd;
 }
 
@@ -145,8 +145,8 @@ svg.append("text")
 var label = svg.append("text")
     .attr("class", "year label")
     .attr("text-anchor", "end")
-    .attr("y", 50)
-    .attr("x", 50)
+    .attr("y", height - 24)
+    .attr("x", width)
     .text("2020-05-22");
  var format = d3.format(".2s");
 var tip = d3.tip()
