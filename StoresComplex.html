@@ -109,7 +109,7 @@ var yAxis = d3.svg.axis().scale(yScale).orient("left").ticks(7, d3.format(",d"))
 // Create the SVG container and set the origin.
 var svg = d3.select("#chart").append("svg")
     .attr("viewBox", [0, 0, screen.width*0.8, screen.height*0.8])
-    .attr("transform", "translate(" + margins.left + "," + margins.top + ")");
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 // Add the x-axis.
 svg.append("g")
