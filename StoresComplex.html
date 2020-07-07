@@ -113,7 +113,7 @@ var svg = d3.select("#chart").append("svg")
 // Add the x-axis.
 svg.append("g")
     .attr("class", "x axis")
-    .attr("transform", "translate(0," + height + ")")
+    .attr("transform", "translate(0," + screen.height + ")")
     .call(xAxis);
 
 // Add the y-axis.
@@ -125,8 +125,8 @@ svg.append("g")
 svg.append("text")
     .attr("class", "x label")
     .attr("text-anchor", "end")
-    .attr("x", width)
-    .attr("y", height - 6)
+    .attr("x", screen.width)
+    .attr("y", screen.height - 6)
     .text("Jurisdiction Average Reopening Across Sectors");
 
 // Add a y-axis label.
@@ -142,8 +142,8 @@ svg.append("text")
 var label = svg.append("text")
     .attr("class", "year label")
     .attr("text-anchor", "end")
-    .attr("y", height - 24)
-    .attr("x", width)
+    .attr("y", screen.height - 24)
+    .attr("x", screen.width)
     .text("2020-05-22");
  var format = d3.format(".2s");
 var tip = d3.tip()
