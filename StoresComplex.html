@@ -130,10 +130,6 @@ svg.append("text")
     .attr("x", width)
     .attr("y", height -6)
     .text("Jurisdiction Average Reopening Across Sectors");
-
-var my_transform = d3Transform()
-      .rotate(-90)
-      .translate(20,0)
       
 // Add a y-axis label.
 svg.append("text")
@@ -141,7 +137,7 @@ svg.append("text")
     .attr("text-anchor", "end")
     .attr("y", 6)
     .attr("dy", ".75em")
-    .attr("transform", my_transform)
+    .attr("transform", "rotate(-90) translate(20,0)")
     .text("Stores and Non-Essential Businesses");
 
 // Add the year label; the value is set on transition.
