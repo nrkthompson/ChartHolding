@@ -121,7 +121,7 @@ svg.append("g")
 // Add the y-axis.
 svg.append("g")
     .attr("class", "y axis")
-    .attr("transform", "translate(20,0)")
+    .attr("transform", "translate(60,0)")
     .call(yAxis);
 
 // Add an x-axis label.
@@ -157,7 +157,7 @@ var tip = d3.tip()
   })
 // Various accessors that specify the four dimensions of data to visualize.
 function x(d) { return d.average; }
-function y(d) { return d.sector; }
+function y(d) { return d.deathsOverall; }
 function radius(d) { return d.deaths; }
 function color(d) { return d.region; }
 function key(d) { return d.name; }
