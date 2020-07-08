@@ -163,7 +163,7 @@ function color(d) { return d.region; }
 function key(d) { return d.name; }
 
 // Load the data.
-d3.json("https://nrkthompson.github.io/ChartHolding/Data/AdvancedGraph.json", function(nations) {
+d3.json("https://nrkthompson.github.io/ChartHolding/Data/AdvancedGraph2.json", function(nations) {
   	// A bisector since many nation's data is sparsely-defined.
   	var bisect = d3.bisector(function(d) { return d[0]; });
 
@@ -252,7 +252,7 @@ d3.json("https://nrkthompson.github.io/ChartHolding/Data/AdvancedGraph.json", fu
               	region: d.region,
               	deaths: interpolateValues(d.deaths, year),
               	average: interpolateValues(d.average, year),
-              	deathsOverall: interpolateValues(d.sector, year)
+              	deathsOverall: interpolateValues(d.deathsOverall, year)
             };
         });
     }
