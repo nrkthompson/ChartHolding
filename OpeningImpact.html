@@ -202,7 +202,7 @@ d3.json("https://nrkthompson.github.io/ChartHolding/Data/AdvancedGraph2.json", f
   
   	// Positions the dots based on data.
   	function position(dot) {
-      	dot.attr("cx", function(d) { return xScale(x(d)); })
+      	dot.attr("cx", function(d) { return xScale(x(d))+80; })
           	.attr("cy", function(d) { return yScale(y(d)); })
           	.attr("r", function(d) { return radiusScale(radius(d)); });
     		}
