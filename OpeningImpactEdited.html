@@ -91,7 +91,7 @@
 <script src="https://d3js.org/d3.v3.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.6.3/d3-tip.min.js"></script>
   <script>
-  var dates = ['2020-05-22', '2020-05-23', '2020-05-24', '2020-05-25', '2020-05-26', '2020-05-27', '2020-05-28', '2020-05-29', '2020-05-30', '2020-05-31', '2020-06-01', '2020-06-02', '2020-06-03', '2020-06-04', '2020-06-05', '2020-06-06', '2020-06-07', '2020-06-08', '2020-06-09', '2020-06-10', '2020-06-11', '2020-06-12', '2020-06-13', '2020-06-14', '2020-06-15', '2020-06-16', '2020-06-17', '2020-06-18', '2020-06-19', '2020-06-20', '2020-06-21', '2020-06-22', '2020-06-23', '2020-06-24', '2020-06-25', '2020-06-26', '2020-06-27', '2020-06-28', '2020-06-29', '2020-06-30', '2020-07-01', '2020-07-02', '2020-07-03', '2020-07-04']
+  var dates = ['2020-05-22', '2020-05-23', '2020-05-24', '2020-05-25', '2020-05-26', '2020-05-27', '2020-05-28', '2020-05-29', '2020-05-30', '2020-05-31', '2020-06-01', '2020-06-02', '2020-06-03', '2020-06-04', '2020-06-05', '2020-06-06', '2020-06-07', '2020-06-08', '2020-06-09', '2020-06-10', '2020-06-11', '2020-06-12', '2020-06-13', '2020-06-14', '2020-06-15', '2020-06-16', '2020-06-17', '2020-06-18', '2020-06-19', '2020-06-20', '2020-06-21', '2020-06-22', '2020-06-23', '2020-06-24', '2020-06-25', '2020-06-26', '2020-06-27', '2020-06-28', '2020-06-29', '2020-06-30', '2020-07-01', '2020-07-02', '2020-07-03', '2020-07-04', '2020-07-05', '2020-07-06', '2020-07-07', '2020-07-08', '2020-07-09']
 // Chart dimensions.
 var margin = { top: 19.5, right: 19.5, bottom: 19.5, left: 39.5 },
     width = screen.width*0.8 - margin.right,
@@ -163,7 +163,7 @@ function color(d) { return d.region; }
 function key(d) { return d.name; }
 
 // Load the data.
-d3.json("https://nrkthompson.github.io/ChartHolding/Data/AdvancedGraph3.json", function(nations) {
+d3.json("https://nrkthompson.github.io/ChartHolding/Data/AdvancedGraph4.json", function(nations) {
   	// A bisector since many nation's data is sparsely-defined.
   	var bisect = d3.bisector(function(d) { return d[0]; });
 
@@ -212,7 +212,7 @@ d3.json("https://nrkthompson.github.io/ChartHolding/Data/AdvancedGraph3.json", f
   	// After the transition finishes, you can mouseover to change the year.
   	function enableInteraction() {
       	var yearScale = d3.scale.linear()
-        	.domain([0, 43])
+        	.domain([0, 48])
         	.range([box.x + 10, box.x + box.width - 10])
         	.clamp(true);
 
@@ -233,7 +233,7 @@ d3.json("https://nrkthompson.github.io/ChartHolding/Data/AdvancedGraph3.json", f
   	// Tweens the entire chart by first tweening the year, and then the data.
   	// For the interpolated data, the dots and label are redrawn.
   	function tweenYear() {
-      	var year = d3.interpolateNumber(0, 43);
+      	var year = d3.interpolateNumber(0, 48);
       	return function(t) { displayYear(year(t)); };
     }
 
