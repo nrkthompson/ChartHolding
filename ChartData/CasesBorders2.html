@@ -99,7 +99,7 @@ var margin = { top: 19.5, right: 19.5, bottom: 19.5, left: 39.5 },
 
 // Various scales. These domains make assumptions of data, naturally.
 var xScale = d3.scale.linear().domain([0,6]).range([0, width]),
-    yScale = d3.scale.linear().domain([0,200]).range([height, 20]),
+    yScale = d3.scale.linear().domain([0,300]).range([height, 20]),
     radiusScale = d3.scale.linear().domain([0, 100000000]).range([5, 30]),
     colorScale = d3.scale.category10();
 
@@ -212,7 +212,7 @@ d3.json("https://nrkthompson.github.io/ChartHolding/ChartData/CasesBorders2.json
   	// After the transition finishes, you can mouseover to change the year.
   	function enableInteraction() {
       	var yearScale = d3.scale.linear()
-        	.domain([0, 35])
+        	.domain([2020-05-22, 35])
         	.range([box.x + 10, box.x + box.width - 10])
         	.clamp(true);
 
@@ -233,7 +233,7 @@ d3.json("https://nrkthompson.github.io/ChartHolding/ChartData/CasesBorders2.json
   	// Tweens the entire chart by first tweening the year, and then the data.
   	// For the interpolated data, the dots and label are redrawn.
   	function tweenYear() {
-      	var year = d3.interpolateNumber(0, 35);
+      	var year = d3.interpolateNumber(2020-05-22, 35);
       	return function(t) { displayYear(year(t)); };
     }
 
