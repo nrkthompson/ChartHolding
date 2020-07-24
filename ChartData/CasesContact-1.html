@@ -212,7 +212,7 @@ d3.json("https://nrkthompson.github.io/ChartHolding/ChartData/CasesContact-1.jso
   	// After the transition finishes, you can mouseover to change the year.
   	function enableInteraction() {
       	var yearScale = d3.scale.linear()
-        	.domain([7, 42])
+        	.domain([7, 49])
         	.range([box.x + 10, box.x + box.width - 10])
         	.clamp(true);
 
@@ -233,7 +233,7 @@ d3.json("https://nrkthompson.github.io/ChartHolding/ChartData/CasesContact-1.jso
   	// Tweens the entire chart by first tweening the year, and then the data.
   	// For the interpolated data, the dots and label are redrawn.
   	function tweenYear() {
-      	var year = d3.interpolateNumber(7, 42);
+      	var year = d3.interpolateNumber(7, 49);
       	return function(t) { displayYear(year(t)); };
     }
 
