@@ -1,0 +1,130 @@
+
+<!doctype html>
+<html style="margin: 0 auto; disaply: block; height:98%;  width:98%;">
+
+	<head>
+		<title>Line Chart Multiple Axes</title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+		<style>
+		canvas {
+			-moz-user-select: none;
+			-webkit-user-select: none;
+			-ms-user-select: none;
+		}
+		</style>
+	</head>
+
+	<body style="margin: 0 auto; disaply: block; height: 100%;  width: 100%;">
+		<div style="margin: 0 auto; disaply: block; height: 100%;  width: 100%;">
+			<canvas id="canvas"></canvas>
+		</div>
+		<script>
+			function dataMaker() {
+				d3.text("https://nrkthompson.github.io/ChartHolding/Data/CountryIndicatorsSourceHistorical.csv", "text/csv", function(text) {
+					  var csv1 = d3.csv.parseRows(text);
+					  var labelNames = [];
+					  var averages = [];
+            				  var country1 = [];
+					  var country2 = [];
+					  for (var i = 1, len = csv1.length; i < len; i++) {
+						  if (labelNames.includes(csv1[i][14]) == false) {
+							  labelNames.push(csv1[i][14]);
+							  averages.push(csv1[i][15]*1);
+						  }
+					  }
+					  for (var i = 0, len = labelNames.length; i < len; i++) {
+						  var entry1 = null;
+						  var entry2 = null;
+						  for (var x = 1, len2 = csv1.length; x < len2; x++) {
+							  if (csv1[x][0].includes("Poland") && csv1[x][14].includes(labelNames[i])) {
+								  var entry1 = csv1[x][11]*1;
+							  }
+							  if (csv1[x][0].includes("Chile") && csv1[x][14].includes(labelNames[i])) {
+								  var entry2 = csv1[x][11]*1;
+							  }
+						  }
+						  country1.push(entry1);
+						  country2.push(entry2);
+					  }
+					  window.myData = {
+						  labels: labelNames,
+						  datasets: [{
+						    label: 'Average Among All Jursidictions',
+						    borderColor: '#E30000',
+						    backgroundColor: '#E30000',
+						    fill: false,
+						    pointRadius: 1,
+						    data: averages
+						    },{
+						    label: 'Poland',
+						    borderColor: '#04297a',
+						    backgroundColor: '#04297a',
+						    fill: false,
+						    pointRadius: 1,
+						    data: country1
+						    }, {
+						    label: 'Chile',
+						    borderColor: '#34baeb',
+						    backgroundColor: '#34baeb',
+						    fill: false,
+						    pointRadius: 1,
+						    data: country2
+						    }]
+						    }  
+				});
+			}
+			dataMaker();
+			window.onload = function() {
+						setTimeout(() => { 
+							var yLabels = {
+							      1: 'Level 1 (Most Restrictive)', 2: 'Level 2', 3: 'Level 3', 4: 'Level 4', 5: 'Level 5 (Least Restrictive)'
+							};
+							var ctx = document.getElementById('canvas').getContext('2d');
+							window.myLine = Chart.Line(ctx, {
+							  data: window.myData,
+							  options: {
+							    responsive: true,
+							    hoverMode: 'index',
+							    stacked: false,
+							    maintainAspectRatio: false,
+							    tooltips: {
+								callbacks: {
+								    label: function(tooltipItem, data) {
+									return data.datasets[tooltipItem.datasetIndex].label.concat(" - Level ").concat(data.datasets[tooltipItem.datasetIndex]['data'][tooltipItem.index]);
+								    }
+								}
+							    },
+							    legend: {
+								    display: true
+							    },
+							    title: {
+								display: false,
+								text: 'Western Canada',
+								padding: 5
+							     },
+							     scales: {
+								      yAxes: [{
+									  ticks: {
+									      min: 1,
+									      max:5,
+									      stepSize: 1,
+									      callback: function(value, index, values) {
+										  return yLabels[value];
+									      }
+									  }
+								      }],
+								      xAxes: [{
+									  ticks: {
+									      display: true
+									  }
+								      }]
+								  }
+							   }
+							 });
+						}, 3000);
+				};
+		</script>
+	</body>
+
+</html>
