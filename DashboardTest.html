@@ -22,27 +22,12 @@
                                 <table style="table-layout:fixed; height:100%; width:100%; margin: 0 auto; disaply: block;">
                                 <tr style="height:4%;">
                                     <th style="width:100%" colspan="3">
-                                        Overall Reopening vs. Selected Sector Reopening in Selected Jurisdiction 1
+                                        Reopening Over Time Compared to All Jurisdiction Average
                                     </th>
                                 </tr>
-                                <tr style="height:4%;">
-                                    <td style="width:100%; text-align:left;" colspan="3">
-                                        <select name="sector1" id="sector1" style="display:inline" onchange="linkChanger(this.value, 'country1')">
-                                        <option value="Stores">Stores/Non-Essential Businesses</option>
-                                        <option value="Schools">Schooling/Youth Activities</option>
-                                        <option value="Eateries">Eateries</option>
-                                        <option value="Leisure">Leisure Activities</option>
-                                        <option value="Contact">Contact Services</option>
-                                        <option value="Manufacturing">Manufacturing/Construction</option>
-                                        <option value="Gatherings">Gatherings</option>
-                                        <option value="Borders">Borders/Movement</option>
-                                        <option value="Cultural">Cultural</option>
-                                        </select>
-                                    </td>
-                                </tr>
-                                <tr style="height:92%;">
+                                <tr style="height:96%;">
                                     <td style="width:100%" colspan="3">
-                                        <iframe id="countrysector1" src="https://nrkthompson.github.io/ChartHolding/InternalComparison/CountryStores.html" style="height:100%; width:100%; display:inline;" frameBorder="0"></iframe>
+                                        <iframe id="countrysector1" src="https://nrkthompson.github.io/ChartHolding/BottomSwap/CountryCountryAverage.html" style="height:100%; width:100%; display:inline;" frameBorder="0"></iframe>
                                     </td>
                                 </tr>
                                 </table>
@@ -51,28 +36,12 @@
                                 <table style="table-layout:fixed; height:100%; width:100%; margin: 0 auto; disaply: block;">
                                 <tr style="height:4%;">
                                     <th style="width:100%" colspan="3">
-                                        Comparison of Selected Jurisdictions Over Time on Selected Metric
+                                        Reopening Over Time Compared to Standard Deviations of All Jurisdiction Average
                                     </th>
                                 </tr>
-                                <tr style="height:4%;">
-                                    <td style="width:100%; text-align:left;" colspan="3">
-                                        <select name="sectorComparison" id="sectorComparison" style="display:inline" onchange="linkChanger(this.value, 'countryiesovertime')">
-                                        <option value="Average">Jurisdiction Average</option>
-                                        <option value="Stores">Stores/Non-Essential Businesses</option>
-                                        <option value="Schools">Schooling/Youth Activities</option>
-                                        <option value="Eateries">Eateries</option>
-                                        <option value="Leisure">Leisure Activities</option>
-                                        <option value="Contact">Contact Services</option>
-                                        <option value="Manufacturing">Manufacturing/Construction</option>
-                                        <option value="Gatherings">Gatherings</option>
-                                        <option value="Borders">Borders/Movement</option>
-                                        <option value="Cultural">Cultural</option>
-                                        </select>
-                                    </td>
-                                </tr>
-                                <tr style="height:92%;">
+                                <tr style="height:96%;">
                                     <td style="width:100%" colspan="3">
-                                        <iframe id="countriesovertime" src="https://nrkthompson.github.io/ChartHolding/LineComparison/CountryCountryAverage.html" style="height:100%; width:100%; display:inline;" frameBorder="0"></iframe>
+                                        <iframe id="countriesovertime" src="https://nrkthompson.github.io/ChartHolding/BottomSwap/CountryCountryChangeStdDev.html" style="height:100%; width:100%; display:inline;" frameBorder="0"></iframe>
                                     </td>
                                 </tr>
                                 </table>
@@ -81,27 +50,12 @@
                                 <table style="table-layout:fixed; height:100%; width:100%; margin: 0 auto; disaply: block;">
                                 <tr style="height:4%;">
                                     <th style="width:100%" colspan="3">
-                                        Overall Reopening vs. Selected Sector Reopening in Selected Jurisdiction 2
+                                        Rate of Reopening Over Time
                                     </th>
                                 </tr>
-                                <tr style="height:4%;">
-                                    <td style="width:100%; text-align:left;" colspan="3">
-                                        <select name="sector2" id="sector2" style="display:inline" onchange="linkChanger(this.value, 'country2')">
-                                        <option value="Stores">Stores/Non-Essential Businesses</option>
-                                        <option value="Schools">Schooling/Youth Activities</option>
-                                        <option value="Eateries">Eateries</option>
-                                        <option value="Leisure">Leisure Activities</option>
-                                        <option value="Contact">Contact Services</option>
-                                        <option value="Manufacturing">Manufacturing/Construction</option>
-                                        <option value="Gatherings">Gatherings</option>
-                                        <option value="Borders">Borders/Movement</option>
-                                        <option value="Cultural">Cultural</option>
-                                        </select>
-                                    </td>
-                                </tr>
-                                <tr style="height:92%;">
+                                <tr style="height:96%;">
                                     <td style="width:100%" colspan="3">
-                                        <iframe id="countrysector2" src="https://nrkthompson.github.io/ChartHolding/InternalComparison/CountryStores.html" style="height:100%; width:100%; display:inline;" frameBorder="0"></iframe>
+                                        <iframe id="countrysector2" src="https://nrkthompson.github.io/ChartHolding/BottomSwap/CountryCountryChange.html" style="height:100%; width:100%; display:inline;" frameBorder="0"></iframe>
                                     </td>
                                 </tr>
                                 </table>
@@ -201,22 +155,6 @@
           myFunction2();
         }
       }
-      function dataChanger(inputValue, identifier) {
-        document.getElementById(identifier).src = inputValue;
-      }
-      function linkChanger(inputValue, identifier) {
-        if (identifier.includes("country1")) {
-          var country1 = document.getElementById('country1').value; 
-          document.getElementById('countrysector1').src = "https://nrkthompson.github.io/ChartHolding/InternalComparison/".concat(country1).concat(inputValue).concat(".html");
-        } else if (identifier.includes("country2")) {
-          var country2 = document.getElementById('country2').value; 
-          document.getElementById('countrysector2').src = "https://nrkthompson.github.io/ChartHolding/InternalComparison/".concat(country2).concat(inputValue).concat(".html");
-        } else {
-          var country1 = document.getElementById('country1').value; 
-          var country2 = document.getElementById('country2').value; 
-          document.getElementById('countriesovertime').src = "https://nrkthompson.github.io/ChartHolding/LineComparison/".concat(country1).concat(country2).concat(inputValue).concat(".html");
-        }
-      }
       function countryChanger(inputCountry, inputSecondary) {
         if (inputSecondary == 1) {
           var country1 = inputCountry;
@@ -225,13 +163,10 @@
           var country1 = document.getElementById('country1').value;
           var country2 = inputCountry;
         }
-        var sector1 = document.getElementById('sector1').value;
-        var sector2 = document.getElementById('sector2').value;
-        var sectorComparison = document.getElementById('sectorComparison').value;
         document.getElementById('indicators').src = "https://nrkthompson.github.io/ChartHolding/Countries/".concat(country1).concat(country2).concat(".html");
-        document.getElementById('countrysector1').src = "https://nrkthompson.github.io/ChartHolding/InternalComparison/".concat(country1).concat(sector1).concat(".html");
-        document.getElementById('countrysector2').src = "https://nrkthompson.github.io/ChartHolding/InternalComparison/".concat(country2).concat(sector2).concat(".html");
-        document.getElementById('countriesovertime').src = "https://nrkthompson.github.io/ChartHolding/LineComparison/".concat(country1).concat(country2).concat(sectorComparison).concat(".html");
+        document.getElementById('countrysector1').src = "https://nrkthompson.github.io/ChartHolding/BottomSwap/".concat(country1).concat(country2).concat("Average.html");
+        document.getElementById('countrysector2').src = "https://nrkthompson.github.io/ChartHolding/BottomSwap/".concat(country1).concat(country2).concat("Change.html");
+        document.getElementById('countriesovertime').src = "https://nrkthompson.github.io/ChartHolding/BottomSwap/".concat(country1).concat(country2).concat("StdDev.html");
       }
       var myVar;
       function myFunction2() {
