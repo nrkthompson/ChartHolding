@@ -1,0 +1,1578 @@
+1,01-Jan,COVID-19,17,0.0003934
+2,01-Jan,Economy and jobs,392,0.009071344
+3,01-Jan,Environment,399,0.009233333
+4,01-Jan,Government,112,0.002591813
+5,01-Jan,Healthcare,116,0.002684377
+6,01-Jan,Immigration and refugees,74,0.001712448
+7,02-Jan,COVID-19,43,0.000753249
+8,02-Jan,Economy and jobs,666,0.011666608
+9,02-Jan,Environment,691,0.012104544
+10,02-Jan,Government,169,0.002960446
+11,02-Jan,Healthcare,209,0.003661143
+12,02-Jan,Immigration and refugees,170,0.002977963
+13,03-Jan,COVID-19,29,0.000409437
+14,03-Jan,Economy and jobs,711,0.010038261
+15,03-Jan,Environment,739,0.010433579
+16,03-Jan,Government,203,0.002866058
+17,03-Jan,Healthcare,231,0.003261376
+18,03-Jan,Immigration and refugees,174,0.002456621
+19,04-Jan,COVID-19,24,0.0003999
+20,04-Jan,Economy and jobs,583,0.009714238
+21,04-Jan,Environment,585,0.009747563
+22,04-Jan,Government,176,0.0029326
+23,04-Jan,Healthcare,242,0.004032325
+24,04-Jan,Immigration and refugees,148,0.00246605
+25,05-Jan,COVID-19,29,0.000423172
+26,05-Jan,Economy and jobs,585,0.008536407
+27,05-Jan,Environment,645,0.009411936
+28,05-Jan,Government,325,0.004742449
+29,05-Jan,Healthcare,185,0.002699548
+30,05-Jan,Immigration and refugees,359,0.005238582
+31,06-Jan,COVID-19,33,0.000477887
+32,06-Jan,Economy and jobs,696,0.010079069
+33,06-Jan,Environment,748,0.010832102
+34,06-Jan,Government,289,0.00418513
+35,06-Jan,Healthcare,189,0.002736988
+36,06-Jan,Immigration and refugees,385,0.005575347
+37,07-Jan,COVID-19,45,0.000631951
+38,07-Jan,Economy and jobs,863,0.012119425
+39,07-Jan,Environment,738,0.010364004
+40,07-Jan,Government,268,0.003763622
+41,07-Jan,Healthcare,246,0.003454668
+42,07-Jan,Immigration and refugees,256,0.003595102
+43,08-Jan,COVID-19,37,0.000464509
+44,08-Jan,Economy and jobs,887,0.011135662
+45,08-Jan,Environment,738,0.009265071
+46,08-Jan,Government,238,0.002987923
+47,08-Jan,Healthcare,293,0.003678409
+48,08-Jan,Immigration and refugees,205,0.002573631
+49,09-Jan,COVID-19,30,0.000399111
+50,09-Jan,Economy and jobs,835,0.011108598
+51,09-Jan,Environment,604,0.008035441
+52,09-Jan,Government,271,0.003605306
+53,09-Jan,Healthcare,280,0.003725039
+54,09-Jan,Immigration and refugees,163,0.002168505
+55,10-Jan,COVID-19,39,0.000496461
+56,10-Jan,Economy and jobs,1064,0.013544478
+57,10-Jan,Environment,679,0.008643515
+58,10-Jan,Government,282,0.003589796
+59,10-Jan,Healthcare,236,0.003004226
+60,10-Jan,Immigration and refugees,232,0.002953307
+61,11-Jan,COVID-19,35,0.00051918
+62,11-Jan,Economy and jobs,690,0.010235263
+63,11-Jan,Environment,481,0.007135016
+64,11-Jan,Government,199,0.002951909
+65,11-Jan,Healthcare,182,0.002699736
+66,11-Jan,Immigration and refugees,155,0.002299226
+67,12-Jan,COVID-19,35,0.000495449
+68,12-Jan,Economy and jobs,679,0.00961171
+69,12-Jan,Environment,796,0.011267925
+70,12-Jan,Government,151,0.002137508
+71,12-Jan,Healthcare,209,0.002958538
+72,12-Jan,Immigration and refugees,154,0.002179975
+73,13-Jan,COVID-19,49,0.000650661
+74,13-Jan,Economy and jobs,811,0.010769108
+75,13-Jan,Environment,749,0.009945822
+76,13-Jan,Government,236,0.003133797
+77,13-Jan,Healthcare,308,0.004089871
+78,13-Jan,Immigration and refugees,187,0.002483136
+79,14-Jan,COVID-19,49,0.000632283
+80,14-Jan,Economy and jobs,923,0.011910138
+81,14-Jan,Environment,749,0.00966489
+82,14-Jan,Government,334,0.004309844
+83,14-Jan,Healthcare,300,0.003871118
+84,14-Jan,Immigration and refugees,202,0.002606553
+85,15-Jan,COVID-19,95,0.001163432
+86,15-Jan,Economy and jobs,1035,0.01267528
+87,15-Jan,Environment,755,0.009246219
+88,15-Jan,Government,341,0.004176107
+89,15-Jan,Healthcare,268,0.003282102
+90,15-Jan,Immigration and refugees,251,0.003073909
+91,16-Jan,COVID-19,59,0.000735743
+92,16-Jan,Economy and jobs,923,0.01151002
+93,16-Jan,Environment,727,0.009065855
+94,16-Jan,Government,447,0.005574192
+95,16-Jan,Healthcare,290,0.003616366
+96,16-Jan,Immigration and refugees,193,0.002406754
+97,17-Jan,COVID-19,62,0.000784105
+98,17-Jan,Economy and jobs,916,0.011584525
+99,17-Jan,Environment,684,0.008650453
+100,17-Jan,Government,373,0.004717279
+101,17-Jan,Healthcare,255,0.00322495
+102,17-Jan,Immigration and refugees,191,0.002415551
+103,18-Jan,COVID-19,43,0.000614786
+104,18-Jan,Economy and jobs,723,0.010336989
+105,18-Jan,Environment,595,0.008506927
+106,18-Jan,Government,254,0.003631529
+107,18-Jan,Healthcare,263,0.003760205
+108,18-Jan,Immigration and refugees,164,0.002344766
+109,19-Jan,COVID-19,46,0.000687285
+110,19-Jan,Economy and jobs,634,0.009472583
+111,19-Jan,Environment,585,0.008740475
+112,19-Jan,Government,226,0.003376662
+113,19-Jan,Healthcare,194,0.002898551
+114,19-Jan,Immigration and refugees,160,0.002390557
+115,20-Jan,COVID-19,77,0.001078552
+116,20-Jan,Economy and jobs,936,0.013110713
+117,20-Jan,Environment,739,0.0103513
+118,20-Jan,Government,285,0.003992044
+119,20-Jan,Healthcare,245,0.003431757
+120,20-Jan,Immigration and refugees,179,0.002507284
+121,21-Jan,COVID-19,151,0.001908518
+122,21-Jan,Economy and jobs,1153,0.014572985
+123,21-Jan,Environment,770,0.009732176
+124,21-Jan,Government,516,0.006521822
+125,21-Jan,Healthcare,241,0.003046045
+126,21-Jan,Immigration and refugees,176,0.002224497
+127,22-Jan,COVID-19,189,0.002399726
+128,22-Jan,Economy and jobs,1067,0.013547658
+129,22-Jan,Environment,634,0.008049874
+130,22-Jan,Government,573,0.007275359
+131,22-Jan,Healthcare,289,0.003669422
+132,22-Jan,Immigration and refugees,175,0.002221968
+133,23-Jan,COVID-19,240,0.003009103
+134,23-Jan,Economy and jobs,1096,0.013741568
+135,23-Jan,Environment,685,0.00858848
+136,23-Jan,Government,515,0.006457033
+137,23-Jan,Healthcare,357,0.00447604
+138,23-Jan,Immigration and refugees,243,0.003046716
+139,24-Jan,COVID-19,236,0.003019022
+140,24-Jan,Economy and jobs,945,0.012088882
+141,24-Jan,Environment,666,0.008519784
+142,24-Jan,Government,369,0.004720421
+143,24-Jan,Healthcare,374,0.004784383
+144,24-Jan,Immigration and refugees,232,0.002967853
+145,25-Jan,COVID-19,299,0.00444775
+146,25-Jan,Economy and jobs,753,0.01120119
+147,25-Jan,Environment,480,0.007140201
+148,25-Jan,Government,342,0.005087393
+149,25-Jan,Healthcare,321,0.004775009
+150,25-Jan,Immigration and refugees,187,0.002781703
+151,26-Jan,COVID-19,467,0.006069034
+152,26-Jan,Economy and jobs,605,0.007862453
+153,26-Jan,Environment,562,0.007303634
+154,26-Jan,Government,282,0.003664813
+155,26-Jan,Healthcare,285,0.0037038
+156,26-Jan,Immigration and refugees,144,0.001871394
+157,27-Jan,COVID-19,455,0.005505808
+158,27-Jan,Economy and jobs,887,0.010733301
+159,27-Jan,Environment,527,0.006377057
+160,27-Jan,Government,387,0.004682962
+161,27-Jan,Healthcare,317,0.003835915
+162,27-Jan,Immigration and refugees,181,0.002190223
+163,28-Jan,COVID-19,479,0.005760258
+164,28-Jan,Economy and jobs,1085,0.013047766
+165,28-Jan,Environment,598,0.007191303
+166,28-Jan,Government,418,0.005026697
+167,28-Jan,Healthcare,319,0.003836163
+168,28-Jan,Immigration and refugees,244,0.002934244
+169,29-Jan,COVID-19,470,0.003990931
+170,29-Jan,Economy and jobs,1766,0.014995712
+171,29-Jan,Environment,657,0.005578812
+172,29-Jan,Government,426,0.003617312
+173,29-Jan,Healthcare,435,0.003693734
+174,29-Jan,Immigration and refugees,292,0.002479472
+175,30-Jan,COVID-19,446,0.004721725
+176,30-Jan,Economy and jobs,1280,0.01355114
+177,30-Jan,Environment,690,0.007304911
+178,30-Jan,Government,542,0.005738061
+179,30-Jan,Healthcare,378,0.004001821
+180,30-Jan,Immigration and refugees,316,0.003345438
+181,31-Jan,COVID-19,364,0.004445476
+182,31-Jan,Economy and jobs,1026,0.012530379
+183,31-Jan,Environment,634,0.007742944
+184,31-Jan,Government,818,0.009990108
+185,31-Jan,Healthcare,373,0.004555391
+186,31-Jan,Immigration and refugees,250,0.003053211
+187,01-Feb,COVID-19,225,0.003070289
+188,01-Feb,Economy and jobs,727,0.009920445
+189,01-Feb,Environment,483,0.006590887
+190,01-Feb,Government,616,0.008405769
+191,01-Feb,Healthcare,358,0.004885171
+192,01-Feb,Immigration and refugees,195,0.002660917
+193,02-Feb,COVID-19,253,0.003560622
+194,02-Feb,Economy and jobs,702,0.009879671
+195,02-Feb,Environment,505,0.007107171
+196,02-Feb,Government,249,0.003504328
+197,02-Feb,Healthcare,303,0.004264302
+198,02-Feb,Immigration and refugees,144,0.002026599
+199,03-Feb,COVID-19,225,0.00273716
+200,03-Feb,Economy and jobs,828,0.010072748
+201,03-Feb,Environment,626,0.007615386
+202,03-Feb,Government,248,0.003016958
+203,03-Feb,Healthcare,338,0.004111822
+204,03-Feb,Immigration and refugees,266,0.003235931
+205,04-Feb,COVID-19,202,0.002479197
+206,04-Feb,Economy and jobs,957,0.011745502
+207,04-Feb,Environment,765,0.009389038
+208,04-Feb,Government,430,0.005277498
+209,04-Feb,Healthcare,314,0.003853801
+210,04-Feb,Immigration and refugees,194,0.002381011
+211,05-Feb,COVID-19,185,0.002064571
+212,05-Feb,Economy and jobs,1251,0.013960963
+213,05-Feb,Environment,697,0.00777841
+214,05-Feb,Government,614,0.006852143
+215,05-Feb,Healthcare,297,0.003314473
+216,05-Feb,Immigration and refugees,231,0.002577924
+217,06-Feb,COVID-19,236,0.002698531
+218,06-Feb,Economy and jobs,1007,0.011514493
+219,06-Feb,Environment,705,0.008061289
+220,06-Feb,Government,508,0.005808702
+221,06-Feb,Healthcare,493,0.005637185
+222,06-Feb,Immigration and refugees,214,0.002446973
+223,07-Feb,COVID-19,215,0.002583576
+224,07-Feb,Economy and jobs,1210,0.014540124
+225,07-Feb,Environment,720,0.008651974
+226,07-Feb,Government,400,0.004806652
+227,07-Feb,Healthcare,428,0.005143118
+228,07-Feb,Immigration and refugees,183,0.002199043
+229,08-Feb,COVID-19,173,0.002264932
+230,08-Feb,Economy and jobs,968,0.012673143
+231,08-Feb,Environment,607,0.007946898
+232,08-Feb,Government,264,0.003456312
+233,08-Feb,Healthcare,255,0.003338483
+234,08-Feb,Immigration and refugees,161,0.002107826
+235,09-Feb,COVID-19,154,0.002106271
+236,09-Feb,Economy and jobs,864,0.011817001
+237,09-Feb,Environment,487,0.00666074
+238,09-Feb,Government,260,0.003556042
+239,09-Feb,Healthcare,242,0.003309854
+240,09-Feb,Immigration and refugees,153,0.002092594
+241,10-Feb,COVID-19,180,0.002104623
+242,10-Feb,Economy and jobs,1010,0.011809274
+243,10-Feb,Environment,670,0.007833875
+244,10-Feb,Government,366,0.0042794
+245,10-Feb,Healthcare,316,0.003694783
+246,10-Feb,Immigration and refugees,203,0.002373547
+247,11-Feb,COVID-19,203,0.002269856
+248,11-Feb,Economy and jobs,1093,0.01222144
+249,11-Feb,Environment,791,0.00884461
+250,11-Feb,Government,484,0.005411873
+251,11-Feb,Healthcare,356,0.003980634
+252,11-Feb,Immigration and refugees,293,0.003276196
+253,12-Feb,COVID-19,168,0.001860815
+254,12-Feb,Economy and jobs,1278,0.014155489
+255,12-Feb,Environment,682,0.007554025
+256,12-Feb,Government,607,0.006723303
+257,12-Feb,Healthcare,381,0.004220064
+258,12-Feb,Immigration and refugees,248,0.002746918
+259,13-Feb,COVID-19,160,0.001814388
+260,13-Feb,Economy and jobs,1209,0.01370997
+261,13-Feb,Environment,688,0.007801869
+262,13-Feb,Government,534,0.00605552
+263,13-Feb,Healthcare,301,0.003413318
+264,13-Feb,Immigration and refugees,215,0.002438084
+265,14-Feb,COVID-19,160,0.001781003
+266,14-Feb,Economy and jobs,1246,0.013869564
+267,14-Feb,Environment,610,0.006790075
+268,14-Feb,Government,587,0.006534056
+269,14-Feb,Healthcare,296,0.003294856
+270,14-Feb,Immigration and refugees,206,0.002293042
+271,15-Feb,COVID-19,112,0.001546
+272,15-Feb,Economy and jobs,822,0.011346539
+273,15-Feb,Environment,478,0.006598109
+274,15-Feb,Government,372,0.00513493
+275,15-Feb,Healthcare,258,0.003561322
+276,15-Feb,Immigration and refugees,210,0.002898751
+277,16-Feb,COVID-19,150,0.002121581
+278,16-Feb,Economy and jobs,817,0.011555543
+279,16-Feb,Environment,453,0.006407174
+280,16-Feb,Government,330,0.004667478
+281,16-Feb,Healthcare,216,0.003055076
+282,16-Feb,Immigration and refugees,166,0.002347883
+283,17-Feb,COVID-19,154,0.002011048
+284,17-Feb,Economy and jobs,997,0.013019575
+285,17-Feb,Environment,560,0.007312901
+286,17-Feb,Government,426,0.005563028
+287,17-Feb,Healthcare,302,0.003943743
+288,17-Feb,Immigration and refugees,187,0.002441986
+289,18-Feb,COVID-19,141,0.001668067
+290,18-Feb,Economy and jobs,1335,0.015793396
+291,18-Feb,Environment,760,0.008990997
+292,18-Feb,Government,564,0.006672266
+293,18-Feb,Healthcare,340,0.004022288
+294,18-Feb,Immigration and refugees,222,0.002626318
+295,19-Feb,COVID-19,124,0.001362592
+296,19-Feb,Economy and jobs,1390,0.015274222
+297,19-Feb,Environment,769,0.008450271
+298,19-Feb,Government,666,0.00731844
+299,19-Feb,Healthcare,371,0.004076789
+300,19-Feb,Immigration and refugees,210,0.002307616
+301,20-Feb,COVID-19,136,0.001481982
+302,20-Feb,Economy and jobs,1388,0.015124933
+303,20-Feb,Environment,679,0.007399013
+304,20-Feb,Government,556,0.006058691
+305,20-Feb,Healthcare,454,0.004947204
+306,20-Feb,Immigration and refugees,209,0.002277458
+307,21-Feb,COVID-19,179,0.001943983
+308,21-Feb,Economy and jobs,1435,0.015584444
+309,21-Feb,Environment,681,0.007395823
+310,21-Feb,Government,490,0.005321517
+311,21-Feb,Healthcare,476,0.005169474
+312,21-Feb,Immigration and refugees,237,0.002573877
+313,22-Feb,COVID-19,151,0.001942347
+314,22-Feb,Economy and jobs,1064,0.013686472
+315,22-Feb,Environment,535,0.006881826
+316,22-Feb,Government,278,0.003575977
+317,22-Feb,Healthcare,417,0.005363965
+318,22-Feb,Immigration and refugees,189,0.00243115
+319,23-Feb,COVID-19,206,0.002471832
+320,23-Feb,Economy and jobs,939,0.011267234
+321,23-Feb,Environment,641,0.007691477
+322,23-Feb,Government,261,0.003131787
+323,23-Feb,Healthcare,340,0.004079723
+324,23-Feb,Immigration and refugees,201,0.002411836
+325,24-Feb,COVID-19,278,0.002834161
+326,24-Feb,Economy and jobs,1620,0.016515613
+327,24-Feb,Environment,1701,0.017341394
+328,24-Feb,Government,465,0.004740593
+329,24-Feb,Healthcare,467,0.004760982
+330,24-Feb,Immigration and refugees,248,0.002528316
+331,25-Feb,COVID-19,489,0.005236892
+332,25-Feb,Economy and jobs,1398,0.014971727
+333,25-Feb,Environment,1254,0.013429575
+334,25-Feb,Government,515,0.005515336
+335,25-Feb,Healthcare,457,0.004894191
+336,25-Feb,Immigration and refugees,288,0.003084304
+337,26-Feb,COVID-19,553,0.005546195
+338,26-Feb,Economy and jobs,1404,0.014081117
+339,26-Feb,Environment,1018,0.010209813
+340,26-Feb,Government,438,0.004392827
+341,26-Feb,Healthcare,485,0.004864203
+342,26-Feb,Immigration and refugees,317,0.003179284
+343,27-Feb,COVID-19,829,0.008688726
+344,27-Feb,Economy and jobs,1431,0.014998271
+345,27-Feb,Environment,879,0.009212774
+346,27-Feb,Government,392,0.004108541
+347,27-Feb,Healthcare,447,0.004684994
+348,27-Feb,Immigration and refugees,304,0.003186215
+349,28-Feb,COVID-19,1036,0.010783691
+350,28-Feb,Economy and jobs,1509,0.015707133
+351,28-Feb,Environment,802,0.008347993
+352,28-Feb,Government,369,0.003840909
+353,28-Feb,Healthcare,434,0.004517492
+354,28-Feb,Immigration and refugees,254,0.002643878
+355,29-Feb,COVID-19,856,0.010523857
+356,29-Feb,Economy and jobs,1130,0.013892475
+357,29-Feb,Environment,661,0.008126483
+358,29-Feb,Government,306,0.003762033
+359,29-Feb,Healthcare,425,0.005225046
+360,29-Feb,Immigration and refugees,293,0.003602208
+361,01-Mar,COVID-19,659,0.008221058
+362,01-Mar,Economy and jobs,856,0.010678643
+363,01-Mar,Environment,535,0.006674152
+364,01-Mar,Government,234,0.002919162
+365,01-Mar,Healthcare,381,0.004752994
+366,01-Mar,Immigration and refugees,289,0.003605289
+367,02-Mar,COVID-19,727,0.008305344
+368,02-Mar,Economy and jobs,1131,0.012920694
+369,02-Mar,Environment,721,0.008236799
+370,02-Mar,Government,258,0.002947426
+371,02-Mar,Healthcare,458,0.005232253
+372,02-Mar,Immigration and refugees,334,0.00381566
+373,03-Mar,COVID-19,782,0.008370351
+374,03-Mar,Economy and jobs,1353,0.014482205
+375,03-Mar,Environment,796,0.008520203
+376,03-Mar,Government,287,0.003071983
+377,03-Mar,Healthcare,459,0.004913032
+378,03-Mar,Immigration and refugees,301,0.003221836
+379,04-Mar,COVID-19,861,0.00876434
+380,04-Mar,Economy and jobs,1338,0.013619845
+381,04-Mar,Environment,803,0.008173943
+382,04-Mar,Government,341,0.003471127
+383,04-Mar,Healthcare,541,0.005506978
+384,04-Mar,Immigration and refugees,346,0.003522023
+385,05-Mar,COVID-19,1062,0.010699066
+386,05-Mar,Economy and jobs,1375,0.013852369
+387,05-Mar,Environment,895,0.009016633
+388,05-Mar,Government,364,0.0036671
+389,05-Mar,Healthcare,561,0.005651767
+390,05-Mar,Immigration and refugees,291,0.002931665
+391,06-Mar,COVID-19,1005,0.01025301
+392,06-Mar,Economy and jobs,1506,0.015364211
+393,06-Mar,Environment,681,0.006947562
+394,06-Mar,Government,369,0.003764538
+395,06-Mar,Healthcare,583,0.005947766
+396,06-Mar,Immigration and refugees,300,0.0030606
+397,07-Mar,COVID-19,1009,0.01206101
+398,07-Mar,Economy and jobs,1160,0.013865978
+399,07-Mar,Environment,657,0.007853403
+400,07-Mar,Government,199,0.002378732
+401,07-Mar,Healthcare,531,0.006347271
+402,07-Mar,Immigration and refugees,250,0.002988357
+403,08-Mar,COVID-19,1043,0.012141036
+404,08-Mar,Economy and jobs,1130,0.013153759
+405,08-Mar,Environment,559,0.006507037
+406,08-Mar,Government,201,0.002339739
+407,08-Mar,Healthcare,486,0.005657281
+408,08-Mar,Immigration and refugees,292,0.003399025
+409,09-Mar,COVID-19,1634,0.01772888
+410,09-Mar,Economy and jobs,1745,0.018933229
+411,09-Mar,Environment,662,0.007182692
+412,09-Mar,Government,200,0.002169998
+413,09-Mar,Healthcare,520,0.005641994
+414,09-Mar,Immigration and refugees,259,0.002810147
+415,10-Mar,COVID-19,1953,0.019881505
+416,10-Mar,Economy and jobs,1761,0.017926948
+417,10-Mar,Environment,731,0.007441567
+418,10-Mar,Government,250,0.002544996
+419,10-Mar,Healthcare,653,0.006647528
+420,10-Mar,Immigration and refugees,278,0.002830035
+421,11-Mar,COVID-19,3333,0.032223447
+422,11-Mar,Economy and jobs,1654,0.015990873
+423,11-Mar,Environment,824,0.007966433
+424,11-Mar,Government,349,0.003374132
+425,11-Mar,Healthcare,741,0.007163989
+426,11-Mar,Immigration and refugees,310,0.00299708
+427,12-Mar,COVID-19,7681,0.056489571
+428,12-Mar,Economy and jobs,1901,0.01398082
+429,12-Mar,Environment,783,0.005758539
+430,12-Mar,Government,418,0.003074162
+431,12-Mar,Healthcare,1419,0.010435972
+432,12-Mar,Immigration and refugees,402,0.002956491
+433,13-Mar,COVID-19,8453,0.064039819
+434,13-Mar,Economy and jobs,1950,0.014773175
+435,13-Mar,Environment,701,0.005310767
+436,13-Mar,Government,466,0.00353041
+437,13-Mar,Healthcare,1544,0.011697324
+438,13-Mar,Immigration and refugees,409,0.003098579
+439,14-Mar,COVID-19,6499,0.057717584
+440,14-Mar,Economy and jobs,1408,0.01250444
+441,14-Mar,Environment,519,0.004609236
+442,14-Mar,Government,254,0.002255773
+443,14-Mar,Healthcare,1536,0.013641208
+444,14-Mar,Immigration and refugees,394,0.003499112
+445,15-Mar,COVID-19,8196,0.071816621
+446,15-Mar,Economy and jobs,1426,0.012495181
+447,15-Mar,Environment,544,0.004766745
+448,15-Mar,Government,178,0.001559707
+449,15-Mar,Healthcare,1434,0.01256528
+450,15-Mar,Immigration and refugees,472,0.004135852
+451,16-Mar,COVID-19,10889,0.07911735
+452,16-Mar,Economy and jobs,2289,0.016631428
+453,16-Mar,Environment,740,0.005376696
+454,16-Mar,Government,399,0.002899056
+455,16-Mar,Healthcare,1518,0.011029492
+456,16-Mar,Immigration and refugees,1259,0.009147648
+457,17-Mar,COVID-19,11189,0.08060252
+458,17-Mar,Economy and jobs,2827,0.020364941
+459,17-Mar,Environment,913,0.006577004
+460,17-Mar,Government,370,0.00266538
+461,17-Mar,Healthcare,1442,0.010387777
+462,17-Mar,Immigration and refugees,867,0.006245633
+463,18-Mar,COVID-19,11194,0.081024349
+464,18-Mar,Economy and jobs,3484,0.02521787
+465,18-Mar,Environment,729,0.005276644
+466,18-Mar,Government,332,0.002403081
+467,18-Mar,Healthcare,1490,0.01078491
+468,18-Mar,Immigration and refugees,1615,0.011689684
+469,19-Mar,COVID-19,10581,0.078652187
+470,19-Mar,Economy and jobs,2693,0.020017989
+471,19-Mar,Environment,724,0.005381739
+472,19-Mar,Government,428,0.00318147
+473,19-Mar,Healthcare,1844,0.013707082
+474,19-Mar,Immigration and refugees,575,0.004274171
+475,20-Mar,COVID-19,10225,0.073185745
+476,20-Mar,Economy and jobs,2820,0.020184235
+477,20-Mar,Environment,615,0.004401881
+478,20-Mar,Government,518,0.003707601
+479,20-Mar,Healthcare,1866,0.013355951
+480,20-Mar,Immigration and refugees,678,0.004852805
+481,21-Mar,COVID-19,9118,0.071645216
+482,21-Mar,Economy and jobs,2595,0.020390363
+483,21-Mar,Environment,617,0.004848113
+484,21-Mar,Government,264,0.002074395
+485,21-Mar,Healthcare,2080,0.016343721
+486,21-Mar,Immigration and refugees,631,0.004958119
+487,22-Mar,COVID-19,10100,0.078922281
+488,22-Mar,Economy and jobs,2270,0.017737978
+489,22-Mar,Environment,614,0.00479785
+490,22-Mar,Government,505,0.003946114
+491,22-Mar,Healthcare,2494,0.019488334
+492,22-Mar,Immigration and refugees,376,0.002938097
+493,23-Mar,COVID-19,10720,0.075958875
+494,23-Mar,Economy and jobs,3076,0.021795662
+495,23-Mar,Environment,590,0.004180572
+496,23-Mar,Government,921,0.006525944
+497,23-Mar,Healthcare,2654,0.01880549
+498,23-Mar,Immigration and refugees,320,0.002267429
+499,24-Mar,COVID-19,9727,0.067498924
+500,24-Mar,Economy and jobs,3965,0.027514469
+501,24-Mar,Environment,692,0.004802021
+502,24-Mar,Government,1054,0.00731406
+503,24-Mar,Healthcare,2072,0.014378305
+504,24-Mar,Immigration and refugees,386,0.002678584
+505,25-Mar,COVID-19,8226,0.057427291
+506,25-Mar,Economy and jobs,3617,0.025250974
+507,25-Mar,Environment,661,0.004614568
+508,25-Mar,Government,880,0.00614345
+509,25-Mar,Healthcare,1999,0.013955404
+510,25-Mar,Immigration and refugees,243,0.00169643
+511,26-Mar,COVID-19,8359,0.05786497
+512,26-Mar,Economy and jobs,3414,0.02363333
+513,26-Mar,Environment,759,0.005254159
+514,26-Mar,Government,612,0.004236555
+515,26-Mar,Healthcare,2846,0.019701364
+516,26-Mar,Immigration and refugees,1129,0.007815475
+517,27-Mar,COVID-19,7870,0.055428781
+518,27-Mar,Economy and jobs,2825,0.019896608
+519,27-Mar,Environment,717,0.005049865
+520,27-Mar,Government,390,0.002746788
+521,27-Mar,Healthcare,2732,0.019241605
+522,27-Mar,Immigration and refugees,1095,0.007712137
+523,28-Mar,COVID-19,7378,0.057169424
+524,28-Mar,Economy and jobs,2074,0.016070668
+525,28-Mar,Environment,650,0.005036612
+526,28-Mar,Government,287,0.002223858
+527,28-Mar,Healthcare,2522,0.019542056
+528,28-Mar,Immigration and refugees,401,0.003107202
+529,29-Mar,COVID-19,6620,0.051316238
+530,29-Mar,Economy and jobs,2281,0.017681622
+531,29-Mar,Environment,660,0.00511612
+532,29-Mar,Government,198,0.001534836
+533,29-Mar,Healthcare,2330,0.018061455
+534,29-Mar,Immigration and refugees,334,0.002589067
+535,30-Mar,COVID-19,6826,0.050051694
+536,30-Mar,Economy and jobs,2634,0.019313824
+537,30-Mar,Environment,879,0.006445274
+538,30-Mar,Government,330,0.002419727
+539,30-Mar,Healthcare,2812,0.02061901
+540,30-Mar,Immigration and refugees,287,0.00210443
+541,31-Mar,COVID-19,6804,0.047786604
+542,31-Mar,Economy and jobs,2969,0.020852208
+543,31-Mar,Environment,1055,0.007409592
+544,31-Mar,Government,355,0.002493275
+545,31-Mar,Healthcare,2615,0.018365957
+546,31-Mar,Immigration and refugees,353,0.002479229
+547,01-Apr,COVID-19,7003,0.049245115
+548,01-Apr,Economy and jobs,2934,0.020631896
+549,01-Apr,Environment,1062,0.007467987
+550,01-Apr,Government,620,0.004359842
+551,01-Apr,Healthcare,2241,0.015758718
+552,01-Apr,Immigration and refugees,277,0.001947865
+553,02-Apr,COVID-19,6823,0.048538785
+554,02-Apr,Economy and jobs,2790,0.019848045
+555,02-Apr,Environment,871,0.006196289
+556,02-Apr,Government,425,0.003023448
+557,02-Apr,Healthcare,2130,0.015152809
+558,02-Apr,Immigration and refugees,250,0.001778499
+559,03-Apr,COVID-19,6908,0.048182351
+560,03-Apr,Economy and jobs,3056,0.02131518
+561,03-Apr,Environment,903,0.006298301
+562,03-Apr,Government,333,0.002322629
+563,03-Apr,Healthcare,2205,0.015379572
+564,03-Apr,Immigration and refugees,289,0.002015735
+565,04-Apr,COVID-19,5739,0.044009386
+566,04-Apr,Economy and jobs,2071,0.015881415
+567,04-Apr,Environment,660,0.005061194
+568,04-Apr,Government,284,0.002177847
+569,04-Apr,Healthcare,2100,0.0161038
+570,04-Apr,Immigration and refugees,289,0.00221619
+571,05-Apr,COVID-19,5753,0.045388918
+572,05-Apr,Economy and jobs,1729,0.013641133
+573,05-Apr,Environment,606,0.004781103
+574,05-Apr,Government,217,0.001712045
+575,05-Apr,Healthcare,1844,0.014548438
+576,05-Apr,Immigration and refugees,273,0.002153863
+577,06-Apr,COVID-19,5877,0.043298878
+578,06-Apr,Economy and jobs,2463,0.018146186
+579,06-Apr,Environment,646,0.004759414
+580,06-Apr,Government,301,0.002217622
+581,06-Apr,Healthcare,2428,0.017888323
+582,06-Apr,Immigration and refugees,343,0.002527057
+583,07-Apr,COVID-19,5474,0.040187355
+584,07-Apr,Economy and jobs,2325,0.017068981
+585,07-Apr,Environment,754,0.005535489
+586,07-Apr,Government,332,0.002437377
+587,07-Apr,Healthcare,2191,0.01608522
+588,07-Apr,Immigration and refugees,311,0.002283206
+589,08-Apr,COVID-19,5348,0.040962951
+590,08-Apr,Economy and jobs,2525,0.019340212
+591,08-Apr,Environment,607,0.00464931
+592,08-Apr,Government,269,0.002060403
+593,08-Apr,Healthcare,1531,0.011726679
+594,08-Apr,Immigration and refugees,365,0.002795714
+595,09-Apr,COVID-19,5204,0.042646999
+596,09-Apr,Economy and jobs,2578,0.021126818
+597,09-Apr,Environment,624,0.005113706
+598,09-Apr,Government,439,0.003597623
+599,09-Apr,Healthcare,1300,0.010653555
+600,09-Apr,Immigration and refugees,277,0.002270027
+601,10-Apr,COVID-19,4917,0.044230752
+602,10-Apr,Economy and jobs,1942,0.017469213
+603,10-Apr,Environment,473,0.00425486
+604,10-Apr,Government,300,0.002698643
+605,10-Apr,Healthcare,1272,0.011442245
+606,10-Apr,Immigration and refugees,223,0.002005991
+607,11-Apr,COVID-19,4044,0.03906567
+608,11-Apr,Economy and jobs,1625,0.015697753
+609,11-Apr,Environment,493,0.004762457
+610,11-Apr,Government,321,0.00310091
+611,11-Apr,Healthcare,1291,0.012471261
+612,11-Apr,Immigration and refugees,179,0.001729168
+613,12-Apr,COVID-19,3492,0.034553047
+614,12-Apr,Economy and jobs,1250,0.012368645
+615,12-Apr,Environment,391,0.003868912
+616,12-Apr,Government,329,0.003255427
+617,12-Apr,Healthcare,1087,0.010755774
+618,12-Apr,Immigration and refugees,136,0.001345709
+619,13-Apr,COVID-19,4374,0.0387251
+620,13-Apr,Economy and jobs,1688,0.014944666
+621,13-Apr,Environment,465,0.004116866
+622,13-Apr,Government,241,0.002133687
+623,13-Apr,Healthcare,1215,0.010756972
+624,13-Apr,Immigration and refugees,206,0.001823816
+625,14-Apr,COVID-19,4423,0.036775588
+626,14-Apr,Economy and jobs,2129,0.017701838
+627,14-Apr,Environment,547,0.0045481
+628,14-Apr,Government,382,0.003176187
+629,14-Apr,Healthcare,1214,0.010093955
+630,14-Apr,Immigration and refugees,256,0.002128544
+631,15-Apr,COVID-19,5275,0.041545247
+632,15-Apr,Economy and jobs,2638,0.020776561
+633,15-Apr,Environment,610,0.004804284
+634,15-Apr,Government,503,0.003961566
+635,15-Apr,Healthcare,1194,0.009403796
+636,15-Apr,Immigration and refugees,315,0.002480901
+637,16-Apr,COVID-19,4924,0.038179718
+638,16-Apr,Economy and jobs,2635,0.020431266
+639,16-Apr,Environment,639,0.004954679
+640,16-Apr,Government,412,0.003194566
+641,16-Apr,Healthcare,1441,0.011173228
+642,16-Apr,Immigration and refugees,563,0.00436539
+643,17-Apr,COVID-19,5026,0.038364948
+644,17-Apr,Economy and jobs,2427,0.01852601
+645,17-Apr,Environment,797,0.006083737
+646,17-Apr,Government,527,0.004022747
+647,17-Apr,Healthcare,1726,0.01317507
+648,17-Apr,Immigration and refugees,381,0.002908286
+649,18-Apr,COVID-19,4325,0.036017055
+650,18-Apr,Economy and jobs,2061,0.017163272
+651,18-Apr,Environment,682,0.005679452
+652,18-Apr,Government,698,0.005812695
+653,18-Apr,Healthcare,1396,0.011625389
+654,18-Apr,Immigration and refugees,481,0.004005596
+655,19-Apr,COVID-19,4319,0.035775523
+656,19-Apr,Economy and jobs,1684,0.013949058
+657,19-Apr,Environment,588,0.004870574
+658,19-Apr,Government,888,0.00735556
+659,19-Apr,Healthcare,1363,0.011290122
+660,19-Apr,Immigration and refugees,263,0.002178505
+661,20-Apr,COVID-19,4447,0.034342951
+662,20-Apr,Economy and jobs,1976,0.015260101
+663,20-Apr,Environment,684,0.005282343
+664,20-Apr,Government,1068,0.008247869
+665,20-Apr,Healthcare,1785,0.013785061
+666,20-Apr,Immigration and refugees,214,0.001652663
+667,21-Apr,COVID-19,4171,0.032024016
+668,21-Apr,Economy and jobs,2231,0.017129125
+669,21-Apr,Environment,838,0.006433979
+670,21-Apr,Government,818,0.006280423
+671,21-Apr,Healthcare,1361,0.010449457
+672,21-Apr,Immigration and refugees,307,0.002357078
+673,22-Apr,COVID-19,4319,0.032664267
+674,22-Apr,Economy and jobs,2317,0.017523294
+675,22-Apr,Environment,1305,0.009869615
+676,22-Apr,Government,669,0.005059596
+677,22-Apr,Healthcare,1351,0.01021751
+678,22-Apr,Immigration and refugees,312,0.002359632
+679,23-Apr,COVID-19,4208,0.032900961
+680,23-Apr,Economy and jobs,2318,0.018123676
+681,23-Apr,Environment,830,0.006489496
+682,23-Apr,Government,472,0.003690412
+683,23-Apr,Healthcare,1222,0.009554414
+684,23-Apr,Immigration and refugees,418,0.003268204
+685,24-Apr,COVID-19,3893,0.02857017
+686,24-Apr,Economy and jobs,2211,0.016226213
+687,24-Apr,Environment,845,0.006201334
+688,24-Apr,Government,342,0.002509889
+689,24-Apr,Healthcare,1480,0.010861508
+690,24-Apr,Immigration and refugees,359,0.00263465
+691,25-Apr,COVID-19,3160,0.027776557
+692,25-Apr,Economy and jobs,1536,0.013501516
+693,25-Apr,Environment,893,0.007849514
+694,25-Apr,Government,322,0.002830396
+695,25-Apr,Healthcare,1118,0.009827276
+696,25-Apr,Immigration and refugees,229,0.002012921
+697,26-Apr,COVID-19,3328,0.029999549
+698,26-Apr,Economy and jobs,1503,0.013548474
+699,26-Apr,Environment,1102,0.009933745
+700,26-Apr,Government,369,0.003326272
+701,26-Apr,Healthcare,1087,0.009798531
+702,26-Apr,Immigration and refugees,177,0.001595529
+703,27-Apr,COVID-19,3772,0.031807603
+704,27-Apr,Economy and jobs,1988,0.016763922
+705,27-Apr,Environment,979,0.008255473
+706,27-Apr,Government,304,0.002563497
+707,27-Apr,Healthcare,994,0.008381961
+708,27-Apr,Immigration and refugees,222,0.001872028
+709,28-Apr,COVID-19,3910,0.032339173
+710,28-Apr,Economy and jobs,2154,0.017815493
+711,28-Apr,Environment,790,0.006534002
+712,28-Apr,Government,445,0.003680545
+713,28-Apr,Healthcare,1445,0.011951433
+714,28-Apr,Immigration and refugees,312,0.002580517
+715,29-Apr,COVID-19,3757,0.032245052
+716,29-Apr,Economy and jobs,1929,0.01655595
+717,29-Apr,Environment,691,0.005930618
+718,29-Apr,Government,484,0.004154007
+719,29-Apr,Healthcare,1214,0.010419349
+720,29-Apr,Immigration and refugees,269,0.002308735
+721,30-Apr,COVID-19,3512,0.028868522
+722,30-Apr,Economy and jobs,1826,0.015009658
+723,30-Apr,Environment,712,0.005852616
+724,30-Apr,Government,588,0.00483334
+725,30-Apr,Healthcare,1101,0.009050183
+726,30-Apr,Immigration and refugees,209,0.001717973
+727,01-May,COVID-19,3235,0.026401913
+728,01-May,Economy and jobs,1802,0.014706722
+729,01-May,Environment,568,0.004635637
+730,01-May,Government,892,0.007279909
+731,01-May,Healthcare,930,0.00759004
+732,01-May,Immigration and refugees,336,0.002742208
+733,02-May,COVID-19,2669,0.024512325
+734,02-May,Economy and jobs,1216,0.011167848
+735,02-May,Environment,461,0.004233864
+736,02-May,Government,638,0.005859447
+737,02-May,Healthcare,811,0.007448294
+738,02-May,Immigration and refugees,262,0.00240623
+739,03-May,COVID-19,2951,0.027553688
+740,03-May,Economy and jobs,1146,0.01070028
+741,03-May,Environment,486,0.004537815
+742,03-May,Government,496,0.004631186
+743,03-May,Healthcare,765,0.007142857
+744,03-May,Immigration and refugees,281,0.002623716
+745,04-May,COVID-19,3354,0.02798288
+746,04-May,Economy and jobs,1734,0.014466999
+747,04-May,Environment,562,0.004688843
+748,04-May,Government,447,0.003729382
+749,04-May,Healthcare,925,0.007717401
+750,04-May,Immigration and refugees,238,0.001985666
+751,05-May,COVID-19,3649,0.029034286
+752,05-May,Economy and jobs,1918,0.015261102
+753,05-May,Environment,664,0.005283301
+754,05-May,Government,557,0.004431926
+755,05-May,Healthcare,937,0.007455502
+756,05-May,Immigration and refugees,258,0.002052849
+757,06-May,COVID-19,3202,0.027231133
+758,06-May,Economy and jobs,1875,0.015945776
+759,06-May,Environment,759,0.00645485
+760,06-May,Government,492,0.004184172
+761,06-May,Healthcare,1024,0.00870852
+762,06-May,Immigration and refugees,276,0.002347218
+763,07-May,COVID-19,2916,0.025378148
+764,07-May,Economy and jobs,1759,0.015308698
+765,07-May,Environment,809,0.007040783
+766,07-May,Government,474,0.004125255
+767,07-May,Healthcare,1034,0.008998973
+768,07-May,Immigration and refugees,261,0.002271501
+769,08-May,COVID-19,2989,0.025710501
+770,08-May,Economy and jobs,2226,0.019147399
+771,08-May,Environment,641,0.005513694
+772,08-May,Government,455,0.003913776
+773,08-May,Healthcare,907,0.007801748
+774,08-May,Immigration and refugees,261,0.002245045
+775,09-May,COVID-19,2676,0.025212459
+776,09-May,Economy and jobs,1598,0.015055871
+777,09-May,Environment,541,0.005097138
+778,09-May,Government,360,0.003391811
+779,09-May,Healthcare,699,0.006585766
+780,09-May,Immigration and refugees,181,0.001705327
+781,10-May,COVID-19,2693,0.025403503
+782,10-May,Economy and jobs,1411,0.013310191
+783,10-May,Environment,511,0.004820345
+784,10-May,Government,357,0.003367639
+785,10-May,Healthcare,554,0.005225971
+786,10-May,Immigration and refugees,174,0.00164137
+787,11-May,COVID-19,3040,0.025821576
+788,11-May,Economy and jobs,1729,0.014686022
+789,11-May,Environment,705,0.005988227
+790,11-May,Government,447,0.003796791
+791,11-May,Healthcare,1051,0.00892713
+792,11-May,Immigration and refugees,258,0.002191436
+793,12-May,COVID-19,3749,0.029171011
+794,12-May,Economy and jobs,1938,0.0150796
+795,12-May,Environment,752,0.00585132
+796,12-May,Government,626,0.004870913
+797,12-May,Healthcare,1462,0.011375838
+798,12-May,Immigration and refugees,411,0.003197996
+799,13-May,COVID-19,3694,0.029567612
+800,13-May,Economy and jobs,2101,0.016816879
+801,13-May,Environment,709,0.005674996
+802,13-May,Government,619,0.004954616
+803,13-May,Healthcare,1070,0.008564522
+804,13-May,Immigration and refugees,417,0.003337762
+805,14-May,COVID-19,3510,0.027359888
+806,14-May,Economy and jobs,2322,0.018099618
+807,14-May,Environment,732,0.005705823
+808,14-May,Government,609,0.004747057
+809,14-May,Healthcare,930,0.007249201
+810,14-May,Immigration and refugees,306,0.002385221
+811,15-May,COVID-19,3104,0.025416998
+812,15-May,Economy and jobs,2004,0.016409685
+813,15-May,Environment,620,0.005076849
+814,15-May,Government,487,0.003987783
+815,15-May,Healthcare,825,0.006755484
+816,15-May,Immigration and refugees,303,0.002481105
+817,16-May,COVID-19,2347,0.023553379
+818,16-May,Economy and jobs,1550,0.015555065
+819,16-May,Environment,454,0.004556129
+820,16-May,Government,470,0.004716697
+821,16-May,Healthcare,563,0.005650001
+822,16-May,Immigration and refugees,219,0.00219778
+823,17-May,COVID-19,2516,0.024776948
+824,17-May,Economy and jobs,1297,0.012772537
+825,17-May,Environment,443,0.004362555
+826,17-May,Government,335,0.003298997
+827,17-May,Healthcare,575,0.005662458
+828,17-May,Immigration and refugees,286,0.002816458
+829,18-May,COVID-19,2550,0.023765809
+830,18-May,Economy and jobs,1246,0.011612627
+831,18-May,Environment,505,0.004706562
+832,18-May,Government,336,0.003131495
+833,18-May,Healthcare,558,0.005200518
+834,18-May,Immigration and refugees,213,0.001985144
+835,19-May,COVID-19,2695,0.023644914
+836,19-May,Economy and jobs,1525,0.013379775
+837,19-May,Environment,630,0.005527382
+838,19-May,Government,407,0.003570865
+839,19-May,Healthcare,808,0.007089087
+840,19-May,Immigration and refugees,517,0.004535963
+841,20-May,COVID-19,2711,0.022585079
+842,20-May,Economy and jobs,1846,0.015378848
+843,20-May,Environment,677,0.005640022
+844,20-May,Government,563,0.004690299
+845,20-May,Healthcare,919,0.0076561
+846,20-May,Immigration and refugees,447,0.003723914
+847,21-May,COVID-19,2900,0.024103996
+848,21-May,Economy and jobs,1827,0.015185518
+849,21-May,Environment,687,0.005710154
+850,21-May,Government,599,0.004978722
+851,21-May,Healthcare,850,0.007064964
+852,21-May,Immigration and refugees,367,0.003050402
+853,22-May,COVID-19,2591,0.021922699
+854,22-May,Economy and jobs,1638,0.013859275
+855,22-May,Environment,665,0.005626629
+856,22-May,Government,731,0.006185061
+857,22-May,Healthcare,659,0.005575862
+858,22-May,Immigration and refugees,285,0.002411412
+859,23-May,COVID-19,2231,0.022912601
+860,23-May,Economy and jobs,1428,0.014665708
+861,23-May,Environment,517,0.005309644
+862,23-May,Government,454,0.004662627
+863,23-May,Healthcare,573,0.005884769
+864,23-May,Immigration and refugees,271,0.002783198
+865,24-May,COVID-19,2613,0.026118508
+866,24-May,Economy and jobs,1140,0.011394986
+867,24-May,Environment,519,0.005187717
+868,24-May,Government,337,0.003368518
+869,24-May,Healthcare,564,0.005637519
+870,24-May,Immigration and refugees,226,0.002259006
+871,25-May,COVID-19,2816,0.026219495
+872,25-May,Economy and jobs,1513,0.014087392
+873,25-May,Environment,593,0.005521364
+874,25-May,Government,501,0.004664761
+875,25-May,Healthcare,623,0.005800691
+876,25-May,Immigration and refugees,272,0.002532565
+877,26-May,COVID-19,2628,0.021775697
+878,26-May,Economy and jobs,1768,0.014649708
+879,26-May,Environment,634,0.005253345
+880,26-May,Government,664,0.005501927
+881,26-May,Healthcare,745,0.006173095
+882,26-May,Immigration and refugees,247,0.00204665
+883,27-May,COVID-19,2748,0.021022514
+884,27-May,Economy and jobs,2012,0.01539203
+885,27-May,Environment,699,0.00534743
+886,27-May,Government,1198,0.009164837
+887,27-May,Healthcare,680,0.005202078
+888,27-May,Immigration and refugees,305,0.002333285
+889,28-May,COVID-19,2799,0.02042067
+890,28-May,Economy and jobs,1886,0.013759694
+891,28-May,Environment,573,0.004180437
+892,28-May,Government,1000,0.007295702
+893,28-May,Healthcare,606,0.004421195
+894,28-May,Immigration and refugees,316,0.002305442
+895,29-May,COVID-19,2536,0.01697661
+896,29-May,Economy and jobs,1909,0.012779317
+897,29-May,Environment,785,0.005254984
+898,29-May,Government,859,0.005750358
+899,29-May,Healthcare,529,0.003541257
+900,29-May,Immigration and refugees,442,0.002958857
+901,30-May,COVID-19,2172,0.016007311
+902,30-May,Economy and jobs,1415,0.010428336
+903,30-May,Environment,516,0.003802842
+904,30-May,Government,701,0.005166264
+905,30-May,Healthcare,594,0.00437769
+906,30-May,Immigration and refugees,368,0.002712104
+907,31-May,COVID-19,2674,0.0171113
+908,31-May,Economy and jobs,1595,0.010206628
+909,31-May,Environment,480,0.003071587
+910,31-May,Government,1134,0.007256625
+911,31-May,Healthcare,830,0.005311286
+912,31-May,Immigration and refugees,584,0.003737098
+913,01-Jun,COVID-19,2686,0.015930915
+914,01-Jun,Economy and jobs,2166,0.012846746
+915,01-Jun,Environment,753,0.004466113
+916,01-Jun,Government,1199,0.00711138
+917,01-Jun,Healthcare,567,0.003362929
+918,01-Jun,Immigration and refugees,623,0.003695071
+919,02-Jun,COVID-19,1899,0.01065274
+920,02-Jun,Economy and jobs,1942,0.010893955
+921,02-Jun,Environment,596,0.003343356
+922,02-Jun,Government,1938,0.010871516
+923,02-Jun,Healthcare,500,0.002804829
+924,02-Jun,Immigration and refugees,821,0.004605529
+925,03-Jun,COVID-19,2089,0.012930981
+926,03-Jun,Economy and jobs,1781,0.011024451
+927,03-Jun,Environment,597,0.00369545
+928,03-Jun,Government,1280,0.007923244
+929,03-Jun,Healthcare,624,0.003862581
+930,03-Jun,Immigration and refugees,651,0.004029712
+931,04-Jun,COVID-19,1757,0.011830216
+932,04-Jun,Economy and jobs,1687,0.011358893
+933,04-Jun,Environment,596,0.004012982
+934,04-Jun,Government,1004,0.006760123
+935,04-Jun,Healthcare,781,0.005258622
+936,04-Jun,Immigration and refugees,561,0.00377732
+937,05-Jun,COVID-19,1898,0.012606521
+938,05-Jun,Economy and jobs,2748,0.018252223
+939,05-Jun,Environment,687,0.004563056
+940,05-Jun,Government,1829,0.012148223
+941,05-Jun,Healthcare,696,0.004622834
+942,05-Jun,Immigration and refugees,607,0.004031696
+943,06-Jun,COVID-19,1797,0.013493321
+944,06-Jun,Economy and jobs,2043,0.015340487
+945,06-Jun,Environment,487,0.003656788
+946,06-Jun,Government,1305,0.009798989
+947,06-Jun,Healthcare,468,0.00351412
+948,06-Jun,Immigration and refugees,446,0.003348927
+949,07-Jun,COVID-19,1633,0.012424109
+950,07-Jun,Economy and jobs,1589,0.01208935
+951,07-Jun,Environment,501,0.003811683
+952,07-Jun,Government,860,0.006543009
+953,07-Jun,Healthcare,465,0.00353779
+954,07-Jun,Immigration and refugees,387,0.002944354
+955,08-Jun,COVID-19,1983,0.014382489
+956,08-Jun,Economy and jobs,2008,0.014563811
+957,08-Jun,Environment,538,0.003902057
+958,08-Jun,Government,945,0.006853985
+959,08-Jun,Healthcare,586,0.004250196
+960,08-Jun,Immigration and refugees,613,0.004446024
+961,09-Jun,COVID-19,1932,0.013800887
+962,09-Jun,Economy and jobs,2421,0.017293969
+963,09-Jun,Environment,634,0.004528863
+964,09-Jun,Government,837,0.005978956
+965,09-Jun,Healthcare,652,0.004657442
+966,09-Jun,Immigration and refugees,569,0.004064547
+967,10-Jun,COVID-19,1919,0.014035678
+968,10-Jun,Economy and jobs,2270,0.016602912
+969,10-Jun,Environment,699,0.005112527
+970,10-Jun,Government,1027,0.007511538
+971,10-Jun,Healthcare,559,0.004088559
+972,10-Jun,Immigration and refugees,652,0.004768766
+973,11-Jun,COVID-19,1698,0.012573121
+974,11-Jun,Economy and jobs,1967,0.014564976
+975,11-Jun,Environment,670,0.004961126
+976,11-Jun,Government,955,0.007071455
+977,11-Jun,Healthcare,512,0.003791188
+978,11-Jun,Immigration and refugees,542,0.004013328
+979,12-Jun,COVID-19,2042,0.015603867
+980,12-Jun,Economy and jobs,1786,0.013647652
+981,12-Jun,Environment,580,0.004432048
+982,12-Jun,Government,1251,0.00955947
+983,12-Jun,Healthcare,623,0.004760631
+984,12-Jun,Immigration and refugees,499,0.00381309
+985,13-Jun,COVID-19,1672,0.014356368
+986,13-Jun,Economy and jobs,1155,0.009917228
+987,13-Jun,Environment,565,0.004851285
+988,13-Jun,Government,765,0.006568553
+989,13-Jun,Healthcare,446,0.00382951
+990,13-Jun,Immigration and refugees,461,0.003958305
+991,14-Jun,COVID-19,1815,0.015202024
+992,14-Jun,Economy and jobs,1049,0.008786183
+993,14-Jun,Environment,546,0.004573171
+994,14-Jun,Government,650,0.005444251
+995,14-Jun,Healthcare,604,0.005058965
+996,14-Jun,Immigration and refugees,353,0.002956647
+997,15-Jun,COVID-19,2389,0.018733288
+998,15-Jun,Economy and jobs,1723,0.013510864
+999,15-Jun,Environment,738,0.00578701
+1000,15-Jun,Government,919,0.007206317
+1001,15-Jun,Healthcare,680,0.005332204
+1002,15-Jun,Immigration and refugees,685,0.005371412
+1003,16-Jun,COVID-19,1993,0.015320281
+1004,16-Jun,Economy and jobs,2084,0.016019802
+1005,16-Jun,Environment,672,0.005165694
+1006,16-Jun,Government,770,0.005919025
+1007,16-Jun,Healthcare,606,0.004658349
+1008,16-Jun,Immigration and refugees,979,0.007525617
+1009,17-Jun,COVID-19,2159,0.015774668
+1010,17-Jun,Economy and jobs,1770,0.012932452
+1011,17-Jun,Environment,824,0.006020531
+1012,17-Jun,Government,832,0.006078983
+1013,17-Jun,Healthcare,727,0.005311804
+1014,17-Jun,Immigration and refugees,669,0.004888028
+1015,18-Jun,COVID-19,1724,0.01313744
+1016,18-Jun,Economy and jobs,1828,0.013929954
+1017,18-Jun,Environment,653,0.004976072
+1018,18-Jun,Government,1084,0.008260432
+1019,18-Jun,Healthcare,534,0.004069254
+1020,18-Jun,Immigration and refugees,528,0.004023532
+1021,19-Jun,COVID-19,2066,0.01594985
+1022,19-Jun,Economy and jobs,1593,0.012298214
+1023,19-Jun,Environment,566,0.00436961
+1024,19-Jun,Government,747,0.005766959
+1025,19-Jun,Healthcare,691,0.00533463
+1026,19-Jun,Immigration and refugees,561,0.00433101
+1027,20-Jun,COVID-19,1955,0.016864934
+1028,20-Jun,Economy and jobs,1201,0.010360504
+1029,20-Jun,Environment,474,0.004088992
+1030,20-Jun,Government,696,0.006004089
+1031,20-Jun,Healthcare,615,0.005305337
+1032,20-Jun,Immigration and refugees,416,0.003588651
+1033,21-Jun,COVID-19,1613,0.013501523
+1034,21-Jun,Economy and jobs,1094,0.009157264
+1035,21-Jun,Environment,410,0.003431881
+1036,21-Jun,Government,445,0.003724847
+1037,21-Jun,Healthcare,395,0.003306325
+1038,21-Jun,Immigration and refugees,429,0.00359092
+1039,22-Jun,COVID-19,1892,0.014738646
+1040,22-Jun,Economy and jobs,1565,0.012191322
+1041,22-Jun,Environment,599,0.004666199
+1042,22-Jun,Government,566,0.00440913
+1043,22-Jun,Healthcare,445,0.003466542
+1044,22-Jun,Immigration and refugees,504,0.003926151
+1045,23-Jun,COVID-19,2123,0.015960486
+1046,23-Jun,Economy and jobs,1873,0.014081013
+1047,23-Jun,Environment,694,0.005217417
+1048,23-Jun,Government,701,0.005270043
+1049,23-Jun,Healthcare,560,0.00421002
+1050,23-Jun,Immigration and refugees,514,0.003864197
+1051,24-Jun,COVID-19,2215,0.017304958
+1052,24-Jun,Economy and jobs,1645,0.012851763
+1053,24-Jun,Environment,691,0.005398522
+1054,24-Jun,Government,787,0.006148534
+1055,24-Jun,Healthcare,565,0.004414131
+1056,24-Jun,Immigration and refugees,500,0.003906311
+1057,25-Jun,COVID-19,2381,0.01851607
+1058,25-Jun,Economy and jobs,1669,0.012979135
+1059,25-Jun,Environment,782,0.006081297
+1060,25-Jun,Government,645,0.005015903
+1061,25-Jun,Healthcare,544,0.004230467
+1062,25-Jun,Immigration and refugees,538,0.004183808
+1063,26-Jun,COVID-19,2670,0.020956956
+1064,26-Jun,Economy and jobs,1484,0.011647986
+1065,26-Jun,Environment,732,0.005745502
+1066,26-Jun,Government,548,0.004301278
+1067,26-Jun,Healthcare,613,0.004811466
+1068,26-Jun,Immigration and refugees,573,0.004497504
+1069,27-Jun,COVID-19,2053,0.01722749
+1070,27-Jun,Economy and jobs,1315,0.011034656
+1071,27-Jun,Environment,559,0.004690778
+1072,27-Jun,Government,571,0.004791474
+1073,27-Jun,Healthcare,519,0.004355123
+1074,27-Jun,Immigration and refugees,425,0.003566334
+1075,28-Jun,COVID-19,2090,0.017696118
+1076,28-Jun,Economy and jobs,1344,0.011379705
+1077,28-Jun,Environment,458,0.003877905
+1078,28-Jun,Government,486,0.004114982
+1079,28-Jun,Healthcare,484,0.004098048
+1080,28-Jun,Immigration and refugees,411,0.003479954
+1081,29-Jun,COVID-19,2414,0.018725807
+1082,29-Jun,Economy and jobs,1681,0.013039802
+1083,29-Jun,Environment,600,0.004654302
+1084,29-Jun,Government,639,0.004956831
+1085,29-Jun,Healthcare,511,0.003963914
+1086,29-Jun,Immigration and refugees,404,0.003133897
+1087,30-Jun,COVID-19,2623,0.019931308
+1088,30-Jun,Economy and jobs,1938,0.01472622
+1089,30-Jun,Environment,624,0.004741569
+1090,30-Jun,Government,756,0.005744594
+1091,30-Jun,Healthcare,664,0.005045516
+1092,30-Jun,Immigration and refugees,465,0.003533381
+1093,01-Jul,COVID-19,1911,0.015202259
+1094,01-Jul,Economy and jobs,1368,0.010882622
+1095,01-Jul,Environment,575,0.004574202
+1096,01-Jul,Government,853,0.006785728
+1097,01-Jul,Healthcare,560,0.004454875
+1098,01-Jul,Immigration and refugees,473,0.003762778
+1099,02-Jul,COVID-19,2182,0.018112092
+1100,02-Jul,Economy and jobs,1882,0.015621887
+1101,02-Jul,Environment,519,0.004308055
+1102,02-Jul,Government,725,0.006017996
+1103,02-Jul,Healthcare,599,0.00497211
+1104,02-Jul,Immigration and refugees,408,0.003386679
+1105,03-Jul,COVID-19,2269,0.018275101
+1106,03-Jul,Economy and jobs,1772,0.014272137
+1107,03-Jul,Environment,531,0.004276809
+1108,03-Jul,Government,590,0.00475201
+1109,03-Jul,Healthcare,584,0.004703684
+1110,03-Jul,Immigration and refugees,455,0.003664685
+1111,04-Jul,COVID-19,2109,0.018099897
+1112,04-Jul,Economy and jobs,1237,0.010616203
+1113,04-Jul,Environment,506,0.004342602
+1114,04-Jul,Government,440,0.003776176
+1115,04-Jul,Healthcare,440,0.003776176
+1116,04-Jul,Immigration and refugees,526,0.004514246
+1117,05-Jul,COVID-19,2118,0.019133656
+1118,05-Jul,Economy and jobs,1221,0.011030309
+1119,05-Jul,Environment,567,0.005122183
+1120,05-Jul,Government,333,0.003008266
+1121,05-Jul,Healthcare,759,0.006856678
+1122,05-Jul,Immigration and refugees,397,0.003586431
+1123,06-Jul,COVID-19,2907,0.022143847
+1124,06-Jul,Economy and jobs,1791,0.013642804
+1125,06-Jul,Environment,761,0.005796859
+1126,06-Jul,Government,466,0.003549719
+1127,06-Jul,Healthcare,983,0.007487926
+1128,06-Jul,Immigration and refugees,463,0.003526867
+1129,07-Jul,COVID-19,2889,0.021651478
+1130,07-Jul,Economy and jobs,2122,0.015903232
+1131,07-Jul,Environment,646,0.004841417
+1132,07-Jul,Government,510,0.003822172
+1133,07-Jul,Healthcare,773,0.005793213
+1134,07-Jul,Immigration and refugees,652,0.004886384
+1135,08-Jul,COVID-19,2849,0.020870572
+1136,08-Jul,Economy and jobs,2253,0.016504527
+1137,08-Jul,Environment,628,0.004600463
+1138,08-Jul,Government,548,0.004014417
+1139,08-Jul,Healthcare,806,0.005904416
+1140,08-Jul,Immigration and refugees,513,0.003758022
+1141,09-Jul,COVID-19,2439,0.018930897
+1142,09-Jul,Economy and jobs,2286,0.01774335
+1143,09-Jul,Environment,692,0.005371128
+1144,09-Jul,Government,792,0.006147302
+1145,09-Jul,Healthcare,510,0.00395849
+1146,09-Jul,Immigration and refugees,494,0.003834302
+1147,10-Jul,COVID-19,2112,0.016971489
+1148,10-Jul,Economy and jobs,1840,0.014785767
+1149,10-Jul,Environment,591,0.004749124
+1150,10-Jul,Government,566,0.004548231
+1151,10-Jul,Healthcare,703,0.005649127
+1152,10-Jul,Immigration and refugees,443,0.003559834
+1153,11-Jul,COVID-19,2054,0.017556756
+1154,11-Jul,Economy and jobs,1416,0.012103392
+1155,11-Jul,Environment,485,0.004145583
+1156,11-Jul,Government,810,0.00692355
+1157,11-Jul,Healthcare,703,0.006008958
+1158,11-Jul,Immigration and refugees,445,0.003803679
+1159,12-Jul,COVID-19,2202,0.019025566
+1160,12-Jul,Economy and jobs,1383,0.0119493
+1161,12-Jul,Environment,514,0.004441027
+1162,12-Jul,Government,448,0.003870778
+1163,12-Jul,Healthcare,837,0.007231789
+1164,12-Jul,Immigration and refugees,411,0.003551093
+1165,13-Jul,COVID-19,3054,0.023155309
+1166,13-Jul,Economy and jobs,1788,0.013556546
+1167,13-Jul,Environment,606,0.004594668
+1168,13-Jul,Government,540,0.004094259
+1169,13-Jul,Healthcare,893,0.006770691
+1170,13-Jul,Immigration and refugees,425,0.003222333
+1171,14-Jul,COVID-19,3018,0.022255652
+1172,14-Jul,Economy and jobs,1797,0.013251626
+1173,14-Jul,Environment,702,0.005176762
+1174,14-Jul,Government,618,0.00455732
+1175,14-Jul,Healthcare,846,0.006238662
+1176,14-Jul,Immigration and refugees,720,0.0053095
+1177,15-Jul,COVID-19,2909,0.021781615
+1178,15-Jul,Economy and jobs,1931,0.014458679
+1179,15-Jul,Environment,730,0.005465995
+1180,15-Jul,Government,768,0.005750526
+1181,15-Jul,Healthcare,1071,0.008019288
+1182,15-Jul,Immigration and refugees,535,0.0040059
+1183,16-Jul,COVID-19,3060,0.022305971
+1184,16-Jul,Economy and jobs,1971,0.014367669
+1185,16-Jul,Environment,701,0.005109963
+1186,16-Jul,Government,559,0.004074849
+1187,16-Jul,Healthcare,1257,0.009162943
+1188,16-Jul,Immigration and refugees,506,0.003688504
+1189,17-Jul,COVID-19,2677,0.019849332
+1190,17-Jul,Economy and jobs,1985,0.014718313
+1191,17-Jul,Environment,665,0.00493082
+1192,17-Jul,Government,588,0.004359883
+1193,17-Jul,Healthcare,832,0.006169086
+1194,17-Jul,Immigration and refugees,550,0.004078122
+1195,18-Jul,COVID-19,2083,0.018003146
+1196,18-Jul,Economy and jobs,1323,0.011434547
+1197,18-Jul,Environment,469,0.004053517
+1198,18-Jul,Government,642,0.005548737
+1199,18-Jul,Healthcare,569,0.004917806
+1200,18-Jul,Immigration and refugees,405,0.003500372
+1201,19-Jul,COVID-19,1949,0.017705305
+1202,19-Jul,Economy and jobs,1203,0.010928416
+1203,19-Jul,Environment,443,0.004024346
+1204,19-Jul,Government,510,0.004632994
+1205,19-Jul,Healthcare,633,0.005750363
+1206,19-Jul,Immigration and refugees,252,0.002289244
+1207,20-Jul,COVID-19,2162,0.018399217
+1208,20-Jul,Economy and jobs,1402,0.011931407
+1209,20-Jul,Environment,533,0.004535977
+1210,20-Jul,Government,630,0.005361474
+1211,20-Jul,Healthcare,671,0.005710395
+1212,20-Jul,Immigration and refugees,306,0.002604145
+1213,21-Jul,COVID-19,2599,0.020277756
+1214,21-Jul,Economy and jobs,1610,0.012561442
+1215,21-Jul,Environment,602,0.004696887
+1216,21-Jul,Government,722,0.005633143
+1217,21-Jul,Healthcare,766,0.005976438
+1218,21-Jul,Immigration and refugees,357,0.002785363
+1219,22-Jul,COVID-19,2972,0.021268221
+1220,22-Jul,Economy and jobs,1957,0.01400468
+1221,22-Jul,Environment,657,0.004701622
+1222,22-Jul,Government,780,0.005581835
+1223,22-Jul,Healthcare,682,0.004880527
+1224,22-Jul,Immigration and refugees,412,0.002948354
+1225,23-Jul,COVID-19,2446,0.017161179
+1226,23-Jul,Economy and jobs,1973,0.013842603
+1227,23-Jul,Environment,691,0.004848068
+1228,23-Jul,Government,722,0.005065565
+1229,23-Jul,Healthcare,709,0.004974356
+1230,23-Jul,Immigration and refugees,397,0.002785359
+1231,24-Jul,COVID-19,2389,0.018122648
+1232,24-Jul,Economy and jobs,1649,0.012509103
+1233,24-Jul,Environment,602,0.004566695
+1234,24-Jul,Government,485,0.003679148
+1235,24-Jul,Healthcare,592,0.004490836
+1236,24-Jul,Immigration and refugees,376,0.002852288
+1237,25-Jul,COVID-19,2084,0.018717442
+1238,25-Jul,Economy and jobs,1224,0.010993354
+1239,25-Jul,Environment,501,0.004499731
+1240,25-Jul,Government,401,0.003601581
+1241,25-Jul,Healthcare,514,0.00461649
+1242,25-Jul,Immigration and refugees,249,0.002236393
+1243,26-Jul,COVID-19,1679,0.016218618
+1244,26-Jul,Economy and jobs,1141,0.011021705
+1245,26-Jul,Environment,427,0.004124687
+1246,26-Jul,Government,417,0.00402809
+1247,26-Jul,Healthcare,508,0.004907122
+1248,26-Jul,Immigration and refugees,295,0.002849608
+1249,27-Jul,COVID-19,2361,0.02176739
+1250,27-Jul,Economy and jobs,1662,0.015322915
+1251,27-Jul,Environment,548,0.005052321
+1252,27-Jul,Government,468,0.004314756
+1253,27-Jul,Healthcare,533,0.004914028
+1254,27-Jul,Immigration and refugees,367,0.00338358
+1255,28-Jul,COVID-19,2533,0.02184958
+1256,28-Jul,Economy and jobs,1745,0.015052317
+1257,28-Jul,Environment,609,0.005253215
+1258,28-Jul,Government,571,0.004925428
+1259,28-Jul,Healthcare,1183,0.010204522
+1260,28-Jul,Immigration and refugees,227,0.001958095
+1261,29-Jul,COVID-19,2047,0.017692308
+1262,29-Jul,Economy and jobs,1380,0.011927398
+1263,29-Jul,Environment,543,0.004693172
+1264,29-Jul,Government,616,0.005324114
+1265,29-Jul,Healthcare,1154,0.009974071
+1266,29-Jul,Immigration and refugees,265,0.002290406
+1267,30-Jul,COVID-19,2484,0.021364618
+1268,30-Jul,Economy and jobs,1465,0.012600308
+1269,30-Jul,Environment,506,0.004352052
+1270,30-Jul,Government,556,0.004782096
+1271,30-Jul,Healthcare,828,0.007121539
+1272,30-Jul,Immigration and refugees,293,0.002520062
+1273,31-Jul,COVID-19,2735,0.023496362
+1274,31-Jul,Economy and jobs,1811,0.015558286
+1275,31-Jul,Environment,541,0.004647726
+1276,31-Jul,Government,493,0.004235359
+1277,31-Jul,Healthcare,666,0.0057216
+1278,31-Jul,Immigration and refugees,260,0.002233658
+1279,01-Aug,COVID-19,2150,0.020256456
+1280,01-Aug,Economy and jobs,1327,0.012502473
+1281,01-Aug,Environment,408,0.003844016
+1282,01-Aug,Government,394,0.003712113
+1283,01-Aug,Healthcare,496,0.004673117
+1284,01-Aug,Immigration and refugees,264,0.002487304
+1285,02-Aug,COVID-19,2040,0.01859329
+1286,02-Aug,Economy and jobs,1172,0.010682027
+1287,02-Aug,Environment,506,0.004611865
+1288,02-Aug,Government,314,0.002861908
+1289,02-Aug,Healthcare,534,0.004867067
+1290,02-Aug,Immigration and refugees,277,0.002524677
+1291,03-Aug,COVID-19,2346,0.020242985
+1292,03-Aug,Economy and jobs,1358,0.011717806
+1293,03-Aug,Environment,578,0.004987402
+1294,03-Aug,Government,341,0.002942395
+1295,03-Aug,Healthcare,740,0.006385255
+1296,03-Aug,Immigration and refugees,276,0.002381528
+1297,04-Aug,COVID-19,2402,0.018775159
+1298,04-Aug,Economy and jobs,1694,0.013241099
+1299,04-Aug,Environment,652,0.005096338
+1300,04-Aug,Government,372,0.002907727
+1301,04-Aug,Healthcare,682,0.005330832
+1302,04-Aug,Immigration and refugees,290,0.002266776
+1303,05-Aug,COVID-19,2631,0.020602653
+1304,05-Aug,Economy and jobs,2153,0.016859564
+1305,05-Aug,Environment,757,0.005927863
+1306,05-Aug,Government,388,0.003038324
+1307,05-Aug,Healthcare,813,0.006366384
+1308,05-Aug,Immigration and refugees,252,0.001973344
+1309,06-Aug,COVID-19,2377,0.018055313
+1310,06-Aug,Economy and jobs,1880,0.01428018
+1311,06-Aug,Environment,618,0.004694229
+1312,06-Aug,Government,449,0.003410532
+1313,06-Aug,Healthcare,720,0.005469005
+1314,06-Aug,Immigration and refugees,272,0.002066069
+1315,07-Aug,COVID-19,2184,0.016749108
+1316,07-Aug,Economy and jobs,2032,0.01558342
+1317,07-Aug,Environment,663,0.005084551
+1318,07-Aug,Government,395,0.003029257
+1319,07-Aug,Healthcare,576,0.004417347
+1320,07-Aug,Immigration and refugees,317,0.002431075
+1321,08-Aug,COVID-19,1675,0.015263489
+1322,08-Aug,Economy and jobs,1610,0.014671174
+1323,08-Aug,Environment,506,0.004610941
+1324,08-Aug,Government,363,0.003307849
+1325,08-Aug,Healthcare,500,0.004556265
+1326,08-Aug,Immigration and refugees,210,0.001913631
+1327,09-Aug,COVID-19,1742,0.018335684
+1328,09-Aug,Economy and jobs,1296,0.013641244
+1329,09-Aug,Environment,422,0.004441825
+1330,09-Aug,Government,366,0.003852388
+1331,09-Aug,Healthcare,437,0.004599709
+1332,09-Aug,Immigration and refugees,233,0.002452477
+1333,10-Aug,COVID-19,2139,0.019335593
+1334,10-Aug,Economy and jobs,1439,0.01300791
+1335,10-Aug,Environment,507,0.004583051
+1336,10-Aug,Government,417,0.003769492
+1337,10-Aug,Healthcare,485,0.004384181
+1338,10-Aug,Immigration and refugees,258,0.002332203
+1339,11-Aug,COVID-19,2337,0.020183787
+1340,11-Aug,Economy and jobs,1744,0.01506227
+1341,11-Aug,Environment,633,0.005466982
+1342,11-Aug,Government,450,0.00388648
+1343,11-Aug,Healthcare,850,0.007341129
+1344,11-Aug,Immigration and refugees,263,0.002271432
+1345,12-Aug,COVID-19,1908,0.015909148
+1346,12-Aug,Economy and jobs,1850,0.015425536
+1347,12-Aug,Environment,614,0.00511961
+1348,12-Aug,Government,512,0.004269121
+1349,12-Aug,Healthcare,661,0.005511502
+1350,12-Aug,Immigration and refugees,267,0.00222628
+1351,13-Aug,COVID-19,2236,0.017854006
+1352,13-Aug,Economy and jobs,1844,0.014723966
+1353,13-Aug,Environment,595,0.004750954
+1354,13-Aug,Government,610,0.004870726
+1355,13-Aug,Healthcare,594,0.004742969
+1356,13-Aug,Immigration and refugees,280,0.002235743
+1357,14-Aug,COVID-19,2374,0.018179312
+1358,14-Aug,Economy and jobs,1677,0.012841915
+1359,14-Aug,Environment,611,0.004678837
+1360,14-Aug,Government,630,0.004824333
+1361,14-Aug,Healthcare,625,0.004786045
+1362,14-Aug,Immigration and refugees,586,0.004487395
+1363,15-Aug,COVID-19,1747,0.015987042
+1364,15-Aug,Economy and jobs,1155,0.010569567
+1365,15-Aug,Environment,498,0.004557268
+1366,15-Aug,Government,447,0.00409056
+1367,15-Aug,Healthcare,448,0.004099711
+1368,15-Aug,Immigration and refugees,290,0.002653831
+1369,16-Aug,COVID-19,1704,0.015811744
+1370,16-Aug,Economy and jobs,1126,0.010448371
+1371,16-Aug,Environment,484,0.004491129
+1372,16-Aug,Government,395,0.003665281
+1373,16-Aug,Healthcare,533,0.00494581
+1374,16-Aug,Immigration and refugees,236,0.002189889
+1375,17-Aug,COVID-19,2171,0.017465949
+1376,17-Aug,Economy and jobs,1741,0.014006549
+1377,17-Aug,Environment,627,0.005044288
+1378,17-Aug,Government,455,0.003660528
+1379,17-Aug,Healthcare,541,0.004352408
+1380,17-Aug,Immigration and refugees,255,0.002051505
+1381,18-Aug,COVID-19,2223,0.016861347
+1382,18-Aug,Economy and jobs,2278,0.017278519
+1383,18-Aug,Environment,795,0.006030036
+1384,18-Aug,Government,1329,0.0100804
+1385,18-Aug,Healthcare,483,0.003663532
+1386,18-Aug,Immigration and refugees,265,0.002010012
+1387,19-Aug,COVID-19,1810,0.01540714
+1388,19-Aug,Economy and jobs,1823,0.015517799
+1389,19-Aug,Environment,967,0.008231328
+1390,19-Aug,Government,892,0.007592911
+1391,19-Aug,Healthcare,450,0.003830504
+1392,19-Aug,Immigration and refugees,272,0.002315327
+1393,20-Aug,COVID-19,1690,0.014650554
+1394,20-Aug,Economy and jobs,1892,0.016401685
+1395,20-Aug,Environment,662,0.005738856
+1396,20-Aug,Government,654,0.005669504
+1397,20-Aug,Healthcare,513,0.00444718
+1398,20-Aug,Immigration and refugees,331,0.002869428
+1399,21-Aug,COVID-19,1801,0.015603611
+1400,21-Aug,Economy and jobs,1669,0.014459982
+1401,21-Aug,Environment,638,0.005527542
+1402,21-Aug,Government,599,0.005189652
+1403,21-Aug,Healthcare,564,0.004886417
+1404,21-Aug,Immigration and refugees,288,0.002495192
+1405,22-Aug,COVID-19,1414,0.013930211
+1406,22-Aug,Economy and jobs,1243,0.012245582
+1407,22-Aug,Environment,558,0.005497212
+1408,22-Aug,Government,463,0.004561307
+1409,22-Aug,Healthcare,1030,0.010147183
+1410,22-Aug,Immigration and refugees,222,0.002187063
+1411,23-Aug,COVID-19,1515,0.014780488
+1412,23-Aug,Economy and jobs,1170,0.011414634
+1413,23-Aug,Environment,575,0.005609756
+1414,23-Aug,Government,406,0.003960976
+1415,23-Aug,Healthcare,449,0.004380488
+1416,23-Aug,Immigration and refugees,236,0.002302439
+1417,24-Aug,COVID-19,1621,0.013721706
+1418,24-Aug,Economy and jobs,1463,0.012384242
+1419,24-Aug,Environment,810,0.00685662
+1420,24-Aug,Government,462,0.003910813
+1421,24-Aug,Healthcare,537,0.004545685
+1422,24-Aug,Immigration and refugees,305,0.002581814
+1423,25-Aug,COVID-19,1512,0.01333204
+1424,25-Aug,Economy and jobs,1429,0.012600189
+1425,25-Aug,Environment,579,0.005105325
+1426,25-Aug,Government,381,0.003359462
+1427,25-Aug,Healthcare,514,0.004532188
+1428,25-Aug,Immigration and refugees,288,0.002539436
+1429,26-Aug,COVID-19,1647,0.013553325
+1430,26-Aug,Economy and jobs,1542,0.012689269
+1431,26-Aug,Environment,602,0.004953917
+1432,26-Aug,Government,722,0.005941409
+1433,26-Aug,Healthcare,461,0.003793614
+1434,26-Aug,Immigration and refugees,397,0.003266952
+1435,27-Aug,COVID-19,1892,0.015665364
+1436,27-Aug,Economy and jobs,1572,0.013015831
+1437,27-Aug,Environment,651,0.005390144
+1438,27-Aug,Government,634,0.005249387
+1439,27-Aug,Healthcare,439,0.003634828
+1440,27-Aug,Immigration and refugees,339,0.002806849
+1441,28-Aug,COVID-19,1976,0.016641542
+1442,28-Aug,Economy and jobs,1779,0.01498244
+1443,28-Aug,Environment,690,0.005811065
+1444,28-Aug,Government,754,0.006350062
+1445,28-Aug,Healthcare,531,0.004471993
+1446,28-Aug,Immigration and refugees,338,0.002846579
+1447,29-Aug,COVID-19,1240,0.01132265
+1448,29-Aug,Economy and jobs,1213,0.011076108
+1449,29-Aug,Environment,515,0.004702552
+1450,29-Aug,Government,650,0.00593526
+1451,29-Aug,Healthcare,426,0.003889878
+1452,29-Aug,Immigration and refugees,241,0.002200612
+1453,30-Aug,COVID-19,1327,0.01295443
+1454,30-Aug,Economy and jobs,1089,0.010631028
+1455,30-Aug,Environment,550,0.005369206
+1456,30-Aug,Government,703,0.006862822
+1457,30-Aug,Healthcare,345,0.003367957
+1458,30-Aug,Immigration and refugees,247,0.002411262
+1459,31-Aug,COVID-19,1958,0.01711015
+1460,31-Aug,Economy and jobs,1421,0.01241753
+1461,31-Aug,Environment,566,0.004946039
+1462,31-Aug,Government,573,0.005007209
+1463,31-Aug,Healthcare,425,0.003713899
+1464,31-Aug,Immigration and refugees,292,0.002551667
+1465,01-Sep,COVID-19,1831,0.016730629
+1466,01-Sep,Economy and jobs,1403,0.01281981
+1467,01-Sep,Environment,648,0.005921053
+1468,01-Sep,Government,572,0.005226608
+1469,01-Sep,Healthcare,505,0.004614401
+1470,01-Sep,Immigration and refugees,240,0.002192982
+1471,02-Sep,COVID-19,1541,0.017050987
+1472,02-Sep,Economy and jobs,1197,0.013244667
+1473,02-Sep,Environment,544,0.006019297
+1474,02-Sep,Government,438,0.004846419
+1475,02-Sep,Healthcare,469,0.005189431
+1476,02-Sep,Immigration and refugees,231,0.002555988
+1477,03-Sep,COVID-19,1185,0.018002826
+1478,03-Sep,Economy and jobs,920,0.013976877
+1479,03-Sep,Environment,401,0.006092095
+1480,03-Sep,Government,327,0.004967868
+1481,03-Sep,Healthcare,350,0.00531729
+1482,03-Sep,Immigration and refugees,157,0.002385185
+1483,04-Sep,COVID-19,676,0.014576191
+1484,04-Sep,Economy and jobs,673,0.014511504
+1485,04-Sep,Environment,304,0.006554973
+1486,04-Sep,Government,230,0.004959355
+1487,04-Sep,Healthcare,236,0.005088729
+1488,04-Sep,Immigration and refugees,98,0.002113116
+1489,05-Sep,COVID-19,343,0.015061696
+1490,05-Sep,Economy and jobs,284,0.012470909
+1491,05-Sep,Environment,127,0.00557678
+1492,05-Sep,Government,93,0.004083783
+1493,05-Sep,Healthcare,104,0.004566812
+1494,05-Sep,Immigration and refugees,44,0.001932113
+1495,06-Sep,COVID-19,143,0.016989426
+1496,06-Sep,Economy and jobs,124,0.01473209
+1497,06-Sep,Environment,38,0.004514673
+1498,06-Sep,Government,31,0.003683022
+1499,06-Sep,Healthcare,33,0.003920637
+1500,06-Sep,Immigration and refugees,18,0.002138529
+1501,07-Sep,COVID-19,907,0.016039471
+1502,07-Sep,Economy and jobs,895,0.015827262
+1503,07-Sep,Environment,439,0.007763316
+1504,07-Sep,Government,217,0.003837448
+1505,07-Sep,Healthcare,249,0.004403339
+1506,07-Sep,Immigration and refugees,135,0.002387352
+1507,08-Sep,COVID-19,1063,0.017930034
+1508,08-Sep,Economy and jobs,782,0.013190298
+1509,08-Sep,Environment,446,0.007522855
+1510,08-Sep,Government,214,0.003609621
+1511,08-Sep,Healthcare,248,0.004183112
+1512,08-Sep,Immigration and refugees,151,0.002546976
+1513,09-Sep,COVID-19,1271,0.020408491
+1514,09-Sep,Economy and jobs,890,0.014290761
+1515,09-Sep,Environment,518,0.008317544
+1516,09-Sep,Government,298,0.004784996
+1517,09-Sep,Healthcare,306,0.004913453
+1518,09-Sep,Immigration and refugees,220,0.003532548
+1519,10-Sep,COVID-19,1348,0.020490059
+1520,10-Sep,Economy and jobs,780,0.011856266
+1521,10-Sep,Environment,553,0.008405788
+1522,10-Sep,Government,314,0.004772907
+1523,10-Sep,Healthcare,334,0.005076914
+1524,10-Sep,Immigration and refugees,212,0.003222472
+1525,11-Sep,COVID-19,1063,0.018742507
+1526,11-Sep,Economy and jobs,741,0.013065096
+1527,11-Sep,Environment,530,0.009344806
+1528,11-Sep,Government,236,0.004161083
+1529,11-Sep,Healthcare,255,0.004496086
+1530,11-Sep,Immigration and refugees,153,0.002697651
+1531,12-Sep,COVID-19,591,0.015800449
+1532,12-Sep,Economy and jobs,399,0.010667308
+1533,12-Sep,Environment,369,0.009865255
+1534,12-Sep,Government,139,0.00371618
+1535,12-Sep,Healthcare,252,0.006737247
+1536,12-Sep,Immigration and refugees,98,0.002620041
+1537,13-Sep,COVID-19,211,0.018856122
+1538,13-Sep,Economy and jobs,108,0.009651475
+1539,13-Sep,Environment,128,0.011438785
+1540,13-Sep,Government,43,0.003842717
+1541,13-Sep,Healthcare,49,0.00437891
+1542,13-Sep,Immigration and refugees,24,0.002144772
+1543,14-Sep,COVID-19,1130,0.022243657
+1544,14-Sep,Economy and jobs,744,0.014645381
+1545,14-Sep,Environment,552,0.010865928
+1546,14-Sep,Government,320,0.006299089
+1547,14-Sep,Healthcare,291,0.005728234
+1548,14-Sep,Immigration and refugees,154,0.003031436
+1549,15-Sep,COVID-19,708,0.02088742
+1550,15-Sep,Economy and jobs,570,0.016816143
+1551,15-Sep,Environment,359,0.01059122
+1552,15-Sep,Government,170,0.005015341
+1553,15-Sep,Healthcare,233,0.006873967
+1554,15-Sep,Immigration and refugees,138,0.004071277
+1555,16-Sep,COVID-19,503,0.025943883
+1556,16-Sep,Economy and jobs,353,0.018207138
+1557,16-Sep,Environment,202,0.010418816
+1558,16-Sep,Government,120,0.006189396
+1559,16-Sep,Healthcare,137,0.007066227
+1560,16-Sep,Immigration and refugees,92,0.004745203
+1561,17-Sep,COVID-19,170,0.028926323
+1562,17-Sep,Economy and jobs,96,0.016334865
+1563,17-Sep,Environment,53,0.009018207
+1564,17-Sep,Government,25,0.004253871
+1565,17-Sep,Healthcare,37,0.006295729
+1566,17-Sep,Immigration and refugees,23,0.003913561
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
