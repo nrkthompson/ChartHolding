@@ -1,36 +1,36 @@
 Indicators :,"Cultural (Museums, galleries, attractions, theatres, concerts, libraries)",Borders and Movement (including Schengen Area),"Gatherings (Weddings, funerals, concerts, religious services)",Manufacturing & Construction,Contact Services (beauty &health),"Leisure Activities (Sporting, parks, going outside, amusement parks, zoos)","Eateries (restaurants, bars, cafes)","Schooling
  & 
 Youth Activities ",Stores and Non-Essential Businesses ,Mean Last Week,Mean This Week,Level of reopening this week based on mean:
-Belgium,3,2,2,4,2,3,2,2,3,2.44,2.56,2
-France,2,3,2,4,3,2,2,5,2,2.78,2.78,2
+Belgium,3,2,2,4,2,3,2,2,3,2.56,2.56,2
+France,2,3,2,4,3,2,2,1,2,2.78,2.33,2
 Germany,3,3,2,4,3,2,2,2,3,2.67,2.67,2
-Ireland,1,3,2,1,2,2,2,1,1,1.67,1.67,1
-Luxembourg,1,3,2,4,3,3,3,2,4,2.67,2.78,2
+Ireland,1,3,2,2,2,2,2,4,1,1.67,2.11,2
+Luxembourg,1,3,2,4,3,3,3,2,4,2.78,2.78,2
 Netherlands,1,3,2,4,1,1,1,1,1,1.67,1.67,1
-Portugal,3,3,2,4,3,3,2,3,2,2.22,2.78,2
-Spain,4,3,2,4,3,4,3,4,4,3.44,3.44,3
-UnitedKingdom,1,2,2,4,1,4,2,5,1,2.22,2.44,2
-CzechRepublic,1,2,1,3,1,2,2,1,1,1.56,1.56,1
-Hungary,2,2,1,3,1,2,2,1,1,1.67,1.67,1
-Latvia,2,2,2,3,2,2,2,2,2,2.11,2.11,2
-Lithuania,2,1,2,4,3,3,2,2,2,2.33,2.33,2
+Portugal,3,3,2,4,3,4,2,3,2,2.78,2.89,2
+Spain,4,3,3,4,3,4,3,4,4,3.44,3.56,3
+UnitedKingdom,1,2,2,4,5,4,4,5,4,2.44,3.44,3
+CzechRepublic,2,2,1,3,1,2,2,2,2,1.56,1.89,1
+Hungary,2,2,2,3,3,2,2,1,2,1.67,2.11,2
+Latvia,2,2,2,3,3,2,2,2,2,2.11,2.22,2
+Lithuania,2,2,2,4,3,3,2,2,2,2.33,2.44,2
 Poland,1,2,2,3,2,2,2,1,1,1.78,1.78,1
 Slovakia,2,1,2,3,2,2,2,1,1,1.78,1.78,1
-Austria,1,3,2,4,4,3,2,1,1,2.89,2.33,2
-Greece,2,3,1,insufficient data,3,4,2,2,2,2.25,2.38,2
-Italy,2,3,2,4,2,2,2,1,1,2.11,2.11,2
-Slovenia,3,3,1,4,3,3,2,1,1,2.78,2.33,2
+Austria,1,3,2,4,4,3,2,1,1,2.33,2.33,2
+Greece,2,3,1,insufficient data,3,4,2,1,1,2.38,2.13,2
+Italy,2,3,2,4,4,2,2,3,4,2.11,2.89,2
+Slovenia,3,3,1,4,3,3,2,2,2,2.33,2.56,2
 Switzerland,3,3,2,insufficient data,4,3,2,3,3,2.88,2.88,2
-Australia,3,2,3,4,3,3,4,4,4,3.33,3.33,3
-Israel,3,2,2,4,3,3,3,3,4,3,3,3
+Australia,4,2,3,4,3,4,4,4,4,3.33,3.56,3
+Israel,3,2,3,4,3,3,3,3,4,3,3.11,3
 Japan,4,2,4,4,4,4,3,3,3,3.44,3.44,3
 NewZealand,5,2,5,5,5,5,4,5,4,4.44,4.44,4
 SouthKorea,4,3,2,4,3,3,3,3,4,3.22,3.22,3
 Turkey,4,3,2,4,4,3,3,3,3,3.22,3.22,3
-Denmark,2,3,2,4,1,3,2,3,3,2.56,2.56,2
+Denmark,2,3,2,4,4,3,2,3,3,2.56,2.89,2
 Estonia,2,3,2,4,3,2,2,2,1,2.33,2.33,2
 Finland,4,2,2,4,4,3,2,3,4,3.11,3.11,3
-Iceland,1,3,3,4,4,2,3,4,3,2.78,3,3
+Iceland,1,3,3,4,4,2,3,4,3,3,3,3
 Norway,4,2,3,4,4,2,4,3,4,3.33,3.33,3
 Sweden,3,3,2,4,4,3,4,4,3,3.33,3.33,3
 Chile,2,4,2,insufficient data,3,2,2,3,2,2.5,2.5,2
@@ -38,18 +38,18 @@ Mexico,4,4,2,4,4,4,3,2,4,3.44,3.44,3
 California,4,4,3,4,4,4,3,4,4,3.78,3.78,3
 Illinois,3,3,2,4,4,3,3,4,3,3.22,3.22,3
 Michigan,4,3,3,4,4,4,3,4,4,3.67,3.67,3
-NewYork,4,3,2,4,4,4,4,3,4,3.44,3.56,3
+NewYork,4,3,2,4,4,4,4,3,4,3.56,3.56,3
 Texas,5,3,5,5,5,5,5,5,5,4.78,4.78,4
-Alberta,2,2,2,4,3,3,4,3,3,2.89,2.89,2
-BritishColumbia,3,2,2,3,3,2,3,4,4,3,2.89,2
+Alberta,1,2,2,4,3,3,3,3,3,2.89,2.67,2
+BritishColumbia,3,2,2,3,3,2,3,4,4,2.89,2.89,2
 Manitoba,3,2,3,4,4,4,3,3,3,3.22,3.22,3
 NewBrunswick,4,2,3,4,4,4,4,4,4,3.67,3.67,3
 Newfoundland,4,2,3,4,4,4,3,4,3,3.44,3.44,3
 NorthwestTerritories,2,2,2,4,4,3,3,3,3,2.89,2.89,2
 NovaScotia,4,2,4,4,4,4,4,4,4,3.78,3.78,3
 Nunavut,3,2,2,4,4,4,4,4,4,3.44,3.44,3
-Ontario,2,2,2,4,2,2,2,3,2,2.89,2.33,2
+Ontario,2,2,2,3,2,2,2,3,2,2.33,2.22,2
 PrinceEdwardIsland,3,2,3,4,3,4,3,4,4,3.33,3.33,3
-Quebec,4,2,4,3,4,3,2,4,4,3.56,3.33,3
+Quebec,4,2,4,3,4,4,2,4,4,3.33,3.44,3
 Saskatchewan,4,2,2,4,3,2,4,3,3,3,3,3
 Yukon,3,2,3,4,4,3,4,3,3,3.22,3.22,3
